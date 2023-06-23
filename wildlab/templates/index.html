@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    *{
+        margin:0;
+        padding:0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    body{
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position:center center;
+        height:100vh;
+    }
+
+    .custom-padding{
+        padding-top:25px;
+        background: url("/static/images/NavbarBackground.jpg") 50% 0 no-repeat fixed;
+    }
+    .partner_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+</style>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <title>THE WILD LAB</title>
+    </head>
+    <body>
+        <div class="custom-padding">
+            <div style="height: 45%;">
+                <br>
+                <span style="text-align: center; color: aliceblue; margin-top: 20%;">
+                    <b>
+                        <p>
+                            The
+                        </p>
+                        <p>
+                            WILD
+                        </p>
+                        <p>
+                            Lab
+                        </p>
+                        <br/>
+ 
+                    </b>
+
+                </span>
+
+            </div>
+            <div style="text-align: center; color: chocolate;">Wildlife Ecology & Conservation Biology Lab
+                Kerala Forest Research Institute 
+            </div>
+            <div>
+                <br>
+            </div>
+
+
+        </div>
+        <div style="padding: 5px;">
+            <p class="paragragh">
+                Welcome to the research group of Peroth Balakrishnan, part of the Department of Wildlife Biology at KSCSTE-Kerala Forest Research Institute. Our group is broadly interested in conservation biology, evolutionary ecology, behavioural ecology and natural history. We work across taxa - mammals, birds, reptiles, amphibians and rarely on insects and plants on topics related to species distribution, ecology, behaviour, conservation management and dynamics of human-wildlife interactions. 
+                We support various stakeholders in science-based policy making and wildlife and biodiversity conservation implementation. See more on our research and publications.    
+            </p>
+            <br>
+            <p class="paragragh">
+                We have been awarded several research grants from the MoEF & CC, Government of India; SERB, Department of Science & Technology, Government of India; 
+                Indian Navy, Global Environment Facility-United Nations Development Programme, Mohammed Bin Species Conservation Fund, Abu Dhabi; International Foundation for Science, Sweden, INASP, UK; 
+                Conservation Leadership Programme, etc.
+            </p>
+            <br>
+            <p class="paragragh">
+                We welcome and seek collaborations with research groups that share similar or complementary research interests. Master’s students and volunteers are encouraged to contact us to explore potential opportunities. We strongly advocate democratising science by public participation through our outreach and citizen science programmes. 
+            </p>
+        </div>
+        <div style="position: absolute;left: 50%;">
+            News and Updates <hr style="width: 50%;"/>
+            {% if news%}
+                {% for new in news %}
+                {{new.Date}}
+                <span>{{new}}</span>
+                <br>
+                {% endfor %}  
+            {% else %}
+                <span>no news</span>
+            {% endif %}
+
+        </div>
+        <br/>
+        <br/>
+        <div>
+            <span class="partner_img">funders/collaborators/partners</span>
+            <hr style="width: 50%;">
+            
+            <img src="{% static '/images/partners.png' %}"  class="partner_img">
+        </div>
+        
+    </body>
+</html>
+
+{% endblock content %}
+
+
