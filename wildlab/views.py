@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from wildlab.models import News_Update
+from wildlab.models import News_Update,Publication
 
 # Create your views here.
 def Home(request): 
@@ -12,7 +12,8 @@ def RESEARCH(request):
 def PEOPLE(request): 
     return render(request,'PEOPLE.html',{})
 def publication(request): 
-    return render(request,'publication.html',{})
+    Publications=Publication.objects.all().order_by('-id')
+    return render(request,'publication.html',{"Publications":Publications})
 def MEDIA(request): 
     return render(request,'MEDIA.html',{})
 def GALLERY(request): 

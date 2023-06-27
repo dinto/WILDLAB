@@ -5,6 +5,251 @@
 
 
 {% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2b3c60;
+  font-family: merriweather;
+  font-size: 18;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  /*left: 50%; 
+  margin-left: -3px;*/
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  /*right: 10px;*/
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  right: 25%;;
+}
+
+/* Place the container to the right */
+/*.right {
+  left: 25%;
+}*/
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: 10px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="timeline">
+  <!--
+    {% for publication in  Publications%}
+        {% if forloop.counter|divisibleby:2 == 0 %}
+            <div class="container left">
+                <div class="content">
+                    <h2>{{publication.Year}}</h2>
+                    <ul style="list-style-type:disc">
+                        <li>{{publication.Publication_Description}}</li>
+                    </ul>
+                </div>
+            </div>
+        {% else %}
+            <div class="container right">
+                <div class="content">
+                    <h2>{{publication.Year}}</h2>
+                    <ul style="list-style-type:disc">
+                        <li>{{publication.Publication_Description}}</li>
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+         {% endfor %}
+  -->
+  <div class="container right">
+    <div class="content">
+        <h2>2022</h2>
+        <ul style="list-style-type:disc">
+            <li>Balakrishnan, P., Das, K.S.A., Patel, B. and S. Sivaraman. (in press). Predation of Indian giant flying squirrel and Travancore flying squirrel in the Western Ghats, India. Mammalia, 2022. 
+              <a href="https://www.degruyter.com/document/doi/10.1515/mammalia-2021-0097/html" target="_blank">(DOI)</a>
+            </li>
+            <li>Bindu, T. N., Balakrishnan, P., Sajeev T.V. and V.V. Sudheendrakumar. 2022. Role of soil and larval excreta in the horizontal transmission of the baculovirus HpNPV and its implications in the management of teak defoliator Hyblaea puera. Current Science, 122(11): 1321-1326. 
+              <a href="https://www.currentscience.ac.in/Volumes/122/11/1321.pdf" target="_blank">(DOI / pdf)</a>
+            </li>
+            <li>Bindu, T. N., Balakrishnan, P., Sajeev T.V. and V.V. Sudheendrakumar. 2022. Seeding baculovirus HpNPV in the epicentre populations of teak defoliator, Hyblaea puera to prevent large-scale outbreaks. Current Science, 122(7): 812-818. 
+              <a href="https://www.currentscience.ac.in/Volumes/122/07/0812.pdf" target="_blank">(DOI / pdf)</a>
+            </li>
+            <li>Sreejith K.A., Balakrishnan, P. and M. Amruth. 2022. Forest and Wildlife: Conservation and Challenges (in Malayalam). Book Chapter. In: Manorama Year Book. pp. 346-363.</li>
+            <li>Bindu, T. N. and P. Balakrishanan. 2022. World of Viruses (in Malayalam). Deshabhimani Kilivathil. 29th May, 2022.</li>
+            <li>Balakrishnan, P. 2022. Evolution of locomotion in dinosaurs (in Malayalam). Deshabhimani Kilivathil. 6th February, 2022.</li>
+        </ul>
+    </div>
+  </div>
+  <div class="container right">
+      <div class="content">
+          <h2>2021</h2>
+          <ul style="list-style-type:disc">
+              <li>Patel, B., Sivaraman, S. and P. Balakrishnan. 2021. Use of tree cavities by Indian vertebrates: status of research, knowledge gaps and future conservation perspectives. Current Science, 121(4): 490-501.               
+              <a href="https://www.currentscience.ac.in/Volumes/121/04/0490.pdf" target="_blank">(pdf)</a>
+              </li>
+              <li>Patel, B. 2021. Parasitoid Tachinid Fly on Lobster Moth <i> Neostauropus alternus </i> – an observation from the forests near Peechi-Vazhani Wildlife Sanctuary, Thrissur district, Kerala, India. Journal of the Bombay Natural History Society 118(2). 
+              <a href="https://www.bnhsjournal.in/index.php/bnhs/article/view/152548" target="_blank">(DOI)</a>
+              </li>
+              <li>Patel B., Balakrishnan. P. and T.K. Hrideek. 2021. Tree-microhabitats in tropical forests of the southern Western Ghats. In: New Horizons in Plant Sciences, Proc. International Conference, 04-09 January 2021. (ISBN: 978 -81940888 3-7), Department of Botany, University of Kerala, Kariavattom, Thiruvananthapuram. </li>
+              <li>Balakrishnan P.  2021. Challenges of Wildlife Conservation (in Malayalam). Deshabhimani- Kilivathil. 10th October. P. 4. </li>
+              <li>Balakrishnan P. 2021. Roots of Human-Wildlife Conflicts. (in Malayalam). Sasthra Keralam. May. P. 24-51. </li>
+              <li>Bindu T.N. and Balakrishnan P. 2021. International decade of ecosystem restoration (in Malayalam). Deshabhimani- Kilivathil. 16th May. P. 4.</li>
+          </ul>
+      </div>
+  </div>  
+  <div class="container right">
+    <div class="content">
+        <h2>2020</h2>
+        <ul style="list-style-type:disc">
+            <li>
+              Patel, B., Sivaraman, S. and P. Balakrishnan. 2020. <i> Duttaphrynus parietalis</i> (Indian toad) and <i>Duttaphrynus melanostictus </i> (Asian common toad). Microhabitat use. Herpetological Review 51(4):816-817. 
+            </li>
+            <li>
+              Das, S., M. Harpalani, B. Chowdhuri, R. Negi, S.T. Ali and M. Singh. 2020. Use of an Embedded Fruit by the Nicobar Long-tailed Macaque <i>(Macaca fascicularis umbrosus)</i>: I. Familiarity to Coconuts (<i>Cocos nucifera L. </i>) and Temporal Patterns of Coconut Foraging. Primate Conservation, 34: 195-216. 
+              <a href="http://static1.1.sqspcdn.com/static/f/1200343/28367900/1604696360367/PC34_Das_et_al_M_fascicularis_Nicobar_coconut_feeding.pdf?token=Zxd9bPLjOOjxRGkqljEMw20qTJg%3D" target="_blank">
+              (pdf)
+              </a>
+            </li>
+            <li>
+              ​Balakrishnan P. and Bindu T.N. 2020. Habitat fragmentation and wildlife (in Malayalam). Aranyam. August-September. P. 8-11.
+            </li>
+          </ul>
+      </div>
+  </div>  
+  <div class="container right">
+    <div class="content">
+        <h2>2019</h2>
+        <ul style="list-style-type:disc">
+            <li>
+              Sujanapal, P. and P. Balakrishnan. 2019. Flora and fauna of the proposed Ponmudi WLS - rapid assessment report. Submitted to the Kerala Forest and Wildlife Department.
+            </li>
+            <li>
+              Balakrishnan P and T.N. Bindu. Tree Cavities: microhabitats of animals (in malayalam). Aranyam, November, 2019. 
+            </li>
+          </ul>
+      </div>
+  </div>  
+        
+
+ 
+</div>
+
+</body>
+</html>
+
 
 {% endblock content %}
 
