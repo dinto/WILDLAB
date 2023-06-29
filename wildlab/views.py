@@ -20,4 +20,9 @@ def GALLERY(request):
     return render(request,'GALLERY.html',{})
 def CONTACT(request): 
     return render(request,'CONTACT.html',{})
+def nithin(request): 
+    return render(request,'nithin.html',{})
+def sreejith(request): 
+    return render(request,'sreejith.html',{})
+    
 
