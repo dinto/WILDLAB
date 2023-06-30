@@ -51,3 +51,16 @@ def shireen(request):
     return render(request,'shireen.html',{})
 def dinto(request): 
     return render(request,'dinto.html',{})
+def research1(request): 
+    return render(request,'research1.html',{})
+def research2(request): 
+    return render(request,'research2.html',{})
+def research3(request): 
+    return render(request,'research3.html',{})
+def research4(request): 
+    return render(request,'research4.html',{})
+def research5(request): 
+    return render(request,'research5.html',{})
+def research6(request): 
+    return render(request,'research6.html',{})
+    
