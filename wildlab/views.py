@@ -24,5 +24,30 @@ def nithin(request):
     return render(request,'nithin.html',{})
 def sreejith(request): 
     return render(request,'sreejith.html',{})
-    
 
+def joseph(request): 
+    return render(request,'joseph.html',{})
+def balakrishnan(request): 
+    return render(request,'balakrishnan.html',{})
+def sheheer(request): 
+    return render(request,'sheheer.html',{})
+def bharati(request): 
+    return render(request,'bharati.html',{})
+def ahirbudhnyan(request): 
+    return render(request,'ahirbudhnyan.html',{})
+def ashik(request): 
+    return render(request,'ashik.html',{})
+def bibin(request): 
+    return render(request,'bibin.html',{})
+def deepak(request): 
+    return render(request,'deepak.html',{})
+def riya(request): 
+    return render(request,'riya.html',{})
+def vishal(request): 
+    return render(request,'vishal.html',{})
+def ajith(request): 
+    return render(request,'ajith.html',{})
+def shireen(request): 
+    return render(request,'shireen.html',{})
+def dinto(request): 
+    return render(request,'dinto.html',{})

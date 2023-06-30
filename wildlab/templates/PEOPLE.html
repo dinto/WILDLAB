@@ -15,13 +15,15 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background: #222;
+       background: #222; 
+      /*  background: #0e4a7e3b;*/
     }
     .container{
         position: relative;
         width: 600px;
         height: 600px;
-        border:2px solid #fff;
+       /* border:2px solid #fff; */
+       border:2px solid #a09f9f;
         border-radius: 50%;
     }
     .container .icon{
@@ -41,16 +43,18 @@
         height: 80px;
         border-radius: 50%;
         transform: 0.5s;
-        border: 1px solid #fff;
-        box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
+        /*border: 1px solid #fff; */
+        border: 1px solid #a09f9f;
+        box-shadow: 0 0 0 4px #222, 0 0 0 6px #a09f9f;
         transform: rotate(calc(360deg/15 * var(--i)));
         transform-origin: 340px;
         z-index: 100;
         overflow: hidden;
+        /*border-radius: 10%; */
     }
     .container .icon .imgBx.active
     {
-        box-shadow: 0 0 0 6px #222, 0 0 0 12px #ff1d50;
+        box-shadow: 0 0 0 6px #222, 0 0 0 12px #fff;
     }
     .container .icon .imgBx  img
     {
@@ -63,7 +67,7 @@
         object-fit: cover;
         transform: rotate(calc(-360deg/15 * var(--i)));
         /*transition: 0.5s;*/
-        filter: grayscale(1);
+        filter: grayscale(0);
     }
     .container .icon .imgBx.active img{
         filter: grayscale(0);
@@ -81,7 +85,8 @@
         position: absolute;
         inset: 60px;
         border: 4px solid transparent;
-        border-left: 4px solid #2196f3;
+        /*border-left: 4px solid #2196f3; */
+        border-left: 4px solid rgba(62, 184, 123, 0.877);
         border-right: 4px solid #fff;
         border-radius: 50%;
         animation: animte_01 5s linear infinite;
@@ -103,7 +108,8 @@
         position: absolute;
         inset: 120px;
         border: 4px solid transparent;
-        border-left: 4px solid #2196f3;
+        /*border-left: 4px solid #2196f3; */
+        border-left: 4px solid rgba(62, 184, 123, 0.877);
         border-right: 4px solid #fff;
         border-radius: 50%;
         animation: animte_02 2.5s linear infinite;
@@ -218,8 +224,8 @@
         margin-top: 0;
     } 
     #currentteamid{
-        margin-top: 30px;
-        margin-left: 12%;
+        margin-top: 50px;
+        margin-left: 19%;
         display: flex;
     }
     #Interns{
@@ -308,12 +314,12 @@ background-size: cover; height:480px; ">
 <br>
 <br>
 </section>
-<p style="text-align: center; color: aliceblue;">MEET OUR TEAM</p>
+<p style="text-align: center; color: aliceblue;font-size: 28px; margin-top: 12px;">MEET OUR TEAM</p>
 <section id="currentteamid">
 <div class="container" id="currentteamid">
     <div class="icon">
-        <div class="imgBx active" style="--i:1;" data-id="content1">
-            <img src="">
+        <div class="imgBx" style="--i:1;" data-id="content1">
+            <img src="{% static '/images/bharathi.jpg' %}">
         </div>
         <div class="imgBx" style="--i:2;" data-id="content2">
             <img src="{% static '/images/sreejith.jpg' %}">
@@ -321,59 +327,63 @@ background-size: cover; height:480px; ">
         <div class="imgBx" style="--i:3;" data-id="content3">
             <img src="{% static '/images/nithin.jpg' %}">
         </div>
-        <div class="imgBx" style="--i:4;" data-id="content4">
-            <img src="{% static '/images/' %}">
+        <div class="imgBx active" style="--i:4;" data-id="content4">
+            <img src="{% static '/images/balu.jpg' %}">  
         </div>
         <div class="imgBx" style="--i:5;" data-id="content5">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/riya.JPG' %}">
         </div>
         <div class="imgBx" style="--i:6;" data-id="content6">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/bibin.jpg' %}">
         </div>
         <div class="imgBx" style="--i:7;" data-id="content7">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/dinto.jpg' %}">
         </div>
         <div class="imgBx" style="--i:8;" data-id="content8">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/vishal.jpg' %}">
         </div>
         <div class="imgBx" style="--i:9;" data-id="content9">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/shireen1.jpg' %}">
         </div>
         <div class="imgBx" style="--i:10;" data-id="content10">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/ashik.jpg' %}">
         </div>
         <div class="imgBx" style="--i:11;" data-id="content11">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/ahira.png' %}">
         </div>
         <div class="imgBx" style="--i:12;" data-id="content12">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/JOSEPH.png' %}">
         </div>
         <div class="imgBx" style="--i:13;" data-id="content13">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/ajith.jpg' %}">
         </div>
         <div class="imgBx" style="--i:14;" data-id="content14">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/deepak.jpg' %}">
         </div>
         <div class="imgBx" style="--i:15;" data-id="content15">
-            <img src="{% static '/images/' %}">
+            <img src="{% static '/images/shaheer.JPG' %}">
         </div>
     </div>
 
     <div class="content">
-        <div class="contentBx active" id="content1">
+        <div class="contentBx" id="content1">
             <div class="card">
                 <div class="imgBx">
-                    <img src="">
+                    <img style="border-radius: 10%;" src="{% static '/images/bharathi.jpg' %}"> 
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                        </span>
-                </h2>
+                    <a  style="text-decoration: none;"  href="{% url 'bharati'%}">
+                        <h2>Bharati Patel <br>
+                            <span>
+                                PhD Scholar
+                            </span>
+                        </h2>
+                    </a>
+                    <!--
                 <ul class="sci">
-                    <li> <a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li> <a href="https://www.linkedin.com/in/bharati-patel-5bb59442/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
                     
-                </ul>
+                </ul>-->
 
                 </div>
             </div>
@@ -384,19 +394,21 @@ background-size: cover; height:480px; ">
         <div class="contentBx " id="content2">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/sreejith.jpg' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/sreejith.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <a href="{% url 'sreejith'%}">
+                    <a  style="text-decoration: none;"  href="{% url 'sreejith'%}">
                     <h2>Sreejith Sivaraman <br>
                         <span>
                             PhD Scholar
                         </span>
                     </h2>
                     </a>
+                <!--
                 <ul class="sci">
                     <li> <a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
                 </ul>
+                -->
 
                 </div>
             </div>
@@ -406,40 +418,47 @@ background-size: cover; height:480px; ">
         <div class="contentBx " id="content3">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/nithin.jpg' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/nithin.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <a href="{% url 'nithin'%}">
+                    <a  style="text-decoration: none;"  href="{% url 'nithin'%}">
                         <h2> Nithin Divakar <br>
                             <span>
                                 PhD Scholar
                             </span>
                         </h2>
                     </a>
+                    <!--
                 <ul class="sci">
                     <li> <a href=""></a><i class="fa-brands fa-researchgate"></i></a></li>
                     <li> <a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
                     <li> <a href=""></a><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
-
+-->
                 </div>
             </div>
         </div>
 
-        <div class="contentBx " id="content4">
+        <div class="contentBx active" id="content4">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/balu.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                        </span>
-                </h2>
+                    <a  style="text-decoration: none;"  href="{% url 'balakrishnan'%}">                    
+                        <h2> Dr.  Peroth Balakrishnan<br>
+                            <span>
+                                Principal Investigator & Scientist
+                            </span>
+
+                            <p style="font-size: 12px;"> Department of Wildlife Biology, KFRI</p>
+                        </h2>
+                    </a>
+                <!--
                 <ul class="sci">
                     <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
                 </ul>
-
+-->
                 </div>
             </div>
         </div>
@@ -447,52 +466,48 @@ background-size: cover; height:480px; ">
         <div class="contentBx " id="content5">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/riya.JPG' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-
+                    <a  style="text-decoration: none;"  href="{% url 'riya'%}">  
+                        <h2> Riya Bobby Peter <br>
+                            <span>
+                                Project Staff
+                            </span>
+                        </h2>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="contentBx " id="content6">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/bibin.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                            
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-
+                    <a  style="text-decoration: none;"  href="{% url 'bibin'%}">  
+                        <h2> Bibin Paul<br>
+                            <span>
+                                Project Staff
+                            </span>
+                        </h2>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="contentBx " id="content7">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/dinto.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                            
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
+                    <a  style="text-decoration: none;"  href="{% url 'dinto'%}">  
+                        <h2> DINTO DAVI T<br>
+                            <span>
+                                Project Staff                                
+                            </span>
+                        </h2>
+                        </a>
 
                 </div>
             </div>
@@ -500,53 +515,49 @@ background-size: cover; height:480px; ">
         <div class="contentBx " id="content8">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/vishal.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                            
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-
+                    <a  style="text-decoration: none;"  href="{% url 'vishal'%}">  
+                        <h2> Vishal  Gautham M S
+                            <br>
+                            <span>
+                                Project Staff
+                            </span>
+                        </h2>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="contentBx " id="content9">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/shireen1.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                            
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-
+                    <a  style="text-decoration: none;"  href="{% url 'shireen'%}">  
+                        <h2> Shireen sithara<br>
+                            <span>
+                                Project Staff
+                            </span>
+                        </h2>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="contentBx " id="content10">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/ashik.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                           
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
+                    <a  style="text-decoration: none;"  href="{% url 'ashik'%}">  
+                        <h2> Ashik M.E<br>
+                            <span>
+                                Project Staff
+                            </span>
+                        </h2>
+                    </a>
 
                 </div>
             </div>
@@ -554,17 +565,18 @@ background-size: cover; height:480px; ">
         <div class="contentBx " id="content11">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/ahira.png' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                           
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
+                    
+                    <a  style="text-decoration: none;"  href="{% url 'ahirbudhnyan'%}">  
+                        <h2> Ahirbudhnyan M<br>
+                            <span>
+                                Project Staff
+                            
+                            </span>
+                        </h2>
+                    </a>
 
                 </div>
             </div>
@@ -572,35 +584,32 @@ background-size: cover; height:480px; ">
         <div class="contentBx " id="content12">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/JOSEPH.png' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                            
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-
+                    <a  style="text-decoration: none;"  href="{% url 'joseph'%}">  
+                        <h2> Joseph Justine <br>
+                            <span>
+                                Project Staff
+                            </span>
+                        </h2>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="contentBx " id="content13">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/ajith.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                            
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
+                    <a  style="text-decoration: none;"  href="{% url 'ajith'%}">  
+                        <h2> Ajith Jose Paul <br>
+                            <span>
+                                Project Staff
+                            </span>
+                        </h2>
+                    </a>
 
                 </div>
             </div>
@@ -608,36 +617,33 @@ background-size: cover; height:480px; ">
         <div class="contentBx " id="content14">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/deepak.jpg' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
-                        <span>
-                            
-                        </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-
+                    
+                    <a  style="text-decoration: none;"  href="{% url 'deepak'%}">  
+                        <h2> Deepak <br>
+                            <span>
+                                Project Staff
+                            </span>
+                        </h2>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="contentBx " id="content15">
             <div class="card">
                 <div class="imgBx">
-                    <img src="{% static '/images/' %}">
+                    <img style="border-radius: 10%;" src="{% static '/images/shaheer.JPG' %}">
                 </div>
                 <div class="textBx">
-                    <h2> <br>
+                    <a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  
+                    <h2> Sheheer T A<br>
                         <span>
-                            
+                            PhD Scholar
                         </span>
-                </h2>
-                <ul class="sci">
-                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-
+                    </h2>
+                    </a>
                 </div>
             </div>
         </div>
@@ -649,12 +655,15 @@ background-size: cover; height:480px; ">
 </div>
 </section>
 <br>
+<br>
+<div style="margin-top: 10px;"></div>
+<!--
 <section id="Interns">
     <div>
         <p style="text-align: center;">Interns</p>
     </div>
 </section>
-<!--
+
 <section>
 <div>
     <h2>masters</h2>

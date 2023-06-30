@@ -12,5 +12,18 @@ urlpatterns = [
     path('contact/', views.CONTACT, name='contact'),
     path('nithin/', views.nithin, name='nithin'),
     path('sreejith/', views.sreejith, name='sreejith'),
+    path('joseph/', views.joseph, name='joseph'),
+    path('balakrishnan/', views.balakrishnan, name='balakrishnan'),
+    path('sheheer/', views.sheheer, name='sheheer'),
+    path('bharati/', views.bharati, name='bharati'),
+    path('ahirbudhnyan/', views.ahirbudhnyan, name='ahirbudhnyan'),
+    path('ashik/', views.ashik, name='ashik'),
+    path('bibin/', views.bibin, name='bibin'),
+    path('deepak/', views.deepak, name='deepak'),
+    path('riya/', views.riya, name='riya'),
+    path('vishal/', views.vishal, name='vishal'),
+    path('ajith/', views.ajith, name='ajith'),
+    path('shireen/', views.shireen, name='shireen'),
+    path('dinto/', views.dinto, name='dinto'),
 
 ]

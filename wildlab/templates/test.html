@@ -1,0 +1,266 @@
+
+
+
+
+<style>
+    body{
+        color: red;
+    }
+    .home{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+        background: url("/static/images/nithin.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .home-content{
+        max-width: 600px;
+    }
+    .home-content  h1{
+        position: relative;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    
+    .home-content  h1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+    }
+    .home-content h3{
+        position: relative;
+        font-size: 32px;
+        font-weight: 700;
+        color: #00abf0;
+    }
+    .home-content  h3::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.2s;
+    }
+
+    .home-content p{
+        position: relative;
+        font-size: 16px;
+        margin: 20px 0 40px;
+    }
+    .home-content  p::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.6s;
+    }
+    .home-content .btn-box{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 345px;
+        height: 50px;
+    }
+    .home-content  .btn-box::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1.9s;
+        z-index: 2;
+    }
+    .btn-box a{
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: #00abf0;
+        border: 2px solid  #00abf0;
+        border-radius: 8px;
+        font-size: 19px;
+        color: #081b29;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s;
+
+    }
+    .btn-box a:hover{
+        color: #00abf0;
+    }
+    .btn-box a:nth-child(2){
+        background: transparent;
+        color: #00abf0;
+    }
+    .btn-box a:nth-child(2):hover{
+        color: #081b29;
+        
+    }
+    .btn-box a:nth-child(2)::before{
+        background: #00abf0;
+    }
+    .btn-box a::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #081b29;
+        z-index: -1;
+        transition: .5s;
+    }
+    .btn-box a:hover:before{
+        width: 100%;
+    }
+    .home-sci{
+        position: absolute;
+        bottom: 40px;
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .home-sci::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: 2.5s;
+        z-index: 2;
+    }
+    .home-sci a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #00abf0;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #00abf0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .home-sci a:hover{
+        color: #081b29;
+    }
+    
+    .home-sci a::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #00abf0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    .home-sci a:hover:before{
+        width: 100%;
+    }
+    .home-img-hover{
+        position: absolute;
+        top:0;
+        right: 30px;
+        width: 540px;
+        height: 100%;
+        background: transparent;
+        transition: 3s; 
+        animation: manipActiveHover .1s forwards;
+        animation-delay: 4s;
+        pointer-events: none;
+
+    }
+    .home-img-hover:hover{
+        background: #081b29;
+        opacity: .8;
+    }
+    .home-img-hover::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 120%;
+        height: 100%;
+        background: #081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: 3s;
+        z-index: 100;
+    }
+    @keyframes showRight{
+        100%{
+            width: 0;
+        }
+        
+    }
+    @keyframes manipActiveHover{
+        100%{
+            pointer-events: auto;
+        }
+
+    }
+</style>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<section class="home">
+    <div class="home-content">
+        <h1>Hi,I'm Nithin</h1>
+        <h3>Phd Scholar</h3>
+        <p>
+            Amphibians and bats have fascinated me since my childhood with their nocturnal life. 
+            The curiosity for understanding their life and interactions with the surrounding environment 
+            inculcated in me a keen interest in learning community ecology and also how these communities 
+            vary across the changing geographical conditions. After completing my Masters in Wildlife Studies 
+            in 2015, I actively contributed to the on-ground conservation of bats and amphibians in the Kerala 
+            part of Western Ghats through conservation research and stakeholder involvement. Following my interest
+            and passion for both the taxa, I focused mainly on species-specific activities including the long term 
+            conservation management of threatened species like Latidens salimalii, Walkerana phrynoderma,
+            Nasikabatrachus sahyadrensis in their distributional ranges. In this journey, I was fortunate to get
+            support from the Mohamed Bin Zayed Species Conservation Fund & Idea Wild grant for the conservation 
+            of lesser-known endangered Malabar torrent toad and the Conservation Leadership Programme grant for
+            the conservation of endangered Salim Ali’s fruit bat in 2021. I strongly believe that conservation 
+            of a landscape or a species is connected with the involvement of communities living there and hope 
+            I can build a network there with research and conservation education which will equip both the groups.
+        </p>
+        <div class="btn-box">
+            <a href="#">Mail</a>
+            <a href="#">Let's Talk</a>
+        </div>
+    </div>
+    <div class="home-sci">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"></a>
+    </div>
+    <span class="home-img-hover"></span>
+</section>
+
