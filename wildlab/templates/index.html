@@ -19,27 +19,76 @@
 
     .custom-padding{
         padding-top:25px;
-        background: url("/static/images/NavbarBackground.jpg") 50% 0 no-repeat fixed;
+        background: url("/static/images/homepage1.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
     }
     .partner_img{
     display: block;
     margin-left: auto;
     margin-right: auto;
    }
-   .paragragh{
+   .content{
     margin-left: 10%;
-    margin-right: 10%;
+    font-family: Merriweather;
+    font-size: 18px;
+    text-align: justify;
+
    }
+   .bothmargin{
+    margin-left: 10%;
+    margin-right:10%;
+    text-align: justify;
+    font-family: Merriweather;
+    font-size: 18px;
+   }
+   .home-sci{
+        /*bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        
+        */
+        width: 150px;
+        margin-left: 50%;
+
+    }
+
+    .home-sci a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #00abf0;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #00abf0;
+        overflow: hidden;
+    }
+    .homeback2{
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 50%;
+
+    }
+
 </style>
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
     <title>WILD LAB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
+        <!--
         <div class="custom-padding">
-            <div style="height: 45%;">
+            <div>
                 <br>
                 <span style="text-align: center; color: aliceblue; margin-top: 20%;">
                     <b>
@@ -65,21 +114,73 @@
 
 
         </div>
-        <div style="padding: 5px;">
-            <p class="paragragh">
-                WildLab is the research group of <a href="{% url 'balakrishnan'%}">Peroth Balakrishnan </a>, part of the Department of Wildlife Biology at <a href="https://www.kfri.res.in/" target="_blank">KSCSTE-Kerala Forest Research Institute</a>. We are broadly interested in conservation biology, evolutionary ecology, behavioural ecology, citizen science and natural history. We work across taxa - mammals, birds, reptiles, amphibians and rarely on insects and plants on topics related to species distribution, ecology, behaviour, conservation management and dynamics of human-wildlife interactions. We support various stakeholders in science-based policy making, and wildlife and biodiversity conservation implementation. 
-                See more on our <a href="{% url 'research'%}">research</a> and <a href="{% url 'publication'%}">publications</a>.     
-            </p>
+        -->
+        <div class="custom-padding">
+            <div  style="margin-left: 8%; margin-top: 3%;">
+                <p style="color: aliceblue;     font-family: Merriweather; font-size: 64px;margin : 0; padding-top:0;">THE</p>
+                <p style="color: aliceblue;     font-family: Merriweather; font-size: 100px; margin : 0; padding-top:0;">WILD LAB</p>
+            </div>
+
+
+            <div style="margin-left: 9%;margin-top: 3%; color: aliceblue; font-family: Merriweather; font-size: 20px;">
+                
+                <p >WILDLIFE</p>
+                <p >ECOLOGY & CONSERVATION</p>
+                <p >BIOLOGY LAB</p>
+            </div>
+            <div style="margin-left: 25%;margin-top: -7%;color: aliceblue; font-family: Merriweather; font-size: 20px;">
+                <p>KERALA FOREST</p>
+                <p>RESEARCH</p>
+                <p>INSTITUTE</p>
+            </div>
+        </div>
+        <div>
+            
+            <div class="row" style="margin-top: 2%; margin-left: 10%;">
+                <div style="font-family:impact ;">
+                    <h1>WILD LAB</h1>
+                </div>
+                <div class="home-sci">                
+                    <a href="" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top: 2%;">
+          <!--      <div class="col-7"> -->
+                    <p class="bothmargin">
+                        WildLab is the research group of <a href="{% url 'balakrishnan'%}">Peroth Balakrishnan </a>,part of the Department of Wildlife Biology at <a href="https://www.kfri.res.in/" target="_blank">KSCSTE-Kerala Forest Research Institute</a>. We are broadly interested in conservation biology, evolutionary ecology, behavioural ecology, citizen science and natural history. We work across taxa - mammals, birds, reptiles, amphibians and rarely on insects and plants on topics related to species distribution, ecology, behaviour, conservation management and dynamics of human-wildlife interactions. We support various stakeholders in science-based policy making, and wildlife and biodiversity conservation implementation. 
+                        See more on our <a href="{% url 'research'%}">research</a> and <a href="{% url 'publication'%}">publications</a>.     
+                    </p>
+                    <p class="bothmargin">
+                        We have been awarded several research grants from the MoEF & CC, Government of India; SERB, Department of Science & Technology, Government of India; 
+                        Indian Navy, Global Environment Facility-United Nations Development Programme, Mohammed Bin Species Conservation Fund, Abu Dhabi; International Foundation for Science, Sweden, INASP, UK; 
+                        Conservation Leadership Programme, etc.
+                    </p>
+                    <p class="bothmargin">
+                        We welcome and seek collaborations with research groups that share similar or complementary research interests. Master’s students and volunteers are encouraged to contact us to explore potential opportunities. We strongly advocate democratising science by public participation through our outreach and citizen science programmes. 
+                    </p>  
+
+            <!--      </div>
+                <div class="col-4">
+                    <img class="img-fluid" src="{% static '/images/homepage3.jpg' %}" height="100%" width="100%" >
+               </div>-->
+
+            </div>
+            <div class="homeback2">
+
+            </div>
             <br>
-            <p class="paragragh">
-                We have been awarded several research grants from the MoEF & CC, Government of India; SERB, Department of Science & Technology, Government of India; 
-                Indian Navy, Global Environment Facility-United Nations Development Programme, Mohammed Bin Species Conservation Fund, Abu Dhabi; International Foundation for Science, Sweden, INASP, UK; 
-                Conservation Leadership Programme, etc.
-            </p>
-            <br>
-            <p class="paragragh">
-                We welcome and seek collaborations with research groups that share similar or complementary research interests. Master’s students and volunteers are encouraged to contact us to explore potential opportunities. We strongly advocate democratising science by public participation through our outreach and citizen science programmes. 
-            </p>
+            <div class="row" style="margin-top: 2%;">
+              <!--  <div class="col-4" style="margin-left: 5%;">
+                    <img  class="img-fluid" src="{% static '/images/homepage2.jpg' %}" height="100%" width="100%">
+                </div>
+                <div class="col-7">-->
+           
+               <!-- </div>-->
+            </div>
         </div>
         <!--
         <div style="position: absolute;left: 50%;">
@@ -99,7 +200,7 @@
         <br/>
         <br/>
         <div>
-            <span class="partner_img paragragh">funders/collaborators/partners</span>
+            <span class=" bothmargin">funders/collaborators/partners</span>
             <hr style="width: 50%;">
             
             <img src="{% static '/images/partners.png' %}"  class="partner_img">
