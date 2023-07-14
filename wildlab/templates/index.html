@@ -19,9 +19,9 @@
 
     .custom-padding{
         padding-top:25px;
-        background: url("/static/images/homepage1.jpg") 50% 0 no-repeat fixed;
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
         width: 100%;
-        height: 100%;
+        height: 75%;
         background-size: cover;
     }
     .partner_img{
@@ -41,7 +41,7 @@
     margin-right:10%;
     text-align: justify;
     font-family: Merriweather;
-    font-size: 18px;
+    font-size: 22px;
    }
    .home-sci{
         /*bottom: 40px;
@@ -70,12 +70,29 @@
         overflow: hidden;
     }
     .homeback2{
-        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        background: url("/static/images/homepage1.jpg") 100% 0 no-repeat fixed;
         width: 100%;
         height: 50%;
+        background-position: 0.00% 57.73%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: fixed;
 
     }
-
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footerpage{
+    margin-left: 10%;
+    margin-right:10%;
+    text-align: justify;
+    font-family: Merriweather;
+    font-size: 16px;
+    color: #9e9e9c;;
+   }
 </style>
 <!doctype html>
 <html lang="en">
@@ -86,72 +103,32 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <!--
         <div class="custom-padding">
-            <div>
-                <br>
-                <span style="text-align: center; color: aliceblue; margin-top: 20%;">
-                    <b>
-                        <p>
-                            WILD Lab
-                        </p>
-                        <p>
-                            
-                        </p>
-                        <br/>
- 
-                    </b>
-
-                </span>
-
-            </div>
-            <div style="text-align: center; color: chocolate;">Wildlife Ecology & Conservation Biology Lab
-                Kerala Forest Research Institute 
-            </div>
-            <div>
-                <br>
+            <div  style="margin-left: 8%; margin-top: 6%;">
+                <p style="color: aliceblue;     font-family: 'Overpass', sans-serif; font-weight: 300;  font-size: 64px;margin : 0; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;">The</p>
+                <p style="color: aliceblue;     font-family: 'Overpass', sans-serif; font-weight: 700; font-size: 100px; margin-top: -3%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;">WildLab</p>
             </div>
 
 
-        </div>
-        -->
-        <div class="custom-padding">
-            <div  style="margin-left: 8%; margin-top: 3%;">
-                <p style="color: aliceblue;     font-family: Merriweather; font-size: 64px;margin : 0; padding-top:0;">THE</p>
-                <p style="color: aliceblue;     font-family: Merriweather; font-size: 100px; margin : 0; padding-top:0;">WILD LAB</p>
-            </div>
-
-
-            <div style="margin-left: 9%;margin-top: 3%; color: aliceblue; font-family: Merriweather; font-size: 20px;">
+            <div style="margin-left: 9%; color: aliceblue;  font-family: 'Roboto', sans-serif; font-weight: 300; letter-spacing: 1px; margin-top: -40px; font-size: 20px; text-shadow: 2px 2px 4px #000000;">
                 
-                <p >WILDLIFE</p>
-                <p >ECOLOGY & CONSERVATION</p>
-                <p >BIOLOGY LAB</p>
+                <p >Wildlife Ecology & Conservation Biology Lab</p>
+                
             </div>
-            <div style="margin-left: 25%;margin-top: -7%;color: aliceblue; font-family: Merriweather; font-size: 20px;">
-                <p>KERALA FOREST</p>
-                <p>RESEARCH</p>
-                <p>INSTITUTE</p>
+            <div style="margin-left: 9%;color: aliceblue; font-family: 'Roboto', sans-serif; font-weight: 300;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;">
+                <p>KSCSTE-Kerala Forest Research Institute</p>
+                <p></p>
+                <p></p>
             </div>
         </div>
         <div>
-            
-            <div class="row" style="margin-top: 2%; margin-left: 10%;">
-                <div style="font-family:impact ;">
-                    <h1>WILD LAB</h1>
-                </div>
-                <div class="home-sci">                
-                    <a href="" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-                    <a href="" target="_blank"><i class='bx bxl-twitter'></i></a>
-                    <a href="" target="_blank"><i class='bx bxl-instagram'></i></a>
-                </div>
-            </div>
+
 
 
             <div class="row" style="margin-top: 2%;">
           <!--      <div class="col-7"> -->
                     <p class="bothmargin">
-                        WildLab is the research group of <a href="{% url 'balakrishnan'%}">Peroth Balakrishnan </a>,part of the Department of Wildlife Biology at <a href="https://www.kfri.res.in/" target="_blank">KSCSTE-Kerala Forest Research Institute</a>. We are broadly interested in conservation biology, evolutionary ecology, behavioural ecology, citizen science and natural history. We work across taxa - mammals, birds, reptiles, amphibians and rarely on insects and plants on topics related to species distribution, ecology, behaviour, conservation management and dynamics of human-wildlife interactions. We support various stakeholders in science-based policy making, and wildlife and biodiversity conservation implementation. 
+                        WildLab is the research group of <a href="{% url 'balakrishnan'%}">Peroth Balakrishnan</a>, part of the Department of Wildlife Biology at <a href="https://www.kfri.res.in/" target="_blank">KSCSTE-Kerala Forest Research Institute</a>. We are broadly interested in conservation biology, evolutionary ecology, behavioural ecology, citizen science and natural history. We work across taxa - mammals, birds, reptiles, amphibians and rarely on insects and plants on topics related to species distribution, ecology, behaviour, conservation management and dynamics of human-wildlife interactions. We support various stakeholders in science-based policy making, and wildlife and biodiversity conservation implementation. 
                         See more on our <a href="{% url 'research'%}">research</a> and <a href="{% url 'publication'%}">publications</a>.     
                     </p>
                     <p class="bothmargin">
@@ -199,21 +176,93 @@
         -->
         <br/>
         <br/>
-        <div>
-            <span class=" bothmargin">funders/collaborators/partners</span>
-            <hr style="width: 50%;">
-            
-            <img src="{% static '/images/partners.png' %}"  class="partner_img">
+        <div class=" bothmargin">
+            <span class=" bothmargin">Funders/Collaborators/Partners</span>
+            <hr style="width: 100%;">
+           <!--
+            <img src="{% static '/images/partners.png' %}"  class="partner_img">--> 
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static '/images/logo/moefcc-logo.jpg' %}" class="center"  width="80px" height="80px">
+                </div>
+
+                <div class="col-3">
+                    <img src="{% static '/images/logo/KFDC.jpg' %}"  class="center"  width="80px" height="80px">
+                </div>
+                <div class="col-3">
+                    <img src="{% static '/images/logo/bnoZ7dQa_400x400.jpg' %}"  class="center"   width="80px" height="80px">
+                </div>
+
+                <div class="col-3">
+                    <img src="{% static '/images/logo/kscste.jpg' %}"  class="center"   width="80px" height="80px">
+                </div>  
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-3">
+                    <img src="{% static '/images/logo/serblogo_logo.png' %}"  class="center"   width="108px" height="62px">
+                </div>  
+                <div class="col-3">
+                    <img src="{% static '/images/logo/CLP-Logo_RGB-300x111.jpg' %}" style="margin-top: 12px;" class="center" width="150px" height="55px">
+                </div>  
+
+                <div class="col-3">
+                    <img src="{% static '/images/logo/gef undp.jpeg' %}"  class="center" style="margin-top: 12px;" width="118px" height="59px">
+                </div>
+ 
+
+                <div class="col-3">
+                    <img src="{% static '/images/logo/DST-SERB1.jpg' %}"  class="center" style="margin-top: 12px;"  width="100px" height="85px">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static '/images/logo/local self government.png' %}" class="center"    width="87px" height="48px">
+                </div>
+                <div class="col-3">
+                    <img src="{% static '/images/logo/KFD Logo.png' %}" class="center"    width="95px" height="66px">
+                </div>
+                <div class="col-3">
+                    <img src="{% static '/images/logo/mes logo.jpg' %}" class="center"    width="47px" height="61px">
+                </div>
+
+
+                <div class="col-3">
+                    <img src="{% static '/images/logo/Indian_Navy_Insignia.svg.png' %}"  class="center"   width="38px" height="60px">
+                </div> 
+
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static '/images/logo/50-yrs-logo.jpg' %}"  class="center" width="128px" height="64px">
+                </div>
+                <div class="col-3">
+                    <img src="{% static '/images/logo/jio.jpg' %}"  class="center"   width="120px" height="85px">
+                </div>
+                <div class="col-3">
+                    <img src="{% static '/images/logo/species-conservation-fund-logo.png' %}" class="center" style="margin-top: 20px;" width="190px" height="43px">
+                </div>
+              
+                <div class="col-3">
+                    <img src="{% static '/images/logo/277148127_1477806249323778_8029073421856452063_n.jpg' %}"  class="center"  width="90px" height="90px">
+                </div>
+
+            </div>
         </div>
-        
+        <!--species-conservation-fund-logo.png-->
     </body>
 </html>
 
 <footer class="footer  " style="font-family: Merriweather;font-size: 18px;">
     <b><hr ></b>
     <div class="text-center p-3">
-        <h2 class="paragragh">Photographs throughout these pages are copyright protected by Peroth Balakrishnan, lab members and colleagues. Downloadable files are for scientific purposes only and the copyright remains in every case with the copyright owner. They are provided as a service to enhance the accessibility of research information. The content and views expressed are personal. </h2>
-        <div class="text-center p-3 " style="color: #f7e343;">
+        <h2 class="footerpage">Photographs throughout these pages are copyright protected by Peroth Balakrishnan, lab members and colleagues. Downloadable files are for scientific purposes only and the copyright remains in every case with the copyright owner. They are provided as a service to enhance the accessibility of research information. The content and views expressed are personal. </h2>
+        <div class="text-center p-3 " style="color: #9e9e9c;">
             Copyright © 2023. All Rights Reserved : 
             <a  target="_blank" href="">WildLab</a>
         </div>

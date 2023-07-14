@@ -2,22 +2,36 @@
 {% load static %}
 
 {% block content %}
-<br>
-<div class="container">
-    <p class="paragragh">
+<style>
+        .homeback2{
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 50%;
+
+    }
+</style>
+<div class="homeback2">
+    <div style="margin-left: 9%; color: aliceblue; font-family: Merriweather; font-size: 20px;">
+                
+        <p >Research</p>
+        
+    </div>
+</div>
+<div>
+    <p class="bothmargin">
         Our research interests range broadly in wildlife biology, conservation biology, behavioural ecology and evolutionary ecology.
     </p>
-    <p class="paragragh">
+    <p class="bothmargin">
         Specific interests include: ecology and conservation of threatened and fragmented populations, population monitoring, wildlife–habitat relationships, biodiversity conservation in human-altered habitats, population dynamics and life-history evolution of vertebrates, human-wildlife interactions, human dimensions of wildlife and conflict mitigation,  evidence-based conservation and policy making, citizen science and conservation education.
     
     </p>
 </div>
-
-<div class="container">
+<!--
+<div class="bothmargin">
 
     <div class="row">
-        <div class="col-4">
-            <div class="card h-100" style="width: 18rem;">
+       <div class="col-4">
+            <div class="col-4 card h-100" style="width: 22rem;">
                 <img class="card-img-top" src="{% static '/images/partners.png' %}" alt="Wildlife-human dynamics">
                 <div class="card-body" style="background-color: #17a2b84d;">
                   <h5 class="card-title">Wildlife-human dynamics</h5>
@@ -28,7 +42,7 @@
     
         </div>
         <div class="col-4">
-            <div class="card h-100" style="width: 18rem;">
+            <div class="col-4 card h-100" style="width: 22rem;">
                 <img class="card-img-top" src="{% static '/images/partners.png' %}" alt="Threatened species- biology & conservation">
                 <div class="card-body" style="background-color:#17b8224f;">
                   <h5 class="card-title">Threatened species- biology & conservation </h5>
@@ -37,9 +51,9 @@
                 </div>
             </div>
             
-        </div>
+       </div>
         <div class="col-4">
-            <div class="card h-100" style="width: 18rem;">
+            <div class="col-4 card h-100" style="width: 22rem;">
                 <img class="card-img-top" src="{% static '/images/partners.png' %}" alt="Surveys and population assessment">
                 <div class="card-body" style="background-color:#b87d1787;">
                   <h5 class="card-title">Surveys and population assessment</h5>
@@ -48,12 +62,12 @@
                 </div>
             </div>
             
-        </div>
+      </div>
     </div>
     <br>
     <div class="row" style="margin-bottom: 10%;">
-        <div class="col-4">
-            <div class="card h-100" style="width: 18rem;">
+     <div class="col-4"> 
+            <div class="col-4 card h-100" style="width: 22rem;">
                 <img class="card-img-top" src="{% static '/images/partners.png' %}" alt="Wildlife ecology, behaviour and community ecology ">
                 <div class="card-body" style="background-color: #17a2b84d;">
                   <h5 class="card-title">Wildlife ecology, behaviour and community ecology </h5>
@@ -62,9 +76,9 @@
                 </div>
             </div>
         
-        </div>
-        <div class="col-4">
-            <div class="card h-100" style="width: 18rem;">
+       </div>
+        <div class="col-4"> 
+            <div class="col-4 card h-100" style="width: 22rem;">
                 <img class="card-img-top" src="{% static '/images/partners.png' %}" alt="Life history evolution and natural history">
                 <div class="card-body" style="background-color:#17b8224f;">
                   <h5 class="card-title">Life history evolution and natural history</h5>
@@ -73,9 +87,9 @@
                 </div>
             </div>
         
-        </div>
+       </div>
         <div class="col-4">
-            <div class="card h-100" style="width: 18rem;">
+            <div class="col-4 card h-100" style="width: 22rem;">
                 <img class="card-img-top" src="{% static '/images/partners.png' %}" alt="Citizen science, outreach & stakeholder engagement">
                 <div class="card-body" style="background-color:#b87d1787;">
                   <h5 class="card-title">Citizen science, outreach & stakeholder engagement </h5>
@@ -87,6 +101,53 @@
         </div>
     </div>
     
+    
+</div> -->
+
+
+<div class="bothmargin">
+    <div class="row">
+        <div class="col-4">
+            <img  src="{% static '/images/partners.png' %}"  width="100%" alt="Wildlife-human dynamics">
+            <h5 class="">Wildlife-human dynamics</h5>
+            <p class="">Human-wildlife interactions and human dimensions of wildlife conservation</p>
+            <a href="{% url 'research1'%}" class="btn btn-primary">More Details</a>
+        </div>
+        <div class="col-4">
+            <img  src="{% static '/images/partners.png' %}" width="100%" alt="Threatened species- biology & conservation">
+            <h5 class="card-title">Threatened species- biology & conservation </h5>
+            <p class="card-text">Understanding the biology and evidence-based conservation of species and ecosystems under threat</p>
+            <a href="{% url 'research2'%}" class="btn btn-primary">More Details</a>
+        </div>
+        <div class="col-4">
+            <img class="card-img-top" src="{% static '/images/partners.png' %}" width="100%" alt="Surveys and population assessment">
+            <h5 class="card-title">Surveys and population assessment</h5>
+            <p class="card-text">Status surveys and population assessment of wildlife</p>
+            <a href="{% url 'research3'%}" class="btn btn-primary">More Details</a>
+        </div>
+    
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4">
+            <img class="card-img-top" src="{% static '/images/partners.png' %}" width="100%" alt="Wildlife ecology, behaviour and community ecology ">
+            <h5 class="card-title">Wildlife ecology, behaviour and community ecology </h5>
+            <p class="card-text">Exploring the connections between behavioural ecology, population ecology, and community ecology for effective wildlife conservation.</p>
+            <a href="{% url 'research4'%}" class="btn btn-primary">More Details</a>
+        </div>
+        <div class="col-4">
+            <img class="card-img-top" src="{% static '/images/partners.png' %}" width="100%" alt="Life history evolution and natural history">
+            <h5 class="card-title">Life history evolution and natural history</h5>
+            <p class="card-text">Life history evolution of vertebrates, natural history of tropical fauna.</p>
+            <a href="{% url 'research5'%}" class="btn btn-primary">More Details</a>
+        </div>
+        <div class="col-4">
+            <img class="card-img-top" src="{% static '/images/partners.png' %}" width="100%" alt="Citizen science, outreach & stakeholder engagement">
+            <h5 class="card-title">Citizen science, outreach & stakeholder engagement </h5>
+            <p class="card-text">Evidence-based conservation and policies; democratising science and capacity building, disruptive digital technologies for nature conservation .</p>
+            <a href="{% url 'research6'%}" class="btn btn-primary">More Details</a>
+        </div>
+    </div>
     
 </div>
 
