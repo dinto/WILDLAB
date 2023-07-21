@@ -29,19 +29,13 @@
     margin-left: auto;
     margin-right: auto;
    }
-   .content{
-    margin-left: 10%;
-    font-family: Merriweather;
-    font-size: 18px;
-    text-align: justify;
 
-   }
    .bothmargin{
     margin-left: 10%;
     margin-right:10%;
-    text-align: justify;
-    font-family: Merriweather;
-    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    text-align: center;
    }
    .home-sci{
         /*bottom: 40px;
@@ -93,14 +87,18 @@
     font-size: 16px;
     color: #9e9e9c;;
    }
+   #grad1 {
+    height: 20;
+  background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
+}
 </style>
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
     <title>WILD LAB</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     </head>
     <body>
         <div class="custom-padding">
@@ -124,18 +122,23 @@
         <div>
 
 
+            <div id="grad1" ></div>
 
-            <div class="row" style="margin-top: 2%;">
+            <div class="row" style="margin-top: 2%; ">
           <!--      <div class="col-7"> -->
+            <br>
                     <p class="bothmargin">
                         WildLab is the research group of <a href="{% url 'balakrishnan'%}">Peroth Balakrishnan</a>, part of the Department of Wildlife Biology at <a href="https://www.kfri.res.in/" target="_blank">KSCSTE-Kerala Forest Research Institute</a>. We are broadly interested in conservation biology, evolutionary ecology, behavioural ecology, citizen science and natural history. We work across taxa - mammals, birds, reptiles, amphibians and rarely on insects and plants on topics related to species distribution, ecology, behaviour, conservation management and dynamics of human-wildlife interactions. We support various stakeholders in science-based policy making, and wildlife and biodiversity conservation implementation. 
                         See more on our <a href="{% url 'research'%}">research</a> and <a href="{% url 'publication'%}">publications</a>.     
                     </p>
+                    <br>
                     <p class="bothmargin">
                         We have been awarded several research grants from the MoEF & CC, Government of India; SERB, Department of Science & Technology, Government of India; 
                         Indian Navy, Global Environment Facility-United Nations Development Programme, Mohammed Bin Species Conservation Fund, Abu Dhabi; International Foundation for Science, Sweden, INASP, UK; 
                         Conservation Leadership Programme, etc.
                     </p>
+                    
+                    <br>
                     <p class="bothmargin">
                         We welcome and seek collaborations with research groups that share similar or complementary research interests. Master’s students and volunteers are encouraged to contact us to explore potential opportunities. We strongly advocate democratising science by public participation through our outreach and citizen science programmes. 
                     </p>  
