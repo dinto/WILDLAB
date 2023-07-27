@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<style>
+    .teammargin{
+        margin-left: 10%; 
+        margin-right: 10%;
+    }
+</style>
+<div style="height: 80%;">
+    <img src="{% static '/images/teamcover.png' %}"  style="height: 80%; width:100%; margin-top: 0px;" alt="First slide">
+    <div  class="divimgtext">
+        <p style="  font-family: 'Bebas Neue ', sans-serif ;font-weight: 600;font-size: 75px; margin-top: -20%;text-shadow: 2px 2px 4px black;    color: cornflowerblue;">THE TEAM</p>
+    </div>
+</div>
+<div>
+    <p style="margin-top: 0px; margin-left: 45%;">CURRENT MEMBERS</p>
+    
+</div>
+<div class="teammargin">
+
+
+<div class="row">
+    <div class="col-3">
+        <a href="{% url 'balakrishnan'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/balu.jpg' %}"  style="border-radius: 3%;" width="100%" height="50%" alt="Dr.Peroth Balakrishnan">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">
+                Dr.Peroth Balakrishnan</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Principal Investigator & Scientist</p>
+        </a>
+
+        
+    </div>
+    <div class="col-3">
+        <a href="{% url 'sheheer'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/shaheer.JPG' %}" style="border-radius: 3%;" width="100%" height="50%" alt="Sheheer">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Sheheer T A</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">PhD Scholar</p>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url 'sreejith'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/sreejith.jpg' %}" style="border-radius: 3%;" width="100%" height="50%" alt="Sreejith Sivaraman">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Sreejith Sivaraman</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">PhD Scholar</p>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url 'nithin'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/nithin.jpg' %}" style="border-radius: 3%;" width="100%" height="50%" alt="nithin">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Nithin Divakar</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">PhD Scholar</p>
+        </a>
+    </div>
+
+</div>
+
+<div class="row" style="margin-top: -10%;">
+    <div class="col-3">
+        <a href="{% url 'bharati'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/bharathi.jpg' %}"  style="border-radius: 3%;" width="100%" height="50%" alt="Bharati Patel">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">
+                Bharati Patel</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">PhD Scholar</p>
+        </a>
+
+        
+    </div>
+    <div class="col-3">
+        <a href="{% url 'riya'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/riya.JPG' %}" style="border-radius: 3%;" width="100%" height="50%" alt="riya">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Riya Bobby Peter</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url 'deepak'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/deepak.jpg' %}" style="border-radius: 3%;" width="100%" height="50%" alt="deepak">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Deepak</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url 'bibin'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/bibin.jpg' %}" style="border-radius: 3%;" width="100%" height="50%" alt="Bibin Paul">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Bibin Paul</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+    </div>
+
+</div>
+
+<div class="row" style="margin-top: -10%;">
+    <div class="col-3">
+        <a href="{% url 'joseph'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/JOSEPH.png' %}"  style="border-radius: 3%;" width="100%" height="50%" alt="joseph">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">
+                Joseph Justine</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+
+        
+    </div>
+    <div class="col-3">
+        <a href="{% url 'ahirbudhnyan'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/ahira.png' %}" style="border-radius: 3%;" width="100%" height="50%" alt="Ahirbudhnyan M">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Ahirbudhnyan M</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url 'dinto'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/dinto.jpg' %}" style="border-radius: 3%;" width="100%" height="50%" alt="DINTO DAVI T">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">DINTO DAVI T</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url 'ashik'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/ashik.jpg' %}" style="border-radius: 3%;" width="100%" height="50%" alt="ashik">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Ashik M.E</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+    </div>
+
+</div>
+
+<div class="row" style="margin-top: -10%;">
+    <div class="col-3">
+        <a href="{% url 'shireen'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/shireen1.jpg' %}"  style="border-radius: 3%;" width="100%" height="50%" alt="Shireen sithara">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">
+                Shireen sithara</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+
+        
+    </div>
+    <div class="col-3">
+        <a href="{% url 'vishal'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/vishal.jpg' %}" style="border-radius: 3%;" width="100%" height="50%" alt="Vishal  Gautham M S">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Vishal  Gautham M S</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url 'ajith'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
+            <img  src="{% static '/images/ajith.jpg' %}" style="border-radius: 3%;" width="100%" height="50%" alt="Ajith Jose Paul">
+            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Ajith Jose Paul</h5>
+            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;">Project Staff</p>
+        </a>
+    </div>
+
+</div>
+</div>
+{% endblock content %}

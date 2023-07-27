@@ -10,7 +10,7 @@ def RESEARCH(request):
     return render(request,'research.html',{})
 
 def PEOPLE(request): 
-    return render(request,'PEOPLE.html',{})
+    return render(request,'team.html',{})
 def publication(request): 
     Publications=Publication.objects.all().order_by('-id')
     return render(request,'publication.html',{"Publications":Publications})
