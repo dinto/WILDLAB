@@ -219,7 +219,67 @@ nav:after{
   animation-name: bounce-animation;
   animation-duration: 2s;
 }
+#fixed-social {
+   position: fixed;
+   top: 56px;
+   right: 5px;
+}
 
+#fixed-social a {
+   color: #fff;
+   display: block;
+   height: 40px;
+   position: relative;
+   text-align: center;
+    line-height: 40px;
+   width: 40px;
+   margin-bottom: 1px;
+   z-index: 2;
+}
+#fixed-social a:hover>span{
+	visibility: visible;
+  right: 41px;
+  opacity: 1;
+} 
+#fixed-social a span {
+	line-height: 40px;
+  right: 60px;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    z-index: 1;
+    opacity: 0;
+    top:0px;
+}
+ .fixed-facebook{
+ 	background-color: #00AAE5;
+ }
+ .fixed-facebook span{
+	background-color: #00AAE5;
+ }
+ .fixed-twitter{
+	background-color: #7D3895;
+
+ }
+ .fixed-twitter span{
+ 	background-color: #7D3895;
+ }
+ .fixed-instagram{
+	background-color: rgb(245,5,139);
+
+ }
+ .fixed-instagram span{
+ 	background-color: rgb(245,5,139);
+ }
+ .fixed-youtube{
+  	background-color: rgb(245,0,0);
+
+}
+.fixed-youtube span{
+  background-color: rgb(245,0,0);
+}
 
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -246,9 +306,27 @@ nav:after{
     <a class="hoverable" href="{% url 'media'%}">MEDIA</a>
     <a class="hoverable" href="{% url 'gallery'%}">GALLERY</a>
     <a class="hoverable" href="{% url 'contact'%}">CONTACT</a>
+<!--
     <a class="hoverable" href="" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
     <a class="hoverable" href="" target="_blank"><i class='bx bxl-twitter'></i></a>
     <a class="hoverable" href="" target="_blank"><i class='bx bxl-instagram'></i></a>
+-->
+    <div id="fixed-social">
+      <div>
+        <a href="#" class="fixed-facebook" target="_blank"><i class="bx bxl-facebook-circle"></i> <span>Facebook</span></a>
+      </div>
+      <div>
+        <a href="#" class="fixed-twitter" target="_blank"><i class="bx bxl-twitter"></i> <span>Twitter</span></a>
+      </div>
+      <div>
+        <a href="#" class="fixed-instagram" target="_blank"><i class="bx bxl-instagram"></i> <span>Instagram</span></a>
+      </div>
+      <div>
+        <a href="#" class="fixed-youtube" target="_blank"><i class="bx bxl-youtube"></i> <span>Youtube</span></a>
+      </div>
+
+    </div>
+
 </div>
 
 {% block content %}
