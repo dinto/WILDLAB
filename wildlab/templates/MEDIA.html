@@ -1,78 +1,23 @@
-
+{% extends "base.html" %}
 {% load static %}
 
+{% block content %}
 <style>
-    body{
-    font-family: 'Droid Serif', serif;
-    font-size: 14px;
-    color: #2f2f2f;
-    /*background-color: #f9f7f1; */
-}
-header{
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 80px;
-    text-transform: uppercase;
-    display: inline-block;
-    line-height: 72px;
-    margin-bottom: 20px;
-
-}
-p{
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.head{
+    .head{
     text-align: center;
     position: relative;
 
 
 }
-
-.saturate { filter: saturate(3); }
-.grayscale { filter: grayscale(100%); }
-.contrast { filter: contrast(160%); }
-.brightness { filter: brightness(0.25); }
-.blur { filter: blur(3px); }
-.invert { filter: invert(100%); }
-.sepia { filter: sepia(100%); }
-.huerotate { filter: hue-rotate(180deg); }
-.rss.opacity { filter: opacity(50%); }
-
-.subhead{
-    text-transform: uppercase;
-    border-bottom: 2px solid #2f2f2f;
-    border-top: 2px solid #2f2f2f;
-    padding: 12px 0 12px 0;
-
-}
-.weatherforcastbox{
-    position: relative;
-    width: 12%;
-    left: 10px;
-    border: 3px double #2f2f2f;
-    padding: 10px 15px 10px 15px;
-    line-height: 20px;
-    display: inline-block;
-    margin: 0 50px 20px -360px;
-}
-.content{
-    font-size: 0;
-    line-height: 0;
-    word-spacing: -.31em;
-    display: inline-block;
-    margin: 30px 2% 0 2%;
-
-
-}
 .collumns{
-
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .collumn{
     font-size: 14px;
     line-height: 20px;
-    width: 25%;
+    width: 24%;
     display: inline-block;
     padding: 0 1% 0 1%;
     vertical-align: top;
@@ -247,6 +192,7 @@ p{
 	font-style: italic;
 	font-size: 12px;
 }
+
 .media {
 /*    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
     filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8); */
@@ -289,227 +235,117 @@ p{
     }
 
 }
+.divimgtext{
+    margin-left: 8%; margin-top: -14%; position: absolute; opacity: 0.7; color: aliceblue;
+}
 </style>
-
-
-{% block content %}
-<html>
-<head>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-   <!-- <link rel="stylesheet" href="styles/newspaper.css">-->
-    <title>THE WildLAB</title>
-    <meta name="viewport" content="width=device-width">
-</head>
-<body>
-    <div class="head">
-        <div class="headerobjectswrapper">    
-            <header>THE WildLAB</header>
-        </div>
-        <div class="subhead">
-            <!--
-            Kerala forest research institute - KFRI-->            
-            <nav class="navbar navbar-expand-lg navbar-light " style="margin-left: 30%;">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="{% url 'home' %}">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'research' %}">RESEARCH</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'team'%}">TEAM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'publication' %}">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'media' %}">MEDIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'gallery' %}">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav> 
-        </div>
+<div style="margin-top: 59px;">
+    <img src="{% static '/images/mediacover.jpg' %}"  style="height: 80%; width:100%;" alt="First slide">
+    <div  class="divimgtext">
+        <p style="  font-family: 'Bebas Neue ', sans-serif ;font-weight: 600;font-size: 75px; margin-top: -17%;text-shadow: 2px 2px 4px #000000;">Media</p>
     </div>
-    <div class="content">
-        <div class="collumns">
-            <div class="collumn">
-                <div class="head">
-                    <span class="headline hl3">Ready to bat for bats? Join this ‘fruity’ project</span>
-                    <p>
-                        <span class="headline hl4">By Aathira Haridas</span>
-                    </p>
-                </div>
+</div>
+<br>
+<div class="content">
+    <div class="collumns">
+        <div class="collumn">
+            <div class="head">
+                <span class="headline hl3">Ready to bat for bats? Join this ‘fruity’ project</span>
+                <p>
+                    <span class="headline hl4">By Aathira Haridas</span>
+                </p>
+            </div>
+            <figure class="figure">
+                <img class="media" src="{% static '/images/fbs.png' %}" alt="">
+                <figcaption class="figcaption"></figcaption>
+            </figure>
+            <p>
+                KOCHI: It’s time to check out the bat roosts near your home! In a unique move, a citizen science initiative is being launched where the local residents are being included into a bat conservation project. All one needs to do is to visit the bat roosting sites, share the details in a form floated by the organisation — you just did your bit to protect the bat species Indian Flying Fox. 
+            </p>            
+            <p>
+                The project is being launched by the Kerala Forest Research Institute’s (KFRI) Department of Wildlife Biology. Titled ‘The Fruit Bat Project’, it is initiated by the Centre for Citizen Science and Biodiversity Informatics in association with the Conservation Leadership Programme and is headed by Dr Balakarishnan P, scientist, Department of Wildlife Biology. 
+            </p>
+            <a href="https://www.newindianexpress.com/cities/kochi/2022/jun/16/ready-to-bat-for-bats-join-this-fruity-project-2466027.html" target="_blank">Details</a>
+        </div>
+        <div class="collumn">
+            <div class="head">
+                <span class="headline hl5"> 
+                    Wildlife researcher and Sally seek to dispel ‘dark’ myths about bats
+                </span>
+                <p>
+                    <span class="headline hl4">
+                        Nithin has been conducting research on Salim Ali’s Fruit Bat since 2021 after getting a grant from the CLP.
+                    </span>
+                </p>
+            </div>
+            <p>
+                THIRUVANANTHAPURAM: Bats are widely misunderstood creatures, with a significant section of the human race confounded by the mammal. And ‘Sally, the fruit bat’ is here to dispel all kinds of myths surrounding the mammal. Wildlife researcher Nithin Divakar has initiated a project on social media to bring some goodwill to the mammal. An Insta page titled @bat_conservation_kerala has been started by the researcher where fruit bat Sally, a character created for the project, will introduce the ‘bat world’ to the public. 
+            </p>              
+            <figure class="figure">
+                <img class="media" src="{% static '/images/batdark.png' %}" alt="">
+                <figcaption class="figcaption"></figcaption>
+            </figure>
+            <a href="https://www.newindianexpress.com/states/kerala/2022/apr/22/wildlife-researcher-and-sally-seek-to-dispel-dark-myths-about-bats-2444916.html" target="_blank">Details</a>
+        </div>
+        <div class="collumn">
+            <div class="head">
+                <span class="headline hl1">
+                    KFRI to map frogs with public participation during monsoon 
+                </span>
+                <p>
+                    <span class="headline hl4">
+                       By MINI MURINGATHERI
+                    </span>
+                </p>
                 <figure class="figure">
-                    <img class="media" src="{% static '/images/fbs.png' %}" alt="">
-                    <figcaption class="figcaption"></figcaption>
+                    <img class="media" src="{% static '/images/kfrifrog.png' %}" alt="">
+                        <figcaption class="figcaption">Variable bush frog (Raorchestes akroparallagi), a species endemic to the Western Ghats.
+                        </figcaption>
+                </figure>
+                <p style="text-align: justify;">
+                    Frogs play a vital role in maintaining the ecological balance. But there is a lack of awareness about the amphibians. The Centre for Citizen Science and Biodiversity Informatics at the KSCSTE-Kerala Forest Research Institute (KFRI) now provides an opportunity for the public to understand about the frogs found in Kerala.
+                </p>
+                <p style="text-align: justify;">
+                    The KFRI is hosting ‘Monsoon Croaks BioBlitz’ with the aim of mapping the diverse frog species found in the State with public participation. The monsoon season is a crucial period for frogs as it marks their breeding season and peak activity.
+                </p>
+                <p style="text-align: justify;">
+                    Emphasising the importance of frogs in our ecosystems, Peroth Balakrishnan, Head of the Department of Wildlife Biology and coordinator of the Centre for Citizen Science and Biodiversity Informatics, KFRI, notes: “Frogs are excellent indicators of the health of our wetlands and ecosystems. By mapping their distribution, we can better protect their habitats and work towards conserving them.”
+                </p>
+                <a href="https://www.thehindu.com/news/national/kerala/kfri-to-map-frogs-with-public-participation-during-monsoon/article66937853.ece" target="_blank">Details</a>
+            </div>                
+        </div>
+        <div class="collumn">
+            <div class="head">
+                <span class="headline hl3">
+                    Mapping frog species through community participation begins in Kerala
+                </span>
+                <figure class="figure">
+                    <img class="media" src="{% static '/images/mappingfrogs.png' %}" alt="">
+                        <figcaption class="figcaption">The aim of the mapping is to document those frogs that live outside the forests also like the Anaimalai gliding frog.
+                        </figcaption>
                 </figure>
                 <p>
-                    KOCHI: It’s time to check out the bat roosts near your home! In a unique move, a citizen science initiative is being launched where the local residents are being included into a bat conservation project. All one needs to do is to visit the bat roosting sites, share the details in a form floated by the organisation — you just did your bit to protect the bat species Indian Flying Fox. 
-                </p>            
-                <p>
-                    The project is being launched by the Kerala Forest Research Institute’s (KFRI) Department of Wildlife Biology. Titled ‘The Fruit Bat Project’, it is initiated by the Centre for Citizen Science and Biodiversity Informatics in association with the Conservation Leadership Programme and is headed by Dr Balakarishnan P, scientist, Department of Wildlife Biology. 
-                </p>
-                <a href="https://www.newindianexpress.com/cities/kochi/2022/jun/16/ready-to-bat-for-bats-join-this-fruity-project-2466027.html" target="_blank">Details</a>
-            </div>
-            <div class="collumn">
-                <div class="head">
-                    <span class="headline hl5"> 
-                        Wildlife researcher and Sally seek to dispel ‘dark’ myths about bats
-                    </span>
-                    <p>
+                    <b>
                         <span class="headline hl4">
-                            Nithin has been conducting research on Salim Ali’s Fruit Bat since 2021 after getting a grant from the CLP.
+                            With the monsoon season approaching, the Centre for Citizen Science and Biodiversity Informatics at the KSCSTE-Kerala Forest Research Institute has launched the mapping of frogs in the state.
                         </span>
-                    </p>
-                </div>
-                <p>
-                    THIRUVANANTHAPURAM: Bats are widely misunderstood creatures, with a significant section of the human race confounded by the mammal. And ‘Sally, the fruit bat’ is here to dispel all kinds of myths surrounding the mammal. Wildlife researcher Nithin Divakar has initiated a project on social media to bring some goodwill to the mammal. An Insta page titled @bat_conservation_kerala has been started by the researcher where fruit bat Sally, a character created for the project, will introduce the ‘bat world’ to the public. 
-                </p>              
-                <figure class="figure">
-                    <img class="media" src="{% static '/images/batdark.png' %}" alt="">
-                    <figcaption class="figcaption"></figcaption>
-                </figure>
-                <a href="https://www.newindianexpress.com/states/kerala/2022/apr/22/wildlife-researcher-and-sally-seek-to-dispel-dark-myths-about-bats-2444916.html" target="_blank">Details</a>
-            </div>
-            <div class="collumn">
-                <div class="head">
-                    <span class="headline hl1">
-                        KFRI to map frogs with public participation during monsoon 
-                    </span>
-                    <p>
-                        <span class="headline hl4">
-                           By MINI MURINGATHERI
-                        </span>
-                    </p>
-                    <figure class="figure">
-                        <img class="media" src="{% static '/images/kfrifrog.png' %}" alt="">
-                            <figcaption class="figcaption">Variable bush frog (Raorchestes akroparallagi), a species endemic to the Western Ghats.
-                            </figcaption>
-                    </figure>
-                    <p style="text-align: justify;">
-                        Frogs play a vital role in maintaining the ecological balance. But there is a lack of awareness about the amphibians. The Centre for Citizen Science and Biodiversity Informatics at the KSCSTE-Kerala Forest Research Institute (KFRI) now provides an opportunity for the public to understand about the frogs found in Kerala.
-                    </p>
-                    <p style="text-align: justify;">
-                        The KFRI is hosting ‘Monsoon Croaks BioBlitz’ with the aim of mapping the diverse frog species found in the State with public participation. The monsoon season is a crucial period for frogs as it marks their breeding season and peak activity.
-                    </p>
-                    <p style="text-align: justify;">
-                        Emphasising the importance of frogs in our ecosystems, Peroth Balakrishnan, Head of the Department of Wildlife Biology and coordinator of the Centre for Citizen Science and Biodiversity Informatics, KFRI, notes: “Frogs are excellent indicators of the health of our wetlands and ecosystems. By mapping their distribution, we can better protect their habitats and work towards conserving them.”
-                    </p>
-                    <a href="https://www.thehindu.com/news/national/kerala/kfri-to-map-frogs-with-public-participation-during-monsoon/article66937853.ece" target="_blank">Details</a>
-                </div>                
-            </div>
-            <div class="collumn">
-                <div class="head">
-                    <span class="headline hl3">
-                        Mapping frog species through community participation begins in Kerala
-                    </span>
-                    <figure class="figure">
-                        <img class="media" src="{% static '/images/mappingfrogs.png' %}" alt="">
-                            <figcaption class="figcaption">The aim of the mapping is to document those frogs that live outside the forests also like the Anaimalai gliding frog.
-                            </figcaption>
-                    </figure>
-                    <p>
-                        <b>
-                            <span class="headline hl4">
-                                With the monsoon season approaching, the Centre for Citizen Science and Biodiversity Informatics at the KSCSTE-Kerala Forest Research Institute has launched the mapping of frogs in the state.
-                            </span>
-                        </b>
-                    </p>
-                    <p style="text-align: justify;">
-                        The objective of the programme called “Monsoon Croaks BioBlitz” which started on June 5 and will end on September 2, is to map the diverse frog species through public participation. Monsoon is an appropriate period for mapping as during this crucial time these amphibians breed and their activity is at the peak.
-                    </p>
-                    <p style="text-align: justify;">
-                        Emphasising the importance of frogs in the ecosystems, Dr. Peroth Balakrishnan, HoD of Wildlife Biology and Coordinator of the CCSBI at KFRI observed: “They play a vital role in maintaining the ecological balance and they are excellent indicators of the health of our wetlands and ecosystems. By mapping their distribution, we can better protect their habitats and work towards conserving them.”
-                    </p>
-                    <a href="https://www.indianarrative.com/science-news/mapping-frog-species-through-community-participation-begins-in-kerala-144814.html" target="_blank">Details</a>
-                    
-                </div>
-                <p>
+                    </b>
                 </p>
-            </div>
-
-
-
-
-           <!-- 
-
-            <div class="collumn">
-                <div class="head">
-                    
-                    <span class="headline hl3">
-                    </span>
-                    <p>
-                        <span class="headline hl4">
-                        </span>
-                    </p>
-                </div>
-                <p>
-                </p>	
-                <p>
+                <p style="text-align: justify;">
+                    The objective of the programme called “Monsoon Croaks BioBlitz” which started on June 5 and will end on September 2, is to map the diverse frog species through public participation. Monsoon is an appropriate period for mapping as during this crucial time these amphibians breed and their activity is at the peak.
                 </p>
-            </div>
-
-
-            <div class="collumn">
-                <div class="head">
-                    <span class="headline hl1">
-                    </span>
-                    <p>
-                        <span class="headline hl4">
-                        </span>
-                    </p>
-                </div>
-                <p>
-                </p>	
-                <p>
+                <p style="text-align: justify;">
+                    Emphasising the importance of frogs in the ecosystems, Dr. Peroth Balakrishnan, HoD of Wildlife Biology and Coordinator of the CCSBI at KFRI observed: “They play a vital role in maintaining the ecological balance and they are excellent indicators of the health of our wetlands and ecosystems. By mapping their distribution, we can better protect their habitats and work towards conserving them.”
                 </p>
-            </div>
-            <div class="collumn">
-                <div class="head">
-                    <span class="headline hl1">
-                        For want of a cavity, many tree dwellers will be left homeless
-                    </span>
-                    <p>
-                        <span class="headline hl4">
-                            By MINI MURINGATHERI
-                        </span>
-                    </p>
-                </div>
-                <figure class="figure">
-                    <img class="media" src="{% static '/images/hornbill.png' %}" alt="">
-                        <figcaption class="figcaption">Malabar grey hornbill, a resident of tree cavities, feeds its young.</figcaption>
-                </figure>
-                <p>
-
-        -->
-                    <!--<span class="citation">"Don't under&shy;estimate the Force.
-                    </span> -->
-    <!--
-                </p>
-                <a href="https://www.thehindu.com/news/national/kerala/for-want-of-a-cavity-many-tree-dwellers-will-be-left-homeless/article36558177.ece" target="_blank">Details</a>
+                <a href="https://www.indianarrative.com/science-news/mapping-frog-species-through-community-participation-begins-in-kerala-144814.html" target="_blank">Details</a>
                 
             </div>
--->
-
-
+            <p>
+            </p>
         </div>
     </div>
+</div>
 
-</body>
-</html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
 {% endblock content %}
