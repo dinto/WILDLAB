@@ -1,9 +1,171 @@
 {% extends "base.html" %}
 {% load static %}
 
-
-
-
 {% block content %}
+
+<style>
+  .gallerycover{
+    margin-top: 59px;
+  }
+  .labgallery{
+    margin-left: 20%; margin-right: 20%;
+    overflow: hidden; 
+   
+  }
+  .labgallery .col-3{
+    padding-right: 0px;
+    padding-left: 3px;
+  }
+  .labgallery .row{
+    margin-bottom: 3px;
+  }
+  .divimgtext{
+    margin-left: 8%; margin-top: -14%; position: absolute; opacity: 0.7; color: aliceblue;
+}
+.labgallery img:hover{
+  transform: scale(1.1);
+}
+
+
+
+.img-wrapper {  
+  width: 400px;
+  height: 400px;
+  overflow: hidden; 
+}
+
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img:hover {
+  transform: scale(1.1);
+}
+
+/* Other styling elements, that are not necessary for the example */
+
+.img-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+}
+  
+</style>
+
+<div class="gallerycover">
+  <img src="{% static '/images/test-galllery-1.png' %}"  style="height: 80%; width:100%;" alt="First slide">
+  <div  class="divimgtext">
+      <p style="  font-family: 'Bebas Neue ', sans-serif ;font-weight: 600;font-size: 75px; margin-top: -17%;text-shadow: 2px 2px 4px #000000;">Gallery</p>
+  </div>
+</div>
+<br>
+
+<div  class="labgallery">
+  <h2 style="text-align: center;">Lab & Fieldwork</h2>
+  <div class="row ">
+    <div class="col-3">
+      <img src="{% static '/images/homecarsoul4.webp' %}" width="100%" height="100%"  alt="First slide">
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}"  width="100%" height="100%" alt="First slide">
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}" width="100%" height="100%"  alt="First slide">
+      
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}" width="100%" height="100%" alt="First slide">
+    </div>
+  
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <img src="{% static '/images/homecarsoul4.webp' %}" width="100%" height="100%" alt="First slide">
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}"  width="100%" height="100%" alt="First slide">
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}" width="100%" height="100%"  alt="First slide">
+      
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}" width="100%" height="100%" alt="First slide">
+    </div>
+  
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <img src="{% static '/images/homecarsoul4.webp' %}" width="100%" height="100%" alt="First slide">
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}"  width="100%" height="100%" alt="First slide">
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}" width="100%" height="100%"  alt="First slide">
+      
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}" width="100%" height="100%" alt="First slide">
+    </div>
+  
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <img src="{% static '/images/homecarsoul4.webp' %}" width="100%" height="100%" alt="First slide">
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}"  width="100%" height="100%" alt="First slide">
+    </div>
+    <div class="col-3">
+      <img src="{% static '/images/researchpage3.jpg' %}" width="100%" height="100%"  alt="First slide">
+      
+    </div>
+    <div class="col-3">
+      <div class="img-wrapper">
+        <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" />
+      </div>
+    </div>
+  
+  </div>
+
+
+</div>
+
+<div class="row">
+  <div class="img-wrapper">
+    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
+  </div>
+  
+  <div class="img-wrapper">
+    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
+  </div>
+  <div class="img-wrapper">
+    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
+  </div>
+  
+  <div class="img-wrapper">
+    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
+  </div>
+    
+</div>
+<div class="row">
+  <div class="img-wrapper">
+    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
+  </div>
+  
+  <div class="img-wrapper">
+    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
+  </div>
+  <div class="img-wrapper">
+    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
+  </div>
+  
+  <div class="img-wrapper">
+    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
+  </div>
+    
+</div>
+
+  
 
 {% endblock content %}
