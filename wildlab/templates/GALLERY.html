@@ -28,14 +28,11 @@
 
 
 
-.img-wrapper {  
-  width: 400px;
-  height: 400px;
-  overflow: hidden; 
-}
+
 
 .inner-img {
   transition: 0.3s;
+  padding: 2px;
 }
 
 .inner-img:hover {
@@ -47,6 +44,11 @@
 .img-wrapper {
   display: inline-block;
   box-sizing: border-box;
+}
+
+.gallerybox{
+  margin-left: 20%; margin-right: 20%;
+  padding-left: 30px;
 }
   
 </style>
@@ -61,6 +63,7 @@
 
 <div  class="labgallery">
   <h2 style="text-align: center;">Lab & Fieldwork</h2>
+  <!--
   <div class="row ">
     <div class="col-3">
       <img src="{% static '/images/homecarsoul4.webp' %}" width="100%" height="100%"  alt="First slide">
@@ -128,42 +131,44 @@
   
   </div>
 
-
+-->
 </div>
-
-<div class="row">
-  <div class="img-wrapper">
-    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
-  </div>
-  
-  <div class="img-wrapper">
-    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
-  </div>
-  <div class="img-wrapper">
-    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
-  </div>
-  
-  <div class="img-wrapper">
-    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
-  </div>
+<div class="gallerybox">
+  <div class="row">
+    <div class="img-wrapper">
+      <img class="inner-img" src="{% static '/images/Lab_fieldwork/field1.jpg' %}" width="277px" height="158px" />
+    </div>
     
-</div>
-<div class="row">
-  <div class="img-wrapper">
-    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
-  </div>
-  
-  <div class="img-wrapper">
-    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
-  </div>
-  <div class="img-wrapper">
-    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
-  </div>
-  
-  <div class="img-wrapper">
-    <img class="inner-img" src="{% static '/images/researchpage3.jpg' %}" width="400px" height="400px" />
-  </div>
+    <div class="img-wrapper">
+      <img class="inner-img" src="{% static '/images/Lab_fieldwork/field2.jpg' %}" width="277px" height="158px" />
+    </div>
+    <div class="img-wrapper">
+      <img class="inner-img" src="{% static '/images/Lab_fieldwork/field3.jpg' %}" width="277px" height="158px" />
+    </div>
     
+    <div class="img-wrapper">
+      <img class="inner-img" src="{% static '/images/Lab_fieldwork/field4.jpg' %}" width="277px" height="158px" />
+    </div>
+      
+  </div>
+  <div class="row">
+    <div class="img-wrapper">
+      <img class="inner-img" src="{% static '/images/Lab_fieldwork/field5.jpg' %}" width="277px" height="158px" />
+    </div>
+    
+    <div class="img-wrapper">
+      <img class="inner-img" src="{% static '/images/Lab_fieldwork/field6.jpg' %}" width="277px" height="158px" />
+    </div>
+    <div class="img-wrapper">
+      <img class="inner-img" src="{% static '/images/Lab_fieldwork/field7.jpg' %}" width="277px" height="158px" />
+    </div>
+    
+    <div class="img-wrapper">
+      <img class="inner-img" src="{% static '/images/Lab_fieldwork/field8.jpg' %}" width="277px" height="158px" />
+    </div>
+      
+  </div>
+  
 </div>
 
   
