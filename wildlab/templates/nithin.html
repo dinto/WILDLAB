@@ -1,163 +1,16 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width,initial-scale=1.0">
-       <title>WildLab</title>
 
+
+{% block content %}
 <style>
-    body{
-        background-color: #081b29;
-    }
-    .home{
-       /* height: 100vh;*/
-        display: flex;
-        align-items: center;
-        padding: 0 10%;
-    }
-    .home-content{
-        max-width: 600px;
-    }
-    .home-content  h1{
-        position: relative;
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-    
-    .home-content  h1::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1s;
-    }
-    .home-content h3{
-        position: relative;
-        font-size: 32px;
-        font-weight: 700;
-        color: #00abf0;
-    }
-    .home-content  h3::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.2s;
+    .home-sci-icons{
+        width: 250px;
+        margin-top: 10px;
+        margin-left: 25%;
     }
 
-    .home-content p{
-        position: relative;
-        font-size: 16px;
-        margin: 20px 0 40px;
-    }
-    .home-content  p::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.5s;
-    }
-    .home-content .btn-box{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        width: 345px;
-        height: 50px;
-    }
-    .home-content  .btn-box::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.9s;
-        z-index: 2;
-    }
-    .btn-box a{
-        position: relative;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-        height: 100%;
-        background: #00abf0;
-        border: 2px solid  #00abf0;
-        border-radius: 8px;
-        font-size: 19px;
-        color: #081b29;
-        text-decoration: none;
-        font-weight: 600;
-        letter-spacing: 1px;
-        z-index: 1;
-        overflow: hidden;
-        transition: 0.5s;
-
-    }
-    .btn-box a:hover{
-        color: #00abf0;
-    }
-    .btn-box a:nth-child(2){
-        background: transparent;
-        color: #00abf0;
-    }
-    .btn-box a:nth-child(2):hover{
-        color: #081b29;
-        
-    }
-    .btn-box a:nth-child(2)::before{
-        background: #00abf0;
-    }
-    .btn-box a::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background: #081b29;
-        z-index: -1;
-        transition: .5s;
-    }
-    .btn-box a:hover:before{
-        width: 100%;
-    }
-    .home-sci{
-        position: absolute;
-        /*bottom: 40px;*/
-        width: 170px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .home-sci::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.9s;
-        z-index: 2;
-    }
-    .home-sci a{
+    .iconsclass{
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -170,182 +23,112 @@
         font-size: 20px;
         color: #00abf0;
         overflow: hidden;
-        transition: 0.5s;
     }
-    .home-sci a:hover{
-        color: #081b29;
-    }
-    
-    .home-sci a::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-       /* background: #00abf0;*/
-        z-index: -1;
-        transition: 0.5s;
-    }
-    .home-sci a:hover:before{
-        width: 100%;
-    }
-    .home-img-hover{
-        position: absolute;
-        /*top:0;*/
-        right: 30px;
-        width: 540px;
-        height: 100%;
-        background: transparent;
-        transition: 3s; 
-        animation: manipActiveHover .1s forwards;
-        animation-delay: 4s;
-        pointer-events: none;
-        
-       /**/ background: url("/static/images/nithin.jpg") no-repeat; 
-        background-size: cover;
-        background-position: center;
 
-    }
-    .home-img-hover:hover{
-       /* background: #081b29; */
-        opacity: .5;
-    }
-    .home-img-hover::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 120%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 3s;
-        z-index: 100;
-    }
-    @keyframes showRight{
-        100%{
-            width: 0;
-        }
-        
-    }
-    @keyframes manipActiveHover{
-        100%{
-            pointer-events: auto;
-        }
 
+    #marginsize{
+        margin-left: 10%; margin-right: 10%;
     }
+    .home{
+        margin-top: 120px;
+    }
+    .title{
+        font-family: 'Bebas Neue ', sans-serif ;font-weight: 600;font-size: 36px;
+    }
+    .head2{
+        font-family: 'montserrat ', sans-serif ;font-size: 24px;
+    }
+    .coverimg{
+        margin-top: 139px;  
+        width:377px;
+        height:377px;
+    }
+    .contacticons{
+        font-size: 24px;
+    }
+    .bodycontent{
+    font-family: Merriweather;
+    font-size: 22px;
+    }
+
+
 </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>WildLab</title>
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'research' %} ">RESEARCH</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'team'%} ">TEAM</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'publication'%}">PUBLICATIONS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'media'%}">MEDIA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'gallery'%}">GALLERY</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'contact'%}">CONTACT US</a>
-                </li>
-
-              </ul>
-
+<div class="row" id="marginsize">
+    <div class="col-8">
+        <section class="home">
+            <div class="home-content">
+                <h1 class="title">Nithin Divakar</h1>
+                <h1 class="head2">Phd Scholar</h1>
+                <br>
+                <span class="bodycontent">          <p>
+                    &nbsp; &nbsp; &nbsp; &nbsp; Amphibians and bats have fascinated me since my childhood with their nocturnal life. The curiosity for understanding their life and interactions with the surrounding 
+                     environment inculcated in me a keen interest in learning community ecology and also how these communities vary across the changing geographical conditions. After completing 
+                     my Masters in Wildlife Studies in 2015, I actively contributed to the on-ground conservation of bats and amphibians in the Kerala part of Western Ghats through conservation research and stakeholder involvement. Following my interest and passion for both the taxa, I focused mainly on species-specific activities including the long term conservation management of threatened species like Latidens salimalii, Walkerana phrynoderma, Nasikabatrachus sahyadrensis in their distributional ranges. In this journey, I was fortunate to get support from the Mohamed Bin Zayed Species Conservation Fund & Idea Wild grant for the conservation of lesser-known endangered Malabar torrent toad and the 
+                     <a href="https://www.conservationleadershipprogramme.org/project/salim-alis-fruit-bat/">Conservation Leadership Programme grant for the conservation of endangered Salim Ali’s fruit bat in 2021 </a>. I strongly believe that conservation of a landscape or a species is connected
+                      with the involvement of communities living there and hope I can build a network there with research and conservation education which will equip both the groups.
+                 </p>
+                 <p>Publications:</p>
+                 <p>
+                     Ravishankar, C., Ravindran, R., John, A. A., Divakar, N., Chandy, G., Joshi, V., & S. M. Goyal.  2022. Detection of Newcastle disease virus and assessment of associated relative risk in backyard and commercial poultry in Kerala, India. Veterinary Medicine and Science, 8(3), 1146-1156. 
+                     <a href="https://doi.org/10.1002/vms3.747" target="_blank">DOI: https://doi.org/10.1002/vms3.747 </a>
+                 </p>
+                 <p>
+                     Divakar, N., M.B. Paul, A.S. Madhu & K. Chandran. 2021. Conservation challenges: saving the Salim Ali’s Fruit Bat one step at a time. Small Mammal Mail #435, In: Zoo’s Print 36(5): 01–04.Wayanad in the Western Ghats of Kerala, India.” Journal of Threatened Taxa, 10(8), 12103-12107. 
+                     
+                     <a href="https://zoosprint.zooreach.org/index.php/zp/article/view/7268" target="_blank">Journal</a>
+         
+                 </p>
+                 <p>
+                     Ramvilas, G., Dhyani, S., Kumar, B., Sinha, N., Raghavan, R., Selvaraj, G., Divakar, N., Anoop, V.K., Shalu, K., Sinha, A., Das, S., Kulkarni, A., & S. Molur.  2021. Insights on COVID-19 impacts, challenges and opportunities for India's biodiversity research: From complexity to building adaptations. Biological conservation, 255, 109003. 
+                     <a href="https://www.sciencedirect.com/science/article/pii/S0006320721000550?via%3Dihub" target="_blank">DOI: 10.1016/j.biocon.2021.109003</a>            
+                 </p>
+                 <p>
+                     Das, S., Syed, E. P., Divakar, N., Thomas, A., & Tapley, B. (2021). Predators of an evolutionarily distinct and globally endangered Frog Nasikabatrachus sahyadrensis Biju and Bossuyt, 2003. Herpetology Notes, 14, 247-249. 
+                 </p>
+                 <p>
+                     Roshnath, R., & Divakar, N. (2019). Solving species quandary: why awareness programs are pivotal in snake conservation. Herpetological Journal, 29(4).
+                     <a href="http://dx.doi.org/10.33256/hj29.4.214218" target="_blank">DOI: 10.33256/hj29.4.214218</a> 
+                      
+                 </p>
+                 <p>
+                     Das, S., Tapley, B., Gray, C. L., Das, J. P., & Divakar, N. (2018). Purple frog, Nasikabatrachus sahyadrensis, in Kerala, India. An output from the EDGE of Existence fellowship, Zoological Society of London.
+                 </p>
+                 <p>
+                     Kanagavel, A., Parvathy, S., Nirmal, N., Divakar, N., & Raghavan, R. (2017). Do frogs really eat cardamom? Understanding the myth of crop damage by amphibians in the Western Ghats, India. Ambio, 46(6), 695-705. 
+                     
+                     <a href="http://dx.doi.org/10.1007/s13280-017-0908-8" target="_blank">DOI: 10.1007/s13280-017-0908-8</a>
+         
+                 </p>
+                 <p>
+                     Kanagavel, A., Parvathy, S., & Divakar, N. (2017). Education workshops improve the ability of forest departments to identify amphibians in Western Ghats, India. Conservation Evidence, 14, 21.
+                 </p>
+                 <p>
+                     Roshnath, R., Basheer, A., & Divakar, N. (2015). Rescued Spectacled Cobra Naja naja eggs hatched in captivity. Newsletter of the South Asian Reptile Network, 17, 30.
+                 </p>
+                 <p>
+                     Roshnath, R., Divakar, N., Chandran, K., Valsarajn, D., & Jose, A. (2014). Heronry census, 2014 in Kannur district, Kerala. Malabar Trogon, 12, 9-13.
+                 </p>
+                </span>
             </div>
-          </nav>        
-<section class="home">
-    <div class="home-content">
-        <h1>Nithin Divakar</h1>
-        <h3>Phd Scholar</h3>
-        <p>
-           &nbsp; &nbsp; &nbsp; &nbsp; Amphibians and bats have fascinated me since my childhood with their nocturnal life. The curiosity for understanding their life and interactions with the surrounding 
-            environment inculcated in me a keen interest in learning community ecology and also how these communities vary across the changing geographical conditions. After completing 
-            my Masters in Wildlife Studies in 2015, I actively contributed to the on-ground conservation of bats and amphibians in the Kerala part of Western Ghats through conservation research and stakeholder involvement. Following my interest and passion for both the taxa, I focused mainly on species-specific activities including the long term conservation management of threatened species like Latidens salimalii, Walkerana phrynoderma, Nasikabatrachus sahyadrensis in their distributional ranges. In this journey, I was fortunate to get support from the Mohamed Bin Zayed Species Conservation Fund & Idea Wild grant for the conservation of lesser-known endangered Malabar torrent toad and the 
-            <a href="https://www.conservationleadershipprogramme.org/project/salim-alis-fruit-bat/">Conservation Leadership Programme grant for the conservation of endangered Salim Ali’s fruit bat in 2021 </a>. I strongly believe that conservation of a landscape or a species is connected
-             with the involvement of communities living there and hope I can build a network there with research and conservation education which will equip both the groups.
-        </p>
-        <p>Publications:</p>
-        <p>
-            Ravishankar, C., Ravindran, R., John, A. A., Divakar, N., Chandy, G., Joshi, V., & S. M. Goyal.  2022. Detection of Newcastle disease virus and assessment of associated relative risk in backyard and commercial poultry in Kerala, India. Veterinary Medicine and Science, 8(3), 1146-1156. 
-            <a href="https://doi.org/10.1002/vms3.747" target="_blank">DOI: https://doi.org/10.1002/vms3.747 </a>
-        </p>
-        <p>
-            Divakar, N., M.B. Paul, A.S. Madhu & K. Chandran. 2021. Conservation challenges: saving the Salim Ali’s Fruit Bat one step at a time. Small Mammal Mail #435, In: Zoo’s Print 36(5): 01–04.Wayanad in the Western Ghats of Kerala, India.” Journal of Threatened Taxa, 10(8), 12103-12107. 
-            
-            <a href="https://zoosprint.zooreach.org/index.php/zp/article/view/7268" target="_blank">Journal</a>
-
-        </p>
-        <p>
-            Ramvilas, G., Dhyani, S., Kumar, B., Sinha, N., Raghavan, R., Selvaraj, G., Divakar, N., Anoop, V.K., Shalu, K., Sinha, A., Das, S., Kulkarni, A., & S. Molur.  2021. Insights on COVID-19 impacts, challenges and opportunities for India's biodiversity research: From complexity to building adaptations. Biological conservation, 255, 109003. 
-            <a href="https://www.sciencedirect.com/science/article/pii/S0006320721000550?via%3Dihub" target="_blank">DOI: 10.1016/j.biocon.2021.109003</a>            
-        </p>
-        <p>
-            Das, S., Syed, E. P., Divakar, N., Thomas, A., & Tapley, B. (2021). Predators of an evolutionarily distinct and globally endangered Frog Nasikabatrachus sahyadrensis Biju and Bossuyt, 2003. Herpetology Notes, 14, 247-249. 
-        </p>
-        <p>
-            Roshnath, R., & Divakar, N. (2019). Solving species quandary: why awareness programs are pivotal in snake conservation. Herpetological Journal, 29(4).
-            <a href="http://dx.doi.org/10.33256/hj29.4.214218" target="_blank">DOI: 10.33256/hj29.4.214218</a> 
-             
-        </p>
-        <p>
-            Das, S., Tapley, B., Gray, C. L., Das, J. P., & Divakar, N. (2018). Purple frog, Nasikabatrachus sahyadrensis, in Kerala, India. An output from the EDGE of Existence fellowship, Zoological Society of London.
-        </p>
-        <p>
-            Kanagavel, A., Parvathy, S., Nirmal, N., Divakar, N., & Raghavan, R. (2017). Do frogs really eat cardamom? Understanding the myth of crop damage by amphibians in the Western Ghats, India. Ambio, 46(6), 695-705. 
-            
-            <a href="http://dx.doi.org/10.1007/s13280-017-0908-8" target="_blank">DOI: 10.1007/s13280-017-0908-8</a>
-
-        </p>
-        <p>
-            Kanagavel, A., Parvathy, S., & Divakar, N. (2017). Education workshops improve the ability of forest departments to identify amphibians in Western Ghats, India. Conservation Evidence, 14, 21.
-        </p>
-        <p>
-            Roshnath, R., Basheer, A., & Divakar, N. (2015). Rescued Spectacled Cobra Naja naja eggs hatched in captivity. Newsletter of the South Asian Reptile Network, 17, 30.
-        </p>
-        <p>
-            Roshnath, R., Divakar, N., Chandran, K., Valsarajn, D., & Jose, A. (2014). Heronry census, 2014 in Kannur district, Kerala. Malabar Trogon, 12, 9-13.
-        </p>
-        <!--
-        <div class="btn-box">
-            <a href="mailto:nithindivakar21@gmail.com"><i class='bx bxs-envelope' ></i></a> 
-            <a href="tel:"><i class='bx bx-phone'></i></a> 
-        </div>-->
-        <div class="home-sci">
-            <a href="https://www.researchgate.net/profile/Nithin-Divakar-2"><i class="fa-brands fa-researchgate"></i></a>
-            <a href="https://orcid.org/0000-0002-2444-2781"><i class="fa-brands fa-orcid"></i></a>
-            <a href="instagram.com/nithindivakar21"><i class='bx bxl-instagram'></i></a>
-            <a href="mailto:nithindivakar21@gmail.com" target="_blank"><i class='bx bxs-envelope' ></i></a> 
-           
+        </section>
+    </div>
+    <div class="col-4">
+        <span class="home-img-hover">
+            <img  src="{% static '/images/nithin1.jpg' %}"   class="coverimg" alt="Nithin">
+        </span>
+        <br>
+        <div class="home-sci-icons">
+            <a href="https://www.researchgate.net/profile/Nithin-Divakar-2" class="iconsclass"><i class="fa-brands fa-researchgate"></i></a>
+            <a href="https://orcid.org/0000-0002-2444-2781" class="iconsclass"><i class="fa-brands fa-orcid"></i></a>
+            <a href="instagram.com/nithindivakar21" class="iconsclass"><i class='bx bxl-instagram'></i></a>
+            <a href="mailto:nithindivakar21@gmail.com" target="_blank" class="iconsclass"><i class='bx bxs-envelope' ></i></a> 
         </div>
     </div>
-    <br>
-    <span class="home-img-hover">
-        <!--<img src="{% static '/images/nithin.jpg' %}" width="70%" style="top:5%"> -->
-
-    </span>
-</section>
-
-
-    </body>
-</html>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>
+{% endblock content %}
