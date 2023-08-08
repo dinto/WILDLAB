@@ -1,163 +1,16 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width,initial-scale=1.0">
-       <title>WildLab</title>
+{% block content %}
+
 
 <style>
-    body{
-        background-color: #081b29;
-    }
-    .home{
-        height: 110vh;
-        display: flex;
-        align-items: center;
-        padding: 0 10%;
-    }
-    .home-content{
-        max-width: 600px;
-    }
-    .home-content  h1{
-        position: relative;
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-    
-    .home-content  h1::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1s;
-    }
-    .home-content h3{
-        position: relative;
-        font-size: 32px;
-        font-weight: 700;
-        color: #00abf0;
-    }
-    .home-content  h3::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.2s;
+    .home-sci-icons{
+        width: 250px;
+        margin-top: 10px;
+        margin-left: 25%;
     }
 
-    .home-content p{
-        position: relative;
-        font-size: 16px;
-        margin: 20px 0 40px;
-    }
-    .home-content  p::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.5s;
-    }
-    .home-content .btn-box{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        width: 345px;
-        height: 50px;
-    }
-    .home-content  .btn-box::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.9s;
-        z-index: 2;
-    }
-    .btn-box a{
-        position: relative;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-        height: 100%;
-        background: #00abf0;
-        border: 2px solid  #00abf0;
-        border-radius: 8px;
-        font-size: 19px;
-        color: #081b29;
-        text-decoration: none;
-        font-weight: 600;
-        letter-spacing: 1px;
-        z-index: 1;
-        overflow: hidden;
-        transition: 0.5s;
-
-    }
-    .btn-box a:hover{
-        color: #00abf0;
-    }
-    .btn-box a:nth-child(2){
-        background: transparent;
-        color: #00abf0;
-    }
-    .btn-box a:nth-child(2):hover{
-        color: #081b29;
-        
-    }
-    .btn-box a:nth-child(2)::before{
-        background: #00abf0;
-    }
-    .btn-box a::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background: #081b29;
-        z-index: -1;
-        transition: .5s;
-    }
-    .btn-box a:hover:before{
-        width: 100%;
-    }
-    .home-sci{
-        position: absolute;
-        /*bottom: 40px;*/
-        width: 220px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .home-sci::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 1.9s;
-        z-index: 2;
-    }
-    .home-sci a{
+    .iconsclass{
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -170,139 +23,78 @@
         font-size: 20px;
         color: #00abf0;
         overflow: hidden;
-        transition: 0.5s;
     }
-    .home-sci a:hover{
-        color: #081b29;
-    }
-    
-    .home-sci a::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-       /* background: #00abf0;*/
-        z-index: -1;
-        transition: 0.5s;
-    }
-    .home-sci a:hover:before{
-        width: 100%;
-    }
-    .home-img-hover{
-        position: absolute;
-        /*top:0;*/
-        right: 30px;
-        width: 540px;
-        height: 100%;
-        background: transparent;
-        transition: 3s; 
-        animation: manipActiveHover .1s forwards;
-        animation-delay: 4s;
-        pointer-events: none;
-        
-       /**/ background: url("/static/images/deepak2.png") no-repeat; 
-        background-size: cover;
-        background-position: center;
 
-    }
-    .home-img-hover:hover{
-       /* background: #081b29; */
-        opacity: .5;
-    }
-    .home-img-hover::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 120%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 3s;
-        z-index: 100;
-    }
-    @keyframes showRight{
-        100%{
-            width: 0;
-        }
-        
-    }
-    @keyframes manipActiveHover{
-        100%{
-            pointer-events: auto;
-        }
 
+    #marginsize{
+        margin-left: 10%; margin-right: 10%;
     }
+    .home{
+        margin-top: 120px;
+    }
+    .title{
+        font-family: 'Bebas Neue ', sans-serif ;font-weight: 600;font-size: 36px;
+    }
+    .head2{
+        font-family: 'montserrat ', sans-serif ;font-size: 24px;
+    }
+    .coverimg{
+        margin-top: 139px;  
+        width:377px;
+        height:377px;
+    }
+    .contacticons{
+        font-size: 24px;
+    }
+    .bodycontent{
+    font-family: Merriweather;
+    font-size: 22px;
+    }
+
+
 </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>WildLab</title>
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="row" id="marginsize">
+    <div class="col-8">
+        <section class="home">
+            <div class="home-content">
+                <h1 class="title">Deepak</h1>
+                <h1 class="head2">Project Assistant</h1>
+                <br>
+                <span class="bodycontent">   
+                    <p>
 
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'research' %} ">RESEARCH</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'team'%} ">TEAM</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'publication'%}">PUBLICATIONS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'media'%}">MEDIA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'gallery'%}">GALLERY</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'contact'%}">CONTACT US</a>
-                </li>
+                        &nbsp; &nbsp; &nbsp; &nbsp; My journey into scientific research first started during my undergraduate years, when I took part in a small-scale grant project focused on indigenous communities in Kerala. In 2020, I received my master's degree in Ecology and Environmental Sciences from Pondicherry University. My master's thesis focused on examining faunal diversity in Kerala's granite quarries. Afterward, I honed my skills as a GIS and Remote Sensing trainee at WWF-India through the Green Skill Development program. Currently, I am playing a role as a project assistant and passionately contributing to a project aimed at conserving the bat population in Kerala.
 
-              </ul>
+
+                     </p>
+             
+                </span>
 
             </div>
-          </nav>        
-<section class="home">
-    <div class="home-content">
-        <h1>Deepak</h1>
-        <h3>Project Staff</h3>
-        <p>
-           &nbsp; &nbsp; &nbsp; &nbsp; My journey into scientific research first started during my undergraduate years, when I took part in a small-scale grant project focused on indigenous communities in Kerala. In 2020, I received my master's degree in Ecology and Environmental Sciences from Pondicherry University. My master's thesis focused on examining faunal diversity in Kerala's granite quarries. Afterward, I honed my skills as a GIS and Remote Sensing trainee at WWF-India through the Green Skill Development program. Currently, I am playing a role as a project assistant and passionately contributing to a project aimed at conserving the bat population in Kerala.
 
-        </p>
-
-        <!--
-        <div class="btn-box">
-            <a href="mailto:sheheer@kfri.res.in"><i class='bx bxs-envelope' ></i></a> 
-            <a href="tel:"><i class='bx bx-phone'></i></a> 
-        </div>-->
-        <div class="home-sci">
-            <a href="mailto:deepakvkd98@gmail.com" target="_blank"><i class='bx bxs-envelope' ></i></a> 
-            <a href="https://www.instagram.com/deepak_kambrath/" target="_blank"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.researchgate.net/profile/Kambrath-Deepak"  target="_blank"><i class="fa-brands fa-researchgate"></i></a>
-            <a href="https://www.linkedin.com/in/deepak-kambrath-5b2263235/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> 
-            <a href="https://www.inaturalist.org/people/5181801" target="_blank"></a> 
-           
-        </div>
-
+        </section>
     </div>
-    <br>
-    <span class="home-img-hover">
-        <!--<img src="{% static '/images/nithin.jpg' %}" width="70%" style="top:5%"> -->
-
-    </span>
-</section>
-    </body>
-</html>
+    <div class="col-4">
+        <span class="home-img-hover">
+            <img  src="{% static '/images/deepak2.png' %}"   class="coverimg" alt="deepak">
+        </span>
+        <br>
+        <div class="home-sci-icons">
+            <a href="mailto:deepakvkd98@gmail.com" target="_blank" class="iconsclass"><i class='bx bxs-envelope' ></i></a> 
+            <a href="https://www.instagram.com/deepak_kambrath/" target="_blank" class="iconsclass"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.researchgate.net/profile/Kambrath-Deepak"  target="_blank" class="iconsclass"><i class="fa-brands fa-researchgate"></i></a>
+            <a href="https://www.linkedin.com/in/deepak-kambrath-5b2263235/" target="_blank" class="iconsclass"><i class="fa-brands fa-linkedin-in"></i></a> 
+          <!--  <a href="https://www.inaturalist.org/people/5181801" target="_blank" class="iconsclass"></a> -->
+        </div>
+    </div>
+</div>
+{% endblock content %}
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
