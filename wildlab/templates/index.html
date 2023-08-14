@@ -121,6 +121,7 @@
 }
 
 </style>
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -128,6 +129,7 @@
     <title>WILD LAB</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     </head>
     <body>
         <!--
@@ -418,6 +420,24 @@
 })
   </script>
 -->
+
+<script >
+    var currentSlide;
+    var rand;
+    $(document).ready(function() {
+    currentSlide = Math.floor((Math.random() * $('.carousel-item').length));
+    rand = currentSlide;
+    $('#carouselExampleIndicators').carousel(currentSlide);
+    $('#carouselExampleIndicators').fadeIn(1000);
+    setInterval(function(){ 
+        while(rand == currentSlide){
+        rand = Math.floor((Math.random() * $('.carousel-item').length));
+        }
+        currentSlide = rand;
+        $('#carouselExampleIndicators').carousel(rand);
+    },5000);
+    });
+</script>
 {% endblock content %}
 
 
