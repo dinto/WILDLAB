@@ -23,8 +23,34 @@
         font-family: 'Lato', sans-serif; 
         font-size: 22px;
     }
+    .gallerycover{
+    margin-top: 59px;
+    height: 80%;
+  }
+  .gallerycover img{
+    height: 100%; width:100%;
+  }
+  .divimgtext{
+    margin-left: 8%;
+    margin-top: -14%;
+    position: absolute;
+    opacity: 0.7;
+    color: aliceblue;
+  }
+  .divimgtext p{
+    font-family: 'Bebas Neue ', sans-serif ;font-weight: 600;font-size: 75px; margin-top: -17%;text-shadow: 2px 2px 4px #000000;
+
+  }
 </style>
-<div  class="margin" style="margin-top: 5%;">
+
+<div class="gallerycover">
+    <img src="{% static '/images/join_us_cover.png' %}"  alt="join_us">
+    <div  class="divimgtext">
+        <p >Join Us</p>
+    </div>
+</div>
+<br>
+<div  class="margin">
     <div class="row">
         <div class="col-3">
             Post-docs
@@ -49,7 +75,7 @@
             Project positions
         </div>
         <div class="col-9">
-            Vacancies in projects are advertised on the institutional website. 
+            Vacancies in projects are advertised on the <a href="https://www.kfri.res.in/noticeboard.asp?sub=4" target="_blank">institutional website.</a> 
         </div>
     </div>
     <br>
@@ -58,12 +84,16 @@
             MSc dissertations and internships
         </div>
         <div class="col-9">
-            Each year 3-5 masters students are accepted in the lab for their dissertation work. Please note that, we accept students with at least three months duration exclusively for their dissertation work. Interns and highly motivated volunteers from related disciplines are also welcome to join our research and outreach programmes. Contact us before making a formal application to the institute.  
+            Each year 3-5 masters students are accepted in the lab for their dissertation work. 
+            Please note that, we accept students with at least three months duration exclusively for their dissertation work. 
+            Interns and highly motivated volunteers from related disciplines are also welcome to join our research and outreach programmes. 
+            Contact us before making a formal <a href="https://www.kfri.res.in/academic_attachments.asp" target="_blank">application </a> to the institute.  
         </div>
     </div>
     <br>
     <div class="comeon">
-        We accept interns throughout the year in our Biodiversity Internship Programme. For details contact us.  
+        We accept interns throughout the year in our <a href="https://ccsbi.kfri.res.in/Opportunities" target="_blank"> Biodiversity Internship Programme </a>. 
+        For details <a href="https://ccsbi.kfri.res.in/contact" target="_blank">contact us </a>.  
     </div>
     <br>
 <!--
