@@ -2,37 +2,52 @@
 {% load static %}
 
 {% block content %}
+<style>
+    .heading{
+    font-size: 26px;font-family: 'Montserrat', sans-serif;font-weight: 600;
+    }
+    .subheading{
+    font-size: 24px;font-family: 'Montserrat', sans-serif;
+    }
+    .content{
+    font-size: 22px;font-family: 'Merriweather';
+    }
+</style>
 <div class="container" style="margin-top: 124px;">
-    <h2>
+    <h2 class="heading">
         Life history evolution and natural history 
     </h2>
-    <p>
+    <p class="content">
         Information on the life-history traits are essential for estimating the population growth rates, evaluating various hypotheses regarding life-history evolution, predicting the response of species to future environmental change and developing conservation management of rare species. About 80% of all passerines breed in the tropics, however, breeding biology and life-history traits of most tropical birds and the factors determining the evolution of these traits are poorly known. Similarly, the life history traits of the majority of mammals, amphibians and reptiles are largely unknown.  
     </p>
-    <p>Understanding organisms, including their characteristics, habitats, diet, behaviour, and mortality, remains crucial to science and society. Integrating this knowledge becomes increasingly increasingly important for translating results obtained through modern research tools, comprehending and optimising complex human-environment interactions, advancing human health, and fostering innovation through biology-inspired design. To strengthen the bond between science and society, reviving and promoting the practice of natural history is crucial.
+    <p class="content">Understanding organisms, including their characteristics, habitats, diet, behaviour, and mortality, remains crucial to science and society. Integrating this knowledge becomes increasingly increasingly important for translating results obtained through modern research tools, comprehending and optimising complex human-environment interactions, advancing human health, and fostering innovation through biology-inspired design. To strengthen the bond between science and society, reviving and promoting the practice of natural history is crucial.
     </p>
-    <h2>Ongoing & recent projects and programmes:</h2>
+    <h2 class="heading">Ongoing & recent projects and programmes:</h2>
     <ul>
-        <li>Database on the life history and functional traits of south-asian bats</li>
-        <li>Camera trapping wildlife in forest and plantation landscapes</li>
-        <li>Database on rodents of India
-        </li>
-        <li>Passive acoustic monitoring of wildlife</li>
-        <li>Wildlife Museum </li>
+        <li class="subheading">Database on the life history and functional traits of south-asian bats</li>
+        <li class="subheading">Camera trapping wildlife in forest and plantation landscapes</li>
+        <li class="subheading">Database on rodents of India</li>
+        <li class="subheading">Passive acoustic monitoring of wildlife</li>
+        <li class="subheading">Wildlife Museum </li>
+        <p class="content">
+            Our lab is coordinating the activities of the KFRI-Wildlife Museum, which is a major attraction at KFRI. The specimens and other collections at the museum is used for
+graduate and undergraduate training, species identification workshops and
+educational programs by state and local agencies. Conservation education and training to students and the inservice training to the officials of forests departments across the country are major activities of the museum. See <a href="https://www.kfri.res.in/kfri_museums.asp" target="_blank">instructions</a> for visitors.
+        </p>
     </ul>
-    <h2>
+    <h2 class="heading">
         Team & Collaborators: 
     </h2>
-    <p><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'nithin'%}"> Nithin </a>, 
+    <p class="content"><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'nithin'%}"> Nithin </a>, 
         <a  style="text-decoration: none;"  href="{% url 'deepak'%}">Deepak</a>, <a  style="text-decoration: none;"  href="{% url 'sreejith'%}">Sreejith</a>,
          <a  style="text-decoration: none;"  href="{% url 'joseph'%}">Joseph </a>, <a  style="text-decoration: none;"  href="{% url 'ahirbudhnyan'%}">Ahir </a>,
          <a  style="text-decoration: none;"  href="{% url 'shireen'%}">Shireen </a>
     </p>
 
-    <h2>
+    <h2 class="heading">
         Funding:
     </h2>
-    <p>KSCSTE  </p>
+    <p class="content">KSCSTE  </p>
 
 </div>
 

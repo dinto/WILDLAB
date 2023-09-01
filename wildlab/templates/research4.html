@@ -2,42 +2,56 @@
 {% load static %}
 
 {% block content %}
+<style>
+    .heading{
+    font-size: 26px;font-family: 'Montserrat', sans-serif;font-weight: 600;
+    }
+    .subheading{
+    font-size: 24px;font-family: 'Montserrat', sans-serif;
+    }
+    .content{
+    font-size: 22px;font-family: 'Merriweather';
+    }
+</style>
 <div class="container" style="margin-top: 124px;">
-    <h2>
+    <h2 class="heading">
         Wildlife ecology, behavioural ecology and community ecology 
     </h2>
-    <p>
+    <p class="content">
         Understanding the demography, habitat use, resource use, space use, and interactions of species and populations, along with the impact of human activities within rapidly changing climatic conditions, is vital for informing effective wildlife management and conservation strategies. 
     </p>
-    <p>Behavioural ecology is central to informing natural resource and wildlife management as it provides an early warning system for environmental changes. By directly or indirectly influencing vital rates like survival and reproduction, behaviour plays a key role in population dynamics and conservation. The projects and programs under this theme primarily emphasise the well-established connections between behavioural ecology, population ecology, and community ecology for effective conservation.</p>
-    <p>Our lab uses various sampling designs and statistical modelling approaches to analyze wildlife data collected with a variety of methods, from live-trapping to non-invasive techniques (hair sampling, camera trapping),  and DNA collection  to enhance our knowledge of science-driven wildlife conservation and management. 
+    <p class="content">Behavioural ecology is central to informing natural resource and wildlife management as it provides an early warning system for environmental changes. By directly or indirectly influencing vital rates like survival and reproduction, behaviour plays a key role in population dynamics and conservation. The projects and programs under this theme primarily emphasise the well-established connections between behavioural ecology, population ecology, and community ecology for effective conservation.</p>
+    <p class="content">Our lab uses various sampling designs and statistical modelling approaches to analyze wildlife data collected with a variety of methods, from live-trapping to non-invasive techniques (hair sampling, camera trapping),  and DNA collection  to enhance our knowledge of science-driven wildlife conservation and management. 
     </p>
     
-    <h2>Ongoing & recent projects and programmes: </h2>
+    <h2 class="heading">Ongoing & recent projects and programmes: </h2>
     <ul>
-        <li>Community structure, habitat associations and conservation of bats along the land use gradients in Kerala in the context of climate change and emerging zoonotic diseases.</li>
-        <li>Patterns of tree cavity occurrence and use by vertebrates in tropical forests of the Western Ghats: a community web approach and its implications in forest management.
+        <li class="subheading">Community structure, habitat associations and conservation of bats along the land use gradients in Kerala in the context of climate change and emerging zoonotic diseases.</li>
+        <p  class="content">
+            Bats are the second most species rich order of mammals, and represent up to 40% of mammals in many tropical ecosystems. Moreover, bats are particularly abundant in the tropics and contribute greatly to patterns of species richness and diversity at the local level. Bats exhibit a high degree of ecological diversity, as evidenced in part by a wide variety of plant and animal food they are known to consume. Though there are a number of taxonomic studies or documentation of the species in several locations in India, ecological surveys were the primary research recommendation for almost all species. Little is known on how bat assemblages are affected by human modification of the landscape in the Western Ghats. A large number of bat species are rare and elusive and apart from some anecdotal reports, information on their micro-habitat use and micro-climatic conditions are largely unknown. Exploitation of wildlife and loss of natural habitats is not only a conservation issue, but also an important driver of zoonotic virus transmission. In recent years, bats have been implicated in numerous emerging infectious disease events and have been recognized as important reservoir hosts for viruses that can cross the species barrier to infect humans and other domestic and wild mammals.  More than 200 viruses of 28 families have been isolated or detected in bats. The effects of environmental changes on the prevalence of pathogens in wild populations; and the frequency of human contact and pets with wild animals potentially zoonotic reservoirs (including not only direct contact with the animals but also with their droppings, saliva or urine) are key factors related to zoonotic risk. Multi-disciplinary approximation of the data such as colony size, number of bats per species, population structure, habitat use, behaviour of each species, degree of contact between bats, social structure, remaining time of bats in the colony, colony type, foraging area, turnover rate of individuals, shelter temperature, relationship with other colonies, co-infection processes, etc are required to understand future zoonotic risk factors and formulate preventive measures and hence this study. The overall aim of this project is to understand the response of bats to land-use changes and their habitat use to understand the future zoonotic risk. The specific objectives are to: assess community and population structure of bats along land-use gradients in Kerala, document the habitat associations and threats to the bat populations along the disturbance gradient, understand knowledge and perceptions on bats among different stakeholders in Kerala, and develop conservation management strategies for bats in Kerala with the support of local communities.
+        </p>
+        <li class="subheading">Patterns of tree cavity occurrence and use by vertebrates in tropical forests of the Western Ghats: a community web approach and its implications in forest management.
         </li>
-        <li>Diversity and dynamics of a tropical forest ecosystem in southern Western Ghats in the context of changing climate. 
+        <li class="subheading">Diversity and dynamics of a tropical forest ecosystem in southern Western Ghats in the context of changing climate. 
         </li>
-        <li>Community structure and habitat use of rodents in a tropical forest of the southern Western Ghats, India.</li>
-        <li>Diversity and abundance of tree-microhabitats and its potential as indicators of vertebrate diversity in tropical rainforests of the Western Ghats.</li>
-        <li>Foraging ecology of Bonnet macaque along the anthropogenic gradient: The food traits perspective. 
+        <li class="subheading">Community structure and habitat use of rodents in a tropical forest of the southern Western Ghats, India.</li>
+        <li class="subheading">Diversity and abundance of tree-microhabitats and its potential as indicators of vertebrate diversity in tropical rainforests of the Western Ghats.</li>
+        <li class="subheading">Foraging ecology of Bonnet macaque along the anthropogenic gradient: The food traits perspective. 
         </li>
     </ul>
-    <h2>
+    <h2 class="heading">
         Team & Collaborators: 
     </h2>
-    <p><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'nithin'%}"> Nithin </a>, 
+    <p class="content"><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'nithin'%}"> Nithin </a>, 
         <a  style="text-decoration: none;"  href="{% url 'sreejith'%}">sreejith</a>, <a  style="text-decoration: none;"  href="{% url 'deepak'%}">Deepak</a>,
          <a  style="text-decoration: none;"  href="{% url 'bharati'%}">Bharathi </a>
 
 
     </p>
-    <h2>
+    <h2 class="heading">
         Funding:
     </h2>
-    <p>KSCSTE, MoEF&CC  </p>
+    <p class="content">KSCSTE, MoEF&CC  </p>
 
 </div>
 

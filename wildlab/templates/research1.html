@@ -2,31 +2,59 @@
 {% load static %}
 
 {% block content %}
+<style>
+    .heading{
+    font-size: 26px;font-family: 'Montserrat', sans-serif;font-weight: 600;
+    }
+    .subheading{
+    font-size: 24px;font-family: 'Montserrat', sans-serif;
+    }
+    .content{
+    font-size: 22px;font-family: 'Merriweather';
+    }
+</style>
+
 <div class="container" style="margin-top: 124px;">
-    <h2>
+    <h2 class="heading">
         Wildlife-human dynamics & human dimensions of wildlife 
     </h2>
-    <p>
+    <br>
+    <p class="content">
         Human-wildlife-conflicts are a serious threat to wildlife conservation and the livelihoods of people worldwide. The interaction between wildlife and people and the resultant negative impact on man or his resources, or wild animals or their habitat is and are becoming more prevalent as human population increases, development expands, and global climate changes and other environmental factors place people and wildlife in greater direct or indirect competition for dwindling resources. A complex set of factors such as human-driven habitat modification and fragmentation, behavioural ecology of wildlife, human dimensions of wildlife, variability in the climate and resources are the major causes of human-wildlife conflicts. Crop damage by wild animals, cattle-lifting, human casualties, household damage, transmission of diseases, malicious killing of wildlife due to fear and or as revenge are common forms of human-wildlife conflicts. We try to understand these drivers to develop species-specific and site-specific management strategies.
     </p>
-    <h2>Ongoing & recent projects:</h2>
+    <h2 class="heading">Ongoing & recent projects:</h2>
+    <br>
     <ul>
-        <li>Developing long-term monitoring tools and strategies for mitigating human-wildlife conflicts in Kerala</li>
-        <li>Otters outside protected areas: population assessment and conflict mitigation through stakeholder participation</li>
-        <li>Quantification of the bird hazard to aircrafts in the Naval Air Station (INS Garuda), Kochi to develop mitigation strategies</li>
-        <li>Preparation of Detailed Project Report for Wildlife-friendly Palakkad District</li>
+        <li class="subheading">Developing long-term monitoring tools and strategies for mitigating human-wildlife conflicts in Kerala</li>
+        <p class="content">Human-wildlife-conflicts are a serious threat to wildlife conservation and the livelihoods of people worldwide. In Kerala, being one of the densely populated states with highly fragmented forests, human-wildlife conflict has increased in its intensity and spread over the recent years. It has become a serious social and political issue following few human casualties and large scale crop depredation in certain parts of the state, especially in the forest fringe areas where farmers depend on marginal farming for their livelihood. The anthropocentric approach of dealing with the issue -focusing exclusively on the adverse impact of wildlife on humans- by the media and others leading to attacking the custodians of forests and wildlife, makes the situation worse than ever. Though a few studies have been conducted at local scales by KFRI and other organisations, a comprehensive multi-dimensional analysis of wildlife-human interactions in the state and protocols for site and species specific adaptation and mitigation measures are lacking. This project aims to conduct a comprehensive review of the current situation of the human-wildlife conflict in the state, build a comprehensive database of human-wildlife interactions and map the hotspots of human-wildlife conflicts in Kerala, develop site and species specific protocols for the quick response, rescue mechanisms, stakeholder awareness, and capture the attitudes of stakeholders towards the conservation of species involved in conflicts.</p>
+        <li class="subheading">Otters outside protected areas: population assessment and conflict mitigation through stakeholder participation</li>
+        <p class="content">
+            Otters are known as keystone species in the riparian and aquatic ecosystems. Of the three species of otters found in India, two species Asian small-clawed otter and the Smooth-coated otter found Kerala. Both the species are listed as Vulnerable in the IUCN red list owing to the habitat loss and other threats. There is perceived expansion of the population in many riverine systems after the floods in Kerala. Consequently, there is also an increase in the reports on human-otter interactions. The proposed study aims to document the current population status of otters outside the forest areas in Kerala and assess the human-otter conflicts to propose strategies for conservation and conflict reduction.
+        </p>
+        <p class="content">
+            The specific objectives are to: assess the current status of otters outside protected areas in Kerala, assess the characteristics and threats to the key otter habitats outside protected areas in Kerala, assess the human-otter interactions and factors influencing it in Kerala and develop management strategies for conservation and conflict reduction with active participation of stakeholders.
+        </p>
+        <li class="subheading">Quantification of the bird hazard to aircrafts in the Naval Air Station (INS Garuda), Kochi to develop mitigation strategies</li>
+        <p class="content">
+            The Naval Air Station, INS Garuda located in Kochi is one of the premier locations of defence operations in southern India. The operational area of the INS Garuda had frequent incidence of birds striking the aircraft due to increasing urbanisation around Wellington Island. The previous study conducted by the Kerala Forest Research Institute reported several bird species in the INS Garuda and from the surrounding areas with an increase in bird population during July and August. This study also reported a decrease in the bird strike incidents due to the timely implementation of suggested mitigation measures by the airport authorities. Continuous monitoring of the bird populations in and around the Naval Air Station is essential to develop scientific methods to mitigate the conflicts and to ensure the safety of the aircraft operations. In this background, the proposed project aims to document the diversity and population trends of birds involved in conflict in and around the Naval Air Station and develop mitigation measures. To achieve this information on the species involved, their number, patterns of occurrence (flocking, congregations), movements and daily and seasonal changes in diversity, seasonal migration and abundance and timings of bird strikes need to be collected. The specific objectives are to Study the status, distribution and abundance of avifauna in the INS Garuda and buffer areas, Study the habitat relationship (cover, perches, etc) and attractants (food, water, etc) of avian communities, Train the aviation support personnel to identify bird species, Support the staff in conducting awareness campaigns about wildlife hazards in the surrounding areas, and Suggest suitable control measures to mitigate bird hazard to aircrafts. 
+        </p>
+        <li  class="subheading">Preparation of Detailed Project Report for Wildlife-friendly Palakkad District</li>
+        <p class="content">
+            Palakkad district, located in the Western Ghats biodiversity hotspot supports an area of about 1600 Km2 forest area spread in five forest divisions. The large portion adjoining the forest areas are also included in the ecologically fragile land. The district is famous for Silent Valley National Park and Parambikulam Tiger Reserve. Along with these protected areas, the forest in the district supports a large number of endemic and rare plants and animals. Presence of large number of ponds and sacred groves also attract numerous species of wildlife outside the protected forests. The presence of Palakkad Gap which drives many evolutionary processes, the high rainfall areas of Silent Valley and rain shadow areas in Attappady are also unique to Palakkad. The complex nature of the landscapes, fragmentation of the habitats, unplanned land use patterns and extreme climatic variations also lead to large scale human-wildlife conflict in the district. Recognizing the importance of the preservation of the wildlife for human well-being, the District administration of Palakkad District in Kerala is in the process of devising innovative mechanisms to make the district wildlife-friendly and approached Kerala Forest Research Institute and objectives is to prepare a Detailed Project Report for the innovative project “Wildlife friendly Palakkad District''
+
+        </p>
     </ul>
-    <h2>
+    <h2 class="heading">
         Team & Collaborators: 
     </h2>
-    <p><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'bibin'%}"> Bibin </a>, 
+    <p class="content"><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'bibin'%}"> Bibin </a>, 
         <a  style="text-decoration: none;"  href="{% url 'riya'%}">Riya</a>, <a  style="text-decoration: none;"  href="{% url 'vishal'%}">Vishal</a>,
          <a  style="text-decoration: none;"  href="{% url 'ajith'%}">Ajith </a>, <a  style="text-decoration: none;"  href="#">Aldred </a>
     </p>
-    <h2>
+    <h2 class="heading">
         Funding:
     </h2>
-    <p>KSCSTE, Kerala Forest and Wildlife Department, Indian Navy, Palakkad District Panchayath  </p>
+    <p class="content">KSCSTE, Kerala Forest and Wildlife Department, Indian Navy, Palakkad District Panchayath  </p>
 
 </div>
 
