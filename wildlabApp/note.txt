@@ -1,0 +1,17 @@
+font-family: 'Caveat', cursive;
+font-family: 'Bebas Neue', sans-serif; 
+
+
+font-family 'Quicksand', sans-serif;
+"font-family 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: Merriweather;
+font-family: 'Overpass', sans-serif 
+font-family: 'Raleway', sans-serif;
+
+
+=====================
+media fonts
+=====================
+font-family: 'Playfair Display', serif;

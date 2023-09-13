@@ -33,7 +33,8 @@
    .bothmargin{
     margin-left: 10%;
     margin-right:10%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    
     font-size: 24px;
     text-align: center;
    }
@@ -104,28 +105,36 @@
   left: 16px;
 }
 .Wildlife{
-    margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif; font-weight: 300; letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+    margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+    opacity: 0.9;
 }
 .kfri{
-    margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif; font-weight: 300;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+    margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+    opacity: 0.9;
 }
 .wildlabtext{
-    color: aliceblue;   font-family: 'Bebas Neue', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
     margin-top: -60px;
 }
 .the{
-    color: aliceblue;     font-family: 'Bebas Neue', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
 }
 .divimgtext{
     margin-left: 8%; margin-top: 6%; position: absolute;
 }
 .blockquotetext{
     
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Caveat', cursive;
     font-size: 22px;
     margin-top: -15%;
     color: aliceblue;
     margin-left: 5%;
+
+}
+.subheading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
 
 }
 
@@ -136,31 +145,10 @@
     <head>
         <meta charset="UTF-8">
     <title>WILD LAB</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     </head>
     <body>
-        <!--
-        <div class="custom-padding">
-            <div  style="margin-left: 8%; margin-top: 6%;">
-                <p style="color: aliceblue;     font-family: 'Overpass', sans-serif; font-weight: 300;  font-size: 64px;margin : 0; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;">The</p>
-                <p style="color: aliceblue;     font-family: 'Overpass', sans-serif; font-weight: 700; font-size: 100px; margin-top: -3%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;">WildLab</p>
-            </div>
-
-
-            <div style="margin-left: 9%; color: aliceblue;  font-family: 'Roboto', sans-serif; font-weight: 300; letter-spacing: 1px; margin-top: -40px; font-size: 20px; text-shadow: 2px 2px 4px #000000;">
-                
-                <p >Wildlife Ecology & Conservation Biology Lab</p>
-                
-            </div>
-            <div style="margin-left: 9%;color: aliceblue; font-family: 'Roboto', sans-serif; font-weight: 300;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;">
-                <p>KSCSTE-Kerala Forest Research Institute</p>
-                <p></p>
-                <p></p>
-            </div>
-        </div>
-        -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -259,6 +247,7 @@
                     <p class="bothmargin">
                         We welcome and seek collaborations with research groups that share similar or complementary research interests. Master’s students and volunteers are encouraged to contact us to explore potential opportunities. We strongly advocate democratising science by public participation through our outreach and citizen science programmes. 
                     </p>  
+                    <br>
 
             <!--      </div>
                 <div class="col-4">
@@ -304,8 +293,7 @@
         <br/>
         <br/>
         <div style="text-align: center;    margin-top: 5%;">
-            <span style="font-family: 'Montserrat', sans-serif;
-            font-size: 24px;font-weight: 600;">
+            <span class="subheading">
             Lab News | Recent Publications 
 
             </span>
@@ -314,7 +302,7 @@
         <br/>
         <br/>
         <div class=" bothmargin">
-            <span class=" bothmargin">Funders | Collaborators | Partners</span>
+            <span class=" subheading">Funders | Collaborators | Partners</span>
             <hr style="width: 100%;">
            <!--
             <img src="{% static '/images/partners.png' %}"  class="partner_img">--> 
