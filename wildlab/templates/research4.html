@@ -4,20 +4,35 @@
 {% block content %}
 <style>
     .heading{
-    font-size: 26px;font-family: 'Montserrat', sans-serif;font-weight: 600;
+    font-size: 32px;font-family: 'Montserrat', sans-serif;font-weight: 900;
+    }
+    .ongoing{
+        font-size: 24px;font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
     }
     .subheading{
     font-size: 24px;font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     }
     .content{
-    font-size: 22px;font-family: 'Merriweather';
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
     }
+    .hrline{
+        background-color: rgb(80,183,119);
+        width: 159px;
+        height: 3px;
+        margin: 0px;
+    }
+
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
 <div class="container" style="margin-top: 124px;">
     <h2 class="heading">
         Wildlife ecology, behavioural ecology and community ecology 
     </h2>
+    <br>
     <p class="content">
         Understanding the demography, habitat use, resource use, space use, and interactions of species and populations, along with the impact of human activities within rapidly changing climatic conditions, is vital for informing effective wildlife management and conservation strategies. 
     </p>
@@ -25,7 +40,10 @@
     <p class="content">Our lab uses various sampling designs and statistical modelling approaches to analyze wildlife data collected with a variety of methods, from live-trapping to non-invasive techniques (hair sampling, camera trapping),  and DNA collection  to enhance our knowledge of science-driven wildlife conservation and management. 
     </p>
     
-    <h2 class="heading">Ongoing & recent projects and programmes: </h2>
+    <h2 class="ongoing">Ongoing & recent projects and programmes: </h2>
+    <hr class="hrline">
+    <br>
+    <br>
     <ul>
         <li class="subheading">Community structure, habitat associations and conservation of bats along the land use gradients in Kerala in the context of climate change and emerging zoonotic diseases.</li>
         <p  class="content">
@@ -45,7 +63,7 @@ This study aims to understand the dietary selection, food patch preferences, and
 
         </p>
     </ul>
-    <h2 class="heading">
+    <h2 class="ongoing">
         Team & Collaborators: 
     </h2>
     <p class="content"><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'nithin'%}"> Nithin </a>, 
@@ -54,7 +72,7 @@ This study aims to understand the dietary selection, food patch preferences, and
 
 
     </p>
-    <h2 class="heading">
+    <h2 class="ongoing">
         Funding:
     </h2>
     <p class="content">KSCSTE, MoEF&CC  </p>

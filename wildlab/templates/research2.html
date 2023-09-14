@@ -4,24 +4,42 @@
 {% block content %}
 <style>
     .heading{
-    font-size: 26px;font-family: 'Montserrat', sans-serif;font-weight: 600;
+    font-size: 32px;font-family: 'Montserrat', sans-serif;font-weight: 900;
+    }
+    .ongoing{
+        font-size: 24px;font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
     }
     .subheading{
     font-size: 24px;font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     }
     .content{
-    font-size: 22px;font-family: 'Merriweather';
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
     }
+    .hrline{
+        background-color: rgb(80,183,119);
+        width: 159px;
+        height: 3px;
+        margin: 0px;
+    }
+
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
 <div class="container" style="margin-top: 124px;">
     <h2 class="heading">
         Biology & conservation of threatened species 
     </h2>
+    <br>
     <p class="content">
         The Western Ghats of India, a treasure trove of biodiversity, harbours a remarkable array of threatened wildlife including megaherbivores to tiny amphibians. However, there is limited knowledge regarding their current status, distribution, biology, and the threats they face, which push them closer to extinction. By synergizing scientific rigour with active community engagement, our ultimate goal is to secure the long-term survival of these vulnerable and endangered species. At present, we are focussing on a wide array of threatened species including the lion-tailed macaque (<i>Macaca silenus</i>), bonnet macaque (<i>Macaca radiata</i>) and Salim Ali’s Fruit Bat (<i>Latidens salimalii</i>) Smooth-coated Otter (<i>Lutrogale perspicillata</i>), Small-clawed Otter (<i>Aonyx cinereus</i>), <i>Cycas annaikalensis</i>, and Malabar torrent toad (<i>Blaira ornata</i>).  
     </p>
-    <h2 class="heading">Ongoing & recent projects and programmes: </h2>
+    <h2 class="ongoing">Ongoing & recent projects and programmes: </h2>
+    <hr class="hrline">
+    <br>
+    <br>
     <ul>
         <li class="subheading">Conservation of Critically Endangered cycad, <i>Cycas annaikalensis</i> in India.</li>
         <p class="content">
@@ -47,13 +65,13 @@ This study aims to understand the dietary selection, food patch preferences, and
             This comprehensive conservation project dedicated to safeguarding the endangered <i>Ghatophryne ornata</i>, a lesser-known toad species inhabiting the Kerala region of the Western Ghats. Our holistic approach combines extensive research with on-ground conservation efforts, all driven by active community engagement. Our objectives encompass: 1) Investigating the status, distribution, and habitat preferences of <i> G. ornata </i>, utilizing advanced niche modeling techniques; 2) Exploring the behavior and ecology of <i>G. ornata</i>, including reproductive biology, activity patterns, call descriptions, and tadpole characteristics; 3) Assessing and quantifying anthropogenic pressures and other threats through community surveys and direct observations, leading to the development of effective conservation action plans involving various stakeholders; 4) Examining the stability and individual specificity of ventral patterns for future population monitoring; and 5) Preparing an IUCN Red List assessment for <i>G. ornata</i>, in accordance with IUCN guidelines, to evaluate the species' risk factors. Join us in our mission to protect this unique toad species and its habitat in the Western Ghats
         </p>
     </ul>
-    <h2 class="heading">
+    <h2 class="ongoing">
         Team & Collaborators: 
     </h2>
     <p class="content"><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'nithin'%}"> Nithin </a>, 
         <a  style="text-decoration: none;"  href="{% url 'riya'%}">Riya</a>, <a  style="text-decoration: none;"  href="{% url 'ajith'%}">Ajith </a>
     </p>
-    <h2 class="heading">
+    <h2 class="ongoing">
         Funding:
     </h2>
     <p class="content">KSCSTE, Kerala Forest and Wildlife Department,  Mohammed Bin Species Conservation Fund, Conservation Leadership Programme.   </p>

@@ -4,27 +4,45 @@
 {% block content %}
 <style>
     .heading{
-    font-size: 26px;font-family: 'Montserrat', sans-serif;font-weight: 600;
+    font-size: 32px;font-family: 'Montserrat', sans-serif;font-weight: 900;
+    }
+    .ongoing{
+        font-size: 24px;font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
     }
     .subheading{
     font-size: 24px;font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     }
     .content{
-    font-size: 22px;font-family: 'Merriweather';
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
     }
+    .hrline{
+        background-color: rgb(80,183,119);
+        width: 159px;
+        height: 3px;
+        margin: 0px;
+    }
+
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
 <div class="container" style="margin-top: 124px;">
     <h2  class="heading">
         Surveys and population assessment
     </h2>
+    <br>
     <p class="content">
         Status surveys and population assessments play a crucial role in wildlife conservation efforts. They provide essential information on the abundance, distribution, and trends of different species, helping conservationists understand the health of populations and identify potential threats. These surveys enable informed decision-making, allowing for the implementation of targeted conservation strategies, such as habitat protection, species-specific management plans, and measures to mitigate human-wildlife conflicts. By regularly conducting status surveys and population assessments, conservationists can monitor the effectiveness of their interventions and make adjustments as needed to ensure the long-term survival of wildlife species.
 
     </p>
     <p class="content">Our team routinely conducts or coordinates surveys and population estimation of various taxa including birds, mammals and herpetofauna across Kerala. Look out for notifications or contact us if you are interested in volunteering the surveys. 
     </p>
-    <h2  class="heading">Ongoing & recent projects and programmes: </h2>
+    <h2  class="ongoing">Ongoing & recent projects and programmes: </h2>
+    <hr class="hrline">
+    <br>
+    <br>
     <ul>
         <li class="subheading">Wildlife-friendly and organic certification for cash crop plantations of KFDC</li>
         <p class="content">
@@ -33,14 +51,14 @@
         </p>
         <li class="subheading">Monsoon croaks- bioblitz  </li>
     </ul>
-    <h2  class="heading">
+    <h2  class="ongoing">
         Team & Collaborators: 
     </h2>
     <p class="content"><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'bibin'%}"> Bibin </a>, 
         <a  style="text-decoration: none;"  href="{% url 'riya'%}">Riya</a>, <a  style="text-decoration: none;"  href="{% url 'vishal'%}">Vishal</a>,
          <a  style="text-decoration: none;"  href="{% url 'ajith'%}">Ajith </a>, <a  style="text-decoration: none;"  href="#">Aldred </a>
     </p>
-    <h2  class="heading">
+    <h2  class="ongoing">
         Funding:
     </h2>
     <p class="content">KSCSTE  </p>

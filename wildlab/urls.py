@@ -25,11 +25,11 @@ urlpatterns = [
     path('ajith/', views.ajith, name='ajith'),
     path('shireen/', views.shireen, name='shireen'),
     path('dinto/', views.dinto, name='dinto'),
-    path('research1/', views.research1, name='research1'),
-    path('research2/', views.research2, name='research2'),
-    path('research3/', views.research3, name='research3'),
-    path('research4/', views.research4, name='research4'),
-    path('research5/', views.research5, name='research5'),
-    path('research6/', views.research6, name='research6'),
+    path('Wildlife_human_dynamics/', views.research1, name='research1'),
+    path('Biology_conservation_threatened_species/', views.research2, name='research2'),
+    path('Surveys_and_population_assessment/', views.research3, name='research3'),
+    path('Wildlife_ecology_behavioural_ecology_and_community_ecology/', views.research4, name='research4'),
+    path('Life_history_evolution_and_natural_history/', views.research5, name='research5'),
+    path('Citizen_Science_Outreach_Stakeholder_Engagement/', views.research6, name='research6'),
 
 ]

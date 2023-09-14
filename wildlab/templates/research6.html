@@ -4,20 +4,35 @@
 {% block content %}
 <style>
     .heading{
-    font-size: 26px;font-family: 'Montserrat', sans-serif;font-weight: 600;
+    font-size: 32px;font-family: 'Montserrat', sans-serif;font-weight: 900;
+    }
+    .ongoing{
+        font-size: 24px;font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
     }
     .subheading{
     font-size: 24px;font-family: 'Montserrat', sans-serif;
-
+    font-weight: 600;
     }
     .content{
-    font-size: 22px;font-family: 'Merriweather';
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
     }
+    .hrline{
+        background-color: rgb(80,183,119);
+        width: 159px;
+        height: 3px;
+        margin: 0px;
+    }
+
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
 <div class="container" style="margin-top: 124px;">
     <h2 class="heading">
         Citizen Science, Outreach & Stakeholder Engagement  
     </h2>
+    <br>
     <p class="content">
         There is a growing demand for scientific literacy and desire to democratise science in order to create a knowledge society, which is expected to fundamentally alter the policy-making process. With numerous global issues affecting humanity such as climate change, loss of biodiversity, overpopulation, and emerging diseases, it is crucial to use scientific evidence to develop government policies. Citizen Science, also referred to as participatory science, is a developing approach to enhance scientific endeavours, promote scientific literacy, aid education, and effectively address societal needs by utilising scientific evidence to tackle these challenges.  
 
@@ -29,7 +44,10 @@
     <h2 class="heading">Citizen Science</h2>
     <p class="content">At KFRI, we coordinate the Centre for Citizen Science and Biodiversity Informatics, which aims democratisation of science through public participation, networking and capacity building programmes for various stakeholders. 
     </p>
-    <h2 class="heading">Ongoing & recent projects and programmes: </h2>
+    <h2 class="ongoing">Ongoing & recent projects and programmes: </h2>
+    <hr class="hrline">
+    <br>
+    <br>
     <ul>
         <li class="subheading">Establishment of the Centre for Citizen Science and Biodiversity Informatics <a href="https://ccsbi.kfri.res.in/" target="_blank">(CCSBI).</a> </li>
         <li class="subheading">The Fruit Bat Project:  identifying and mapping the roosting sites of the Indian Flying Fox (<i>Pteropus medius</i>). For details and joining the project visit:
@@ -53,7 +71,10 @@
     <h2 class="heading">
         Outreach & Stakeholder Engagement
     </h2>
-    <h6 class="heading">Ongoing & recent projects and programmes</h6>
+    <br>
+    <h2 class="ongoing">Ongoing & recent projects and programmes</h2>
+    <hr class="hrline">
+    <br>
     <ui>
         <li class="subheading">
             <b>Wildlife Museum</b> 
@@ -82,7 +103,7 @@
         <li class="subheading"><b>Nature Connect</b> is a future programme to explore the potential of disruptive digital technologies including Artificial Intelligence for wildlife and nature conservation. Such tools are key to connect and engage the largely disconnected urban dwellers,  children, veterans, physically and mentally challenged people with nature to create environmental awareness and health benefits; and  to understand health and recreational benefits of nature and wildlife. </li>
         <p class="content">Write to us if you are technologist or educator interested in developing projects / tools using digital technologies for stakeholder engagement and nature conservation. </p>
     </ui>
-    <h2 class="heading">
+    <h2 class="ongoing">
         Team & Collaborators: 
     </h2>
     <p class="content"><a  style="text-decoration: none;"  href="{% url 'sheheer'%}">  Sheheer</a>,<a  style="text-decoration: none;"  href="{% url 'bibin'%}"> Bibin </a>, 
@@ -94,7 +115,7 @@
          <a  style="text-decoration: none;"  href="{% url 'shireen'%}">Shireen </a>,         
          <a  style="text-decoration: none;"  href="{% url 'sreejith'%}">Sreejith </a>,
     </p>  
-    <h2 class="heading">
+    <h2 class="ongoing">
         Funding:
     </h2>
     <p class="content">KSCSTE  </p>
