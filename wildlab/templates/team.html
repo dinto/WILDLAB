@@ -15,13 +15,14 @@
         font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
     }
     .designation{
-        margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;
+        margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
     }
     .project{
-        font-size: 18px;font-family: Merriweather;margin-top: -12px;font-style: italic;
+        font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
     }
     .alumni p{
-        margin-left: 41%; font-family: 'bebas neue', sans-serif; font-size: 30px;font-weight: 700;
+        margin-left: 41%;  font-size: 24px;font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     }
     .projectstaff{
         font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
@@ -32,6 +33,8 @@
     }
     #thesis{
         font-style: italic;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 14px;
     }
     .teamcover{
         margin-top: 59px;
@@ -39,6 +42,11 @@
     .teamcontent{
         margin-top: 120px;
     }
+    .university{
+        font-size: 18px;font-family: 'Raleway', sans-serif; 
+        font-weight: bold;
+    }
+
 </style>
 <div class="teamcover">
     <img src="{% static '/images/team.webp' %}"  style="height: 80%; width:102%; margin-left: -1px;" alt="Team">
@@ -47,7 +55,7 @@
     </div>
 </div>
 <div class="teamcontent">
-    <p style="margin-top: -76px; margin-left: 41%; font-family: 'bebas neue', sans-serif; font-size: 30px;font-weight: 700;">CURRENT MEMBERS</p>
+    <p class="heading">CURRENT MEMBERS</p>
     
 </div>
 <br>
@@ -58,9 +66,9 @@
     <div class="col-3">
         <a href="{% url 'balakrishnan'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/team_balu.webp' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Dr.Peroth Balakrishnan">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">
+            <h5 class="namehead">
                 Dr.Peroth Balakrishnan</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Principal Investigator & Scientist</p>
+            <p class="designation">Principal Investigator & Scientist</p>
         </a>
 
         
@@ -68,22 +76,22 @@
     <div class="col-3">
         <a href="{% url 'sheheer'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/shaheer.png' %}" style="border-radius: 3%;" width="240px" height="240px" alt="Sheheer">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Sheheer T A</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">PhD Scholar</p>
+            <h5 class="namehead">Sheheer T A</h5>
+            <p class="designation">PhD Scholar</p>
         </a>
     </div>
     <div class="col-3">
         <a href="{% url 'sreejith'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/sreejith.jpg' %}" style="border-radius: 3%;" width="240px" height="240px" alt="Sreejith Sivaraman">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Sreejith Sivaraman</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">PhD Scholar</p>
+            <h5 class="namehead">Sreejith Sivaraman</h5>
+            <p class="designation">PhD Scholar</p>
         </a>
     </div>
     <div class="col-3">
         <a href="{% url 'nithin'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/nithin.png' %}" style="border-radius: 3%;" width="240px" height="240px" alt="nithin">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Nithin Divakar</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px; font-family: Merriweather;">PhD Scholar</p>
+            <h5 class="namehead">Nithin Divakar</h5>
+            <p class="designation">PhD Scholar</p>
         </a>
     </div>
 
@@ -93,9 +101,9 @@
     <div class="col-3">
         <a href="{% url 'bharati'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/bharathi-profile.png' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Bharati Patel">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">
+            <h5 class="namehead">
                 Bharati Patel</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">PhD Scholar</p>
+            <p class="designation">PhD Scholar</p>
         </a>
 
         
@@ -103,22 +111,22 @@
     <div class="col-3">
         <a href="{% url 'riya'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/team_riya.webp' %}" style="border-radius: 3%;" width="240px" height="240px" alt="riya">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Riya Bobby Peter</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Fellow</p>
+            <h5 class="namehead">Riya Bobby Peter</h5>
+            <p class="designation">Project Fellow</p>
         </a>
     </div>
     <div class="col-3">
         <a href="{% url 'deepak'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/deepak.png' %}" style="border-radius: 3%;" width="240px" height="240px" alt="deepak">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Deepak</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Assistant</p>
+            <h5 class="namehead">Deepak K</h5>
+            <p class="designation">Project Assistant</p>
         </a>
     </div>
     <div class="col-3">
         <a href="{% url 'bibin'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/bibin.png' %}" style="border-radius: 3%;" width="240px" height="240px" alt="Bibin Paul">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Bibin Paul</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Fellow</p>
+            <h5 class="namehead">Bibin M Paul</h5>
+            <p class="designation">Project Fellow</p>
         </a>
     </div>
 
@@ -128,9 +136,9 @@
     <div class="col-3">
         <a href="{% url 'joseph'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/joseph1.png' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="joseph">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">
+            <h5 class="namehead">
                 Joseph Justine</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Fellow</p>
+            <p class="designation">Project Fellow</p>
         </a>
 
         
@@ -138,22 +146,22 @@
     <div class="col-3">
         <a href="{% url 'ahirbudhnyan'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/ahir.png' %}" style="border-radius: 3%;" width="240px" height="240px" alt="Ahirbudhnyan M">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Ahirbudhnyan M</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Fellow</p>
+            <h5 class="namehead">Ahirbudhnyan M</h5>
+            <p class="designation">Project Fellow</p>
         </a>
     </div>
     <div class="col-3">
         <a href="{% url 'dinto'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/dinto.png' %}" style="border-radius: 3%;" width="240px" height="240px" alt="DINTO DAVI T">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Dinto Davi T</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Computer Programmer</p>
+            <h5 class="namehead">Dinto Davi T</h5>
+            <p class="designation">Computer Programmer</p>
         </a>
     </div>
     <div class="col-3">
         <a href="{% url 'ashik'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/Ashik-web.png' %}" style="border-radius: 3%;" width="240px" height="240px" alt="ashik">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Ashik M.E</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Fellow</p>
+            <h5 class="namehead">Ashik M E</h5>
+            <p class="designation">Project Fellow</p>
         </a>
     </div>
 
@@ -163,9 +171,9 @@
     <div class="col-3">
         <a href="{% url 'shireen'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/shireen1.png' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Shireen sithara">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">
-                Shireen sithara</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Assistant</p>
+            <h5 class="namehead">
+                Shireen Sithara</h5>
+            <p class="designation">Project Assistant</p>
         </a>
 
         
@@ -173,15 +181,15 @@
     <div class="col-3">
         <a href="{% url 'vishal'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/vishal.png' %}" style="border-radius: 3%;" width="240px" height="240px" alt="Vishal  Gautham M S">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Vishal  Gautham M S</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Fellow</p>
+            <h5 class="namehead">Vishal  Gautham M S</h5>
+            <p class="designation">Project Fellow</p>
         </a>
     </div>
     <div class="col-3">
         <a href="{% url 'ajith'%}" style="text-decoration: none; color: rgb(0, 0, 0);">
             <img  src="{% static '/images/team_ajith.webp' %}" style="border-radius: 3%;" width="240px" height="240px" alt="Ajith Jose Paul">
-            <h5 style="font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;">Ajith Jose Paul</h5>
-            <p style="margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: Merriweather;">Project Assistant</p>
+            <h5 class="namehead">Ajith Jose Paul</h5>
+            <p class="designation">Project Assistant</p>
         </a>
     </div>
 
@@ -201,11 +209,11 @@
 <br>
 <br>
 <div class="alumni">
-    <p>ALUMNI  </p>
+    <p >ALUMNI  </p>
     <hr>
 </div>
 <br>
-<p class="projectstaff">PROJECT STAFFS</p>
+<p class="projectstaff">PROJECT STAFF</p>
 <div class="row" style="text-align: center;">
     <div class="col-3">
         <img  src="{% static '/images/Alumini/akhil.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Akhil V">
@@ -280,28 +288,28 @@
     <div class="col-3">
         <img  src="{% static '/images/Interns/anjana.png' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Anjana">
         <h5 class="namehead"> Anjana Madhav </h5>
-        <h6>Central University, Rajasthan</h6>
+        <h6 class="university">Central University, Rajasthan</h6>
         <p class="designation">Biodiversity mapping tools</p>
         <p class="project">Year:  2023</p>
     </div>
     <div class="col-3">
         <img  src="{% static '/images/Interns/Nimitha-C-N.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Nimitha">
         <h5 class="namehead"> Nimitha C N </h5>
-        <h6>Pondicherry University</h6>
+        <h6 class="university">Pondicherry University</h6>
         <p class="designation">Biodiversity Mapping</p>
         <p class="project">Year:  2022</p>
     </div>
     <div class="col-3">
         <img  src="{% static '/images/Interns/Annoose-Basil-P.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Annoose">
         <h5 class="namehead"> Annoose Basil P </h5>
-        <h6>Pondicherry University</h6>
+        <h6 class="university">Pondicherry University</h6>
         <p class="designation">Biodiversity Mapping</p>
         <p class="project">Year:  2022</p>
     </div>
     <div class="col-3">
         <img  src="{% static '/images/Interns/harinarayanan-pc.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Harinarayan">
         <h5 class="namehead"> Harinarayan P C</h5>
-        <h6>Pondicherry University</h6>
+        <h6 class="university">Pondicherry University</h6>
         <p class="designation">Biodiversity Mapping</p>
         <p class="project">Year:  2022</p>
     </div>
@@ -319,7 +327,7 @@
     <div class="col-3">
         <img  src="{% static '/images/msc students/Ashmi.png' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Nimitha">
         <h5 class="namehead">Ashmi J. S</h5>
-        <h6>Kerala Police Academy, Thrissur</h6>
+        <h6 class="university">Kerala Police Academy, Thrissur</h6>
         <p id="thesis">
             Thesis:Studying the hair characteristics of non-volant small mammals involved in wildlife trading and poaching. 
         </p>
@@ -328,21 +336,21 @@
     <div class="col-3">
         <img  src="{% static '/images/Interns/GifnaJohn.jpeg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Nimitha">
         <h5 class="namehead"> Gifna John</h5>
-        <h6>Sacred Heart College (Autonomous), Kochi</h6>
+        <h6 class="university">Sacred Heart College (Autonomous), Kochi</h6>
         <p id="thesis">Thesis: Biodiversity mapping in Kumbalam Grama Panchayath, Ernakulam using digital tools</p>
         <p class="project">Year:  2022-23</p>
     </div>
     <div class="col-3">
         <img  src="{% static '/images/Interns/GEORGE.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Annoose">
         <h5 class="namehead">George Joy</h5>
-        <h6>Bharathiar University</h6>
+        <h6 class="university">Bharathiar University</h6>
         <p id="thesis">Thesis: An analysis of the snake bites in Kannur district, Kerala to develop mitigation strategies </p>
         <p class="project">Year:  2022-23</p>
     </div>
     <div class="col-3">
         <img  src="{% static '/images/Interns/yadhukrishna.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Harinarayan">
         <h5 class="namehead"> Yadhu Krishna</h5>
-        <h6>Bharathiar University</h6>
+        <h6 class="university">Bharathiar University</h6>
         <p id="thesis">Thesis: Assessing the diversity and activity patterns of large mammals in plantations adjacent to the Wayanad Wildlife Sanctuary. </p>
         <p class="project">Year:  2022-23</p>
     </div>
@@ -353,14 +361,14 @@
     <div class="col-3">
         <img  src="{% static '/images/msc students/AMRT.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Akhil V">
         <h5 class="namehead"> Amrit Krishna S </h5>
-        <h6>Pondicherry University</h6>
+        <h6 class="university">Pondicherry University</h6>
         <p id="thesis">Thesis: Wetland bird roosts in southern part of  Vembanad Kole-Ramsar site: mapping, characterization and human perceptions.</p>
         <p class="project">Year:  2021-22</p>
     </div>
     <div class="col-3">
         <img  src="{% static '/images/msc students/DEVIKA.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Akhil V">
         <h5 class="namehead"> Devika S Nair</h5>
-        <h6>Pondicherry University</h6>
+        <h6 class="university">Pondicherry University</h6>
         <p id="thesis">Thesis: Dogs vs wildlife: impacts and public perceptions from Kerala.</p>
         <p class="project">Year:  2021-22</p>
     </div>
@@ -368,14 +376,14 @@
     <div class="col-3">
         <img  src="{% static '/images/msc students/VISHAL.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Akhil V">
         <h5 class="namehead"> Vishal Goutham M S </h5>
-        <h6>Pondicherry University</h6>
+        <h6 class="university">Pondicherry University</h6>
         <p id="thesis">Thesis: Diurnal activity patterns and feeding ecology of the Indian Giant Squirrel <i>Ratufa indica</i> in a remnant forest habitat in Thrissur, Kerala.</p>
         <p class="project">Year:  2021-22</p>
     </div>
     <div class="col-3">
         <img  src="{% static '/images/msc students/adithya.jpg' %}"  style="border-radius: 3%;" width="240px" height="240px" alt="Akhil V">
         <h5 class="namehead"> Adithya Muraleedharan</h5>
-        <h6>Sree Sankara College, Kaladi</h6>
+        <h6 class="university">Sree Sankara College, Kaladi</h6>
         <p id="thesis">Thesis: Assessment of the efficacy of human wildlife conflict mitigation measures in Palakkad district, Kerala.</p>
         <p class="project">Year:  2019-20</p>
     </div>
