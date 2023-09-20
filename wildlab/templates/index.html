@@ -137,7 +137,44 @@
     font-weight: 600;
 
 }
+.atagbutton {
+    display: block;
+    width: 54px;
+    height: 30px;
+    background: rgba(0,183,119);
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    margin-left: 75%;
+}
+.card{
+    height: 515px;
+    background-color: rgb(71,71,71);
+    
+}
+.cardtext{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
 
+.hrline{
+        background-color: rgb(80,183,119);
+        width: 190px;
+        height: 3px;
+        margin-left: 62px;
+    }
+    .cardhead{
+        font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    }
 </style>
 
 <!doctype html>
@@ -292,17 +329,156 @@
         -->
         <br/>
         <br/>
+        <br/>
         <div style="text-align: center;    margin-top: 5%;">
-            <span class="subheading">
-            Lab News | Recent Publications 
+            <span class="heading">
+            Lab News 
 
             </span>
+            <section class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                        </div>
+                        <div class="col-6 text-right">
+
+                            <a class="atagbutton" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <a class="atagbutton" href="#carouselExampleIndicators2" style="margin-left: 5px;" role="button" data-slide="next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="col-12" style="margin-top: 10px;">
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews1.webp' %}">
+                                                    <div class="card-body">                                                        
+                                                        <h4 class="cardhead">Prof. Jo  Setchell at Wildlife Museum</h4>
+                                                        <hr class="hrline">
+                                                        <br>
+                                                        <p class="cardtext">Prof. Jo Setchell, Dept of  Anthropology, Durham University. UK visited KFRI and shared her experience as a primatologist.</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews2.jpg' %}">
+                                                    <div class="card-body">
+                                                        <h4 class="cardhead">Speed Talk at ICCB 2023 by Nithin</h4>
+                                                        <hr class="hrline">
+                                                        <br>
+                                                        <p class="cardtext">Exploring Stakeholder Knowledge, Attitude, and Practices Associated with One of the Oldest Bat Roosts in Kerala, Part of Western Ghats.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews3.webp' %}">
+                                                    <div class="card-body">
+                                                        <h4 class="cardhead">Poster Presentation at ATBC 2023 by Vishal Gautham</h4>
+                                                        <hr class="hrline">
+                                                        <br>
+                                                        <p class="cardtext">Stakeholder Views on Conservation in the Context of Small Mammal Crop Raiding around a Protected Area in the Western Ghats.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews4.webp' %}">
+                                                    <div class="card-body">
+                                                        <h4 class="cardhead">Speed Talk at ATBC 2023 by Ahirbudhnyan</h4>
+                                                        <hr class="hrline">
+                                                        <br>
+                                                        <p class="cardtext">Hornbills That Breed in Plantations: A Focal Species for Community Engagement.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews5.webp' %}">
+                                                    <div class="card-body">
+                                                        <h4 class="cardhead">Poster Presentation at ATBC 2023 by Nithin Divakar</h4>
+                                                        <hr class="hrline">
+                                                        <br>
+                                                        <p class="cardtext">Mapping and Stakeholder Engagement for the Conservation of Habitat Trees and Fruit Bats in Kerala, India.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews6.webp' %}">
+                                                    <div class="card-body">
+                                                        <h4 class="cardhead">Participants engaged in Maxent modeling</h4>
+                                                        <hr class="hrline">
+                                                        <br>
+                                                        <p class="cardtext">A two-day workshop in species distribution modeling with Maxent was conducted for students and researchers.</p>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews7.webp' %}">
+                                                    <div class="card-body">
+                                                        <h4 class="cardhead">Students learning to assemble harp nets for bat-trapping</h4>
+                                                        <hr class="hrline">
+                                                        <br>
+                                                        <p class="cardtext">A two-day training workshop was executed on the taxonomy and acoustics of bats of Peninsular India.</p>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews5.webp' %}">
+                                                    <div class="card-body">
+                                                        <h4 class="subheading">Special title treatment</h4>
+                                                        <hr>
+                                                        <br>
+                                                        <p class="content">With supporting text below as a natural lead-in to additional content.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            -->
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="{% static '/images/Labnews/labnews8.webp' %}">
+                                                    <div class="card-body">
+                                                        <h4 class="cardhead">Students engaged in species identification of frogs</h4>
+                                                        <hr class="hrline">
+                                                        <br>
+                                                        <p class="cardtext">Citizen Science workshop conducted at Kerala Veterinary and Animal Sciences University, Pookode</p>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <br/>
         <br/>
         <div class=" bothmargin">
-            <span class=" subheading">Funders | Collaborators | Partners</span>
+            <span class="heading">Funders | Collaborators | Partners</span>
             <hr style="width: 100%;">
            <!--
             <img src="{% static '/images/partners.png' %}"  class="partner_img">--> 
