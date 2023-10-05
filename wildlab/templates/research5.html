@@ -25,6 +25,47 @@
         height: 3px;
         margin: 0px;
     }
+        
+    .row {
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    .row img {
+        max-width: 100%;
+        transition: all 2.7s;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+
+    .row:hover img {
+        transform: scale(1.07);
+    }
+    .imageclass{
+        overflow: hidden;
+    }
+    #scrolltext{
+    overflow: scroll;
+    width: 95%;
+    height: 70%;
+    scrollbar-width: thin;
+
+
+    }
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid rgba(112, 144, 125, 0.856);
+    }
 
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
@@ -43,61 +84,101 @@
     <br>
     <br>
     
-    <ul>
-        <li class="subheading">Database on the life history and functional traits of south-asian bats</li>
-        <!--<br>
-        <div>
-            <img src="{% static '/images/lifehistory/life1.JPG' %}" class="researchimg"
-                style="height: 32%;width: 37%;"     
-                alt="Database on the life history">
-                
-        </div>-->
-        <li class="subheading">Camera trapping wildlife in forest and plantation landscapes</li>
-        <!--<br>
-        <div>
-            <img src="{% static '/images/lifehistory/life1.JPG' %}" class="researchimg"
-                style="height: 32%;width: 37%;"     
-                alt="Database on the life history">
-                
-        </div>-->
-        <li class="subheading">Database on rodents of India</li>
-        <!--<br>
-        <div>
-            <img src="{% static '/images/lifehistory/life1.JPG' %}" class="researchimg"
-                style="height: 32%;width: 37%;"     
-                alt="Database on the life history">
-                
-        </div>-->
-        <li class="subheading">Passive acoustic monitoring of wildlife</li>
-        <!--<br>
-        <div>
-            <img src="{% static '/images/lifehistory/life4.jpg' %}" class="researchimg"
-                style="height: 32%;width: 37%;"     
-                alt="Database on the life history">
-                
-        </div>-->
-        <li class="subheading">Wildlife Museum </li>
-        <br>
-        <div>
-            <img src="{% static '/images/lifehistory/life5.JPG' %}" class="researchimg"
-                style="width: 37%;height: 40%;"     
-                alt="Wildlife Museum">
-                
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Database on the life history and functional traits of south-asian bats
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+           
+           </p>
+          <br>
         </div>
-        <p class="researchcontent">
-            
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+        </div>
+
+    </div>
+
+    <br>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+        </div>
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Camera trapping wildlife in forest and plantation landscapes
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+           
+           </p>
+          <br>
+        </div>
+        
+
+    </div>
+
+    <br>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Database on rodents of India
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+           
+           </p>
+          <br>
+        </div>
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+        </div>
+
+    </div>
+
+    <br>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+        </div>
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Passive acoustic monitoring of wildlife
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+           
+           </p>
+          <br>
+        </div>
+        
+
+    </div>
+
+    <br>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Wildlife Museum
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
             Our lab is coordinating the activities of the KFRI-Wildlife Museum, which is a major attraction at KFRI. The specimens and other collections at the museum is used for
 graduate and undergraduate training, species identification workshops and
 educational programs by state and local agencies. Conservation education and training to students and the inservice training to the officials of forests departments across the country are major activities of the museum. See <a href="https://www.kfri.res.in/kfri_museums.asp" target="_blank">instructions</a> for visitors.
-        </p>
-    </ul>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        
+           </p>
+          <br>
+        </div>
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+            <img src="{% static '/images/lifehistory/life5.JPG' %}" class="researchimg" alt="Wildlife Museum">
+        </div>
+
+    </div>
+
     <br>
     <br>
     <h2 class="ongoing">

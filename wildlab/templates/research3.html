@@ -25,6 +25,48 @@
         height: 3px;
         margin: 0px;
     }
+            
+    .row {
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    .row img {
+        max-width: 100%;
+        transition: all 2.7s;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+
+    .row:hover img {
+        transform: scale(1.07);
+    }
+    .imageclass{
+        overflow: hidden;
+    }
+    #scrolltext{
+    overflow: scroll;
+    width: 95%;
+    height: 70%;
+    scrollbar-width: thin;
+
+
+    }
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid rgba(112, 144, 125, 0.856);
+    }
+
 
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
@@ -43,35 +85,45 @@
     <hr class="hrline">
     <br>
     <br>
-    <ul>
-        <li class="subheading">Wildlife-friendly and organic certification for cash crop plantations of KFDC</li>
-        <br>
-        <div>
-            <img src="{% static '/images/surveys_population/survery_poplution1.jpeg' %}" class="researchimg"
-                style="height: 40%; width:33%;" alt="Cycas annaikalensis in India">
-                
-        </div>
-        <p class="researchcontent">
-            The Gavi Division of KFDC, nestled next to the Periyar Tiger Reserve, features a lush and biodiverse landscape. Kerala Forest Development Corporation manages cash crop plantations here, growing cardamom and coffee. This area's rich biodiversity offers the potential for wildlife-friendly and organic products, benefiting local stakeholders. In response to KFDC's request, we conducted a study to potentially certify these plantations as wildlife-friendly and organic. The study unveiled a diverse array of 18 mammal species, 109 bird species, 20 reptiles, 31 amphibians, 58 butterflies, 51 moths, and 29 odonates, highlighting the area's abundant wildlife. We also identified and mapped potential wildlife habitats within the plantations, coexisting seamlessly with natural surroundings. Our assessment indicated minimal human-wildlife conflict, overall healthy wildlife habitats, and no significant threats to the local ecosystem. However, we observed some potential issues including electric fencing, unchecked invasive species, tree collection, roadkills, and an inadequate waste management system, all posing minor threats. Stakeholder perspectives showed a positive local attitude toward wildlife. In summary, the study suggests that KFDC Gavi's plantations exhibit wildlife-friendly characteristics, warranting consideration for certification. We also provide recommendations to address minor human-wildlife conflicts and improve wildlife-friendly practices.
 
-        </p>
-        <li class="subheading">Monsoon croaks- bioblitz  </li>
-        <br>
-        <div>
-            <img src="{% static '/images/surveys_population/survery_poplution2.png' %}" class="researchimg"
-                style="height: 32%;width: 37%;"     
-                alt="Cycas annaikalensis in India">
-                
+    <div class="row" style="height: 22em; border-radius: 7px; ">
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Wildlife-friendly and organic certification for cash crop plantations of KFDC
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 15%;">            
+            The Gavi Division of KFDC, nestled next to the Periyar Tiger Reserve, features a lush and biodiverse landscape. Kerala Forest Development Corporation manages cash crop plantations here, growing cardamom and coffee. This area's rich biodiversity offers the potential for wildlife-friendly and organic products, benefiting local stakeholders. In response to KFDC's request, we conducted a study to potentially certify these plantations as wildlife-friendly and organic. The study unveiled a diverse array of 18 mammal species, 109 bird species, 20 reptiles, 31 amphibians, 58 butterflies, 51 moths, and 29 odonates, highlighting the area's abundant wildlife. We also identified and mapped potential wildlife habitats within the plantations, coexisting seamlessly with natural surroundings. Our assessment indicated minimal human-wildlife conflict, overall healthy wildlife habitats, and no significant threats to the local ecosystem. However, we observed some potential issues including electric fencing, unchecked invasive species, tree collection, roadkills, and an inadequate waste management system, all posing minor threats. Stakeholder perspectives showed a positive local attitude toward wildlife. In summary, the study suggests that KFDC Gavi's plantations exhibit wildlife-friendly characteristics, warranting consideration for certification. We also provide recommendations to address minor human-wildlife conflicts and improve wildlife-friendly practices.
+           </p>
+          <br>
         </div>
-        <p class="researchcontent">
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+            <img src="{% static '/images/surveys_population/survery_poplution1.jpeg' %}" class="researchimg"
+            alt="Wildlife-friendly and organic certification for cash crop plantations of KFDC">
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="row" style="height: 22em; border-radius: 7px; ">
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+            <img src="{% static '/images/surveys_population/survery_poplution2.png' %}" class="researchimg"
+            alt="Monsoon croaks- bioblitz">
+        </div>
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Monsoon croaks- bioblitz
+          </div>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 10%;">            
             Monsoon Croaks is a citizen science initiative dedicated to mapping the amphibians of Kerala during the monsoon season (June 4 to October 2, 2023). Citizens across the state are invited to participate and contribute by observing amphibian activity in their surroundings. These observations can be shared with the scientific community through iNaturalist, an online citizen science platform. So far, we have received over a thousand observations, documenting more than 70 species, thanks to the contributions of more than 150 citizen scientists. This collaborative effort will not only help gather valuable biodiversity data but also engage the general public in a meaningful scientific endeavour.
-        </p>
-    </ul>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+           </p>
+        </div>
+
+
+    </div>
+
     <br>
     <br>
     <br>

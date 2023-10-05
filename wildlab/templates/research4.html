@@ -25,6 +25,47 @@
         height: 3px;
         margin: 0px;
     }
+        
+    .row {
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    .row img {
+        max-width: 100%;
+        transition: all 2.7s;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+
+    .row:hover img {
+        transform: scale(1.07);
+    }
+    .imageclass{
+        overflow: hidden;
+    }
+    #scrolltext{
+    overflow: scroll;
+    width: 95%;
+    height: 70%;
+    scrollbar-width: thin;
+
+
+    }
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid rgba(112, 144, 125, 0.856);
+    }
 
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
@@ -44,67 +85,145 @@
     <hr class="hrline">
     <br>
     <br>
-    <ul>
-        <li class="subheading">Community structure, habitat associations and conservation of bats along the land use gradients in Kerala in the context of climate change and emerging zoonotic diseases.</li>
-        <br>
-        <div>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Community structure, habitat associations and conservation of bats along the land use gradients in Kerala in the context of climate change and emerging zoonotic diseases.
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+            Bats are the second most species rich order of mammals, and represent up to 40% of mammals in many tropical ecosystems. Moreover, bats are particularly abundant in the tropics and contribute greatly to patterns of species richness and diversity at the local level. Bats exhibit a high degree of ecological diversity, as evidenced in part by a wide variety of plant and animal food they are known to consume. Though there are a number of taxonomic studies or documentation of the species in several locations in India, ecological surveys were the primary research recommendation for almost all species. Little is known on how bat assemblages are affected by human modification of the landscape in the Western Ghats. A large number of bat species are rare and elusive and apart from some anecdotal reports, information on their micro-habitat use and micro-climatic conditions are largely unknown. Exploitation of wildlife and loss of natural habitats is not only a conservation issue, but also an important driver of zoonotic virus transmission. In recent years, bats have been implicated in numerous emerging infectious disease events and have been recognized as important reservoir hosts for viruses that can cross the species barrier to infect humans and other domestic and wild mammals.  More than 200 viruses of 28 families have been isolated or detected in bats. The effects of environmental changes on the prevalence of pathogens in wild populations; and the frequency of human contact and pets with wild animals potentially zoonotic reservoirs (including not only direct contact with the animals but also with their droppings, saliva or urine) are key factors related to zoonotic risk. Multi-disciplinary approximation of the data such as colony size, number of bats per species, population structure, habitat use, behaviour of each species, degree of contact between bats, social structure, remaining time of bats in the colony, colony type, foraging area, turnover rate of individuals, shelter temperature, relationship with other colonies, co-infection processes, etc are required to understand future zoonotic risk factors and formulate preventive measures and hence this study. The overall aim of this project is to understand the response of bats to land-use changes and their habitat use to understand the future zoonotic risk. The specific objectives are to: assess community and population structure of bats along land-use gradients in Kerala, document the habitat associations and threats to the bat populations along the disturbance gradient, understand knowledge and perceptions on bats among different stakeholders in Kerala, and develop conservation management strategies for bats in Kerala with the support of local communities.                
+           </p>
+          <br>
+        </div>
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
             <img src="{% static '/images/ecology/Eco_1.jpg' %}" class="researchimg"
-                style="height: 40%; width:33%;" alt="Cycas annaikalensis in India">
-                
+            alt=" Community structure, habitat associations and conservation of bats along the land use gradients in Kerala in the context of climate change and emerging zoonotic diseases">
         </div>
-        <p class="researchcontent">
-            Bats are the second most species rich order of mammals, and represent up to 40% of mammals in many tropical ecosystems. Moreover, bats are particularly abundant in the tropics and contribute greatly to patterns of species richness and diversity at the local level. Bats exhibit a high degree of ecological diversity, as evidenced in part by a wide variety of plant and animal food they are known to consume. Though there are a number of taxonomic studies or documentation of the species in several locations in India, ecological surveys were the primary research recommendation for almost all species. Little is known on how bat assemblages are affected by human modification of the landscape in the Western Ghats. A large number of bat species are rare and elusive and apart from some anecdotal reports, information on their micro-habitat use and micro-climatic conditions are largely unknown. Exploitation of wildlife and loss of natural habitats is not only a conservation issue, but also an important driver of zoonotic virus transmission. In recent years, bats have been implicated in numerous emerging infectious disease events and have been recognized as important reservoir hosts for viruses that can cross the species barrier to infect humans and other domestic and wild mammals.  More than 200 viruses of 28 families have been isolated or detected in bats. The effects of environmental changes on the prevalence of pathogens in wild populations; and the frequency of human contact and pets with wild animals potentially zoonotic reservoirs (including not only direct contact with the animals but also with their droppings, saliva or urine) are key factors related to zoonotic risk. Multi-disciplinary approximation of the data such as colony size, number of bats per species, population structure, habitat use, behaviour of each species, degree of contact between bats, social structure, remaining time of bats in the colony, colony type, foraging area, turnover rate of individuals, shelter temperature, relationship with other colonies, co-infection processes, etc are required to understand future zoonotic risk factors and formulate preventive measures and hence this study. The overall aim of this project is to understand the response of bats to land-use changes and their habitat use to understand the future zoonotic risk. The specific objectives are to: assess community and population structure of bats along land-use gradients in Kerala, document the habitat associations and threats to the bat populations along the disturbance gradient, understand knowledge and perceptions on bats among different stakeholders in Kerala, and develop conservation management strategies for bats in Kerala with the support of local communities.
-        </p>
-        <li class="subheading">Patterns of tree cavity occurrence and use by vertebrates in tropical forests of the Western Ghats: a community web approach and its implications in forest management.
-        </li>
-        <li class="subheading">Diversity and dynamics of a tropical forest ecosystem in southern Western Ghats in the context of changing climate. 
-        </li>
-        <li class="subheading">Community structure and habitat use of rodents in a tropical forest of the southern Western Ghats, India.</li>
-        <br>
-        <div>
-            <img src="{% static '/images/ecology/Eco_4.jpg' %}" class="researchimg"
-                style="height: 40%; width:33%;" alt="Cycas annaikalensis in India">
-                
-        </div>
-        <p class="researchcontent">
-            Larger mammals are almost always chosen as the flagship species when it comes to
-the studies related to management aspects related to conservation of a particular habitat or
-biodiversity. However, recent studies have proven that the smaller mammals also exhibit a
-high degree of endemicity and diversity and that these groups can be used in conservation
-prioritization studies of specific ecosystems. Studies conducted on understanding the
-relationship between species distribution, their associated habitats and their characteristics is
-of utmost importance because forest management actions can indiscriminately change the
-resource distribution, availability and also alter the connectivity that is very much essential
-for the healthy balance of the community structure. Small mammals act as model organisms
-and play a key role in identifying and understanding the community structure of a habitat as
-they are restricted to their own natural microhabitats. This makes them the most suitable
-organisms to study the effects of habitat degradation, fragmentation and edge creation. The
-knowledge of their microhabitat preferences and usage can lead us to understand the
-mechanisms of coexistence and resource partition
-Volant and non-volant small mammals are the dominant groups of mammals which
-contributes to 75 per cent the world’s mammalian diversity in which rodents form a major
-part (about 50%). Rodents come under the Order Rodentia and Family Muridae. They occupy
-a wide range of natural habitats, including forests, grasslands and agricultural landscapes, as
-well as human inhabited areas. Most rodents co-existwith one or more similar species and
-their diversity is a function of many variables including resource range and habitat structure.
-Recent studies suggest that these rodents play an important role in forest dynamics through
-their activities as seed predators and dispersers of seeds
 
-        </p>
-        <li class="subheading">Diversity and abundance of tree-microhabitats and its potential as indicators of vertebrate diversity in tropical rainforests of the Western Ghats.</li>
-        <li class="subheading">Foraging ecology of Bonnet macaque along the anthropogenic gradient: The food traits perspective. </li>
-        <br>
-        <div>
-            <img src="{% static '/images/ecology/Eco_6.webp' %}" class="researchimg"
-                style="height: 40%; width:33%;" alt="Cycas annaikalensis in India">
-                
+    </div>
+    <br>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
         </div>
-        <p class="researchcontent">
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Patterns of tree cavity occurrence and use by vertebrates in tropical forests of the Western Ghats: a community web approach and its implications in forest management.
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+           
+           </p>
+          <br>
+        </div>
+    </div>
+    <br>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Diversity and dynamics of a tropical forest ecosystem in southern Western Ghats in the context of changing climate. 
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+           
+           </p>
+          <br>
+        </div>
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+        </div>
+
+    </div>
+
+    <br>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+            <img src="{% static '/images/ecology/Eco_4.jpg' %}" class="researchimg"
+                alt="Community structure and habitat use of rodents in a tropical forest of the southern Western Ghats, India">
+        </div>
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Community structure and habitat use of rodents in a tropical forest of the southern Western Ghats, India.
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+            
+                Larger mammals are almost always chosen as the flagship species when it comes to
+    the studies related to management aspects related to conservation of a particular habitat or
+    biodiversity. However, recent studies have proven that the smaller mammals also exhibit a
+    high degree of endemicity and diversity and that these groups can be used in conservation
+    prioritization studies of specific ecosystems. Studies conducted on understanding the
+    relationship between species distribution, their associated habitats and their characteristics is
+    of utmost importance because forest management actions can indiscriminately change the
+    resource distribution, availability and also alter the connectivity that is very much essential
+    for the healthy balance of the community structure. Small mammals act as model organisms
+    and play a key role in identifying and understanding the community structure of a habitat as
+    they are restricted to their own natural microhabitats. This makes them the most suitable
+    organisms to study the effects of habitat degradation, fragmentation and edge creation. The
+    knowledge of their microhabitat preferences and usage can lead us to understand the
+    mechanisms of coexistence and resource partition
+    Volant and non-volant small mammals are the dominant groups of mammals which
+    contributes to 75 per cent the world’s mammalian diversity in which rodents form a major
+    part (about 50%). Rodents come under the Order Rodentia and Family Muridae. They occupy
+    a wide range of natural habitats, including forests, grasslands and agricultural landscapes, as
+    well as human inhabited areas. Most rodents co-existwith one or more similar species and
+    their diversity is a function of many variables including resource range and habitat structure.
+    Recent studies suggest that these rodents play an important role in forest dynamics through
+    their activities as seed predators and dispersers of seeds
+    
+           </p>
+          <br>
+        </div>
+    </div>
+    <br>
+    
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Diversity and abundance of tree-microhabitats and its potential as indicators of vertebrate diversity in tropical rainforests of the Western Ghats.
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
+           
+           </p>
+          <br>
+        </div>
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+        </div>
+
+    </div>
+
+    <br>
+    <div class="row" style="height: 28em; border-radius: 7px; ">
+        <div class="col-sm-6 imageclass" style="padding: 0px;">
+            <img src="{% static '/images/ecology/Eco_6.webp' %}" class="researchimg"
+               alt="Foraging ecology of Bonnet macaque along the anthropogenic gradient: The food traits perspective">
+        </div>
+        <div class="col-sm-6" style="background-color: rgb(244, 244, 244); ">
+          <br>
+          <div class="subheading" style="text-align: center;  padding-left: 2px; padding-right: 2px;">
+            Foraging ecology of Bonnet macaque along the anthropogenic gradient: The food traits perspective.
+          </div>
+          <br>
+          <p class="researchcontent" id="scrolltext" style="padding-left: 5%;padding-right: 5%;padding-bottom: 22%;">
             Human civilization has had a negative impact on wildlife; however, several species successfully thrive in urban and rural habitats. Their adaptations to novel stressors, food sources, predators, and other challenges in human-dominated areas enable them to thrive in these environments. The study of these adaptations provides crucial information for conservation efforts and helps mitigate negative interactions, such as human-wildlife conflicts over resources. Globally, primates are among the most threatened animals, with several species inhabiting human-modified habitats. The number of threatened primate species and threats to various primate populations has increased in recent years, casting doubt on the survival of several species. When exploring human-wildlife conflict from an ecological perspective, food emerges as a significant factor driving conflicts and competition for resources.
 This study aims to understand the dietary selection, food patch preferences, and behavioral flexibility of the Bonnet macaque in different habitats while comparing these findings with anthropogenic food-related factors. Specifically, we seek to explore the relationship between anthropogenic food sources and interactions between humans and Bonnet macaques. This research can provide insights into the primary drivers behind changing foraging behaviors and habitat expansions of Bonnet macaques in anthropogenic environments.
 
-        </p>
-    </ul>
+           </p>
+          <br>
+        </div>
+        
+
+    </div>
+
+    <br>
+
     <h2 class="ongoing">
         Team & Collaborators: 
     </h2>
