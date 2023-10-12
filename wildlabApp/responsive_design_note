@@ -1,0 +1,122 @@
+/*note 1) max-width & min-width
+max-width: width from 0px to 499px
+min-width: width from 500px onwards
+*/
+
+@media (max-width:500px){
+	h1{
+    	color:red;
+	}
+}
+@media (min-width:500px){
+	h1{
+    	color:red;
+	}
+}
+
+
+
+/*
+note 2: different type of mobile screens
+*/
+.container{
+    width:90%;
+    margin:0 auto;
+    }
+@media(min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+}
+@media(min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+}
+@media(min-width: 768px){}
+@media(min-width: 1024px){}
+@media(min-width: 1280px){}
+@media(min-width: 1536px){}
+
+/* 
+note 3: print,speech,device
+all support all type of functions and all is default value hence we can remove all from media query
+*/
+
+@media all and (min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+}
+
+/*  without all
+all is default value hence we can remove all from media query
+*/
+@media (min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+}
+
+
+/* for printing */
+
+@media print{
+    .container{
+        max-width: 475px;
+    }
+}
+
+
+/* for screen */
+
+@media screen{
+    .container{
+        max-width: 475px;
+    }
+}
+
+/*
+note4: after media query if any class,id or tag in style which is already defined inside query will be taken as final out hence write all before media query
+*/
+
+@media (min-width: 475px){
+    body{
+        color: red;
+    }
+}
+body{
+    color: blue;
+}
+
+/* here body colour will be blue
+*/
+
+
+/*
+note5:  orientation
+*/
+@media(orientation: landscape){
+    body{
+        color:red;
+    }
+}
+@media(orientation: portrait){
+    body{
+        color:blue;
+    }
+}
+
+@media(orientation: landscape) and (max-width:475px){
+    body{
+        color:red;
+    }
+}
+
+
+/* , is indicating or condition */
+@media(orientation: landscape) , (max-width:475px){
+    body{
+        color:red;
+    }
+}
