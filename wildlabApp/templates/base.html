@@ -1,27 +1,5 @@
 <style>
-    .menu-area li a:hover{
-    background:tomato;
-    color:#fff;
-}
-.menu-area li a{
-    text-decoration:none;
-    color: #fff;
-    letter-spacing:1px;
-    text-transform: uppercase;
-    display:block;
-    
-    padding: 0px 25px 0px 35px;
-    font-size:14px;
-    line-height:30px;
-    position:relative;
-    z-index:1;
-}
-.menu-area li{
-    list-style:none;
-    display:inline-block;
-    
-}
-nav{
+/*nav{
     position:relative;
     padding:10px 20px 10px 10px;
     text-align:right;
@@ -57,40 +35,64 @@ nav:after{
         color: rebeccapurple;
 
     }
-    .bothmargin{
+.home-sci{
+    
+        width: 150px;
+        margin-left: 50%;
+
+    }
+
+    .home-sci a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #00abf0;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #00abf0;
+        overflow: hidden;
+    }
+*/
+
+ /* bothmargin using in research page margin setup*/
+  .bothmargin{
     margin-left: 10%;
     margin-right:10%;
     text-align: left;
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
-   }
-   .topnav {
-  overflow: hidden;
-  background-color: #333;
-  text-decoration: none;
-  position:fixed;
-  width:100%;
-  z-index: 1000000;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-decoration: none;
+    position:fixed;
+    width:100%;
+    z-index: 1000000;
     top:0;
     opacity: 0.9;
     height: 60px;
-}
+  }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 14px;
-  font-family: 'Bebas Neue ', sans-serif ;
-  font-weight: 600;
-  top: 5px;
-}
-
-.topnav a:hover {
+  .topnav a {
+    float: left;
+    display: block;
     color: #f2f2f2;
-}
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-family: 'Bebas Neue ', sans-serif ;
+    font-weight: 600;
+    top: 5px;
+  }
+
+  .topnav a:hover {
+    color: #f2f2f2;
+  }
 
 
 .topnav .icon {
@@ -118,32 +120,7 @@ nav:after{
     text-align: left;
   }
 }
-.home-sci{
-        /*bottom: 40px;
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        
-        */
-        width: 150px;
-        margin-left: 50%;
 
-    }
-
-    .home-sci a{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: 2px solid #00abf0;
-        border-radius: 50%;
-        text-decoration: none;
-        font-size: 20px;
-        color: #00abf0;
-        overflow: hidden;
-    }
 
     .hoverable{
   display:inline-block;
@@ -406,19 +383,7 @@ nav:after{
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
-<!--
-<nav>
-    <ul class="menu-area">
-        <li><a href="{% url 'home' %}"
-            >HOME</a></li>
-        <li><a href="{% url 'research' %} ">RESEARCH</a></li>
-        <li><a href="{% url 'team'%} ">TEAM</a></li>
-        <li><a href="{% url 'publication'%}">PUBLICATIONS</a></li>
-        <li><a href="{% url 'media'%}">MEDIA</a></li>
-        <li><a href="{% url 'gallery'%}">GALLERY</a></li>
-        <li><a href="{% url 'contact'%}">CONTACT US</a></li>
-    </ul>
-</nav>-->
+
 <title>
   WildLab - Wildlife Ecology & Conservation Biology Lab
 </title>

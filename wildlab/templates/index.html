@@ -3,6 +3,7 @@
 
 {% block content %}
 <style>
+@media(max-width: 475px){
     *{
         margin:0;
         padding:0;
@@ -16,7 +17,6 @@
         background-position:center center;
         height:100vh;
     }
-
     .custom-padding{
         padding-top:25px;
         background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
@@ -25,45 +25,633 @@
         background-size: cover;
     }
     .partner_img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   }
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-   .bothmargin{
-    margin-left: 10%;
-    margin-right:10%;
-    font-family: 'Raleway', sans-serif;
-    
-    font-size: 24px;
-    text-align: center;
-   }
-   .home-sci{
-        /*bottom: 40px;
-        display: flex;
-        justify-content: space-between;
+    .bothmargin{
+        margin-left: 10%;
+        margin-right:10%;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .homeback2{
+        background: url("/static/images/homepage1.jpg") 100% 0 no-repeat fixed;
+        width: 100%;
+        height: 30% !important;
+        background-position: 0.00% 57.73%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #grad1 {
+        height: 20;
+        background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
+    }
+    #carouselExampleIndicators{
+        position: relative;
+    }
+    .container {
+        position: relative;
+
+    }
+
+    .bottom-left {
         position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .Wildlife{
+        margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+        opacity: 0.9;
+    }
+    .kfri{
+        margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+        opacity: 0.9;
+    }
+    .wildlabtext{
+        color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+        margin-top: -60px;
+    }
+    .the{
+        color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    }
+    .divimgtext{
+        margin-left: 8%; margin-top: 6%; position: absolute;
+    }
+    .blockquotetext{  
+        font-family: 'Caveat', cursive;
+        font-size: 22px;
+        margin-top: -15%;
+        color: aliceblue;
+        margin-left: 5%;
         
-        */
-        width: 150px;
-        margin-left: 50%;
+    }
+    .subheading{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
 
     }
-
-    .home-sci a{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: 2px solid #00abf0;
-        border-radius: 50%;
+    .atagbutton {
+        display: block;
+        width: 54px;
+        height: 30px;
+        background: rgba(0,183,119);
+        padding: 8px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
         text-decoration: none;
-        font-size: 20px;
-        color: #00abf0;
-        overflow: hidden;
+        position: relative;
+        float: left;
+        margin-left: 30% !important;
     }
+    .card{
+        height: 515px;
+        background-color: rgb(71,71,71);
+        
+    }
+    .cardtext{
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+
+    .hrline{
+        background-color: rgb(80,183,119);
+        height: 3px;
+        width:100px !important;
+        margin-left:31px !important;
+
+    }
+    .cardhead{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+    #inner_class{
+        height: auto !important;
+    }
+    #Labnewshead{
+        text-align: center;    
+        margin-top: 7%;
+    }
+    
+}
+@media(max-width: 640px){
+   
+    *{
+        margin:0;
+        padding:0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    body{
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position:center center;
+        height:100vh;
+    }
+    .custom-padding{
+        padding-top:25px;
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 75%;
+        background-size: cover;
+    }
+    .partner_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bothmargin{
+        margin-left: 10%;
+        margin-right:10%;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .homeback2{
+        background: url("/static/images/homepage1.jpg") 100% 0 no-repeat fixed;
+        width: 100%;
+        height: 30% !important;
+        background-position: 0.00% 57.73%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #grad1 {
+        height: 20;
+        background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
+    }
+    #carouselExampleIndicators{
+        position: relative;
+    }
+    .container {
+        position: relative;
+
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .Wildlife{
+        margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+        opacity: 0.9;
+    }
+    .kfri{
+        margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+        opacity: 0.9;
+    }
+    .wildlabtext{
+        color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+        margin-top: -60px;
+    }
+    .the{
+        color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    }
+    .divimgtext{
+        margin-left: 8%; margin-top: 6%; position: absolute;
+    }
+    .blockquotetext{  
+        font-family: 'Caveat', cursive;
+        font-size: 22px;
+        margin-top: -15%;
+        color: aliceblue;
+        margin-left: 5%;
+        
+    }
+    .subheading{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+
+    }
+    .atagbutton {
+        display: block;
+        width: 54px;
+        height: 30px;
+        background: rgba(0,183,119);
+        padding: 8px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+        position: relative;
+        float: left;
+        margin-left: 30% !important;
+    }
+    .card{
+        height: 515px;
+        background-color: rgb(71,71,71);
+        
+    }
+    .cardtext{
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+
+    .hrline{
+        background-color: rgb(80,183,119);
+        height: 3px;
+        width:100px !important;
+        margin-left:31px !important;
+
+        
+    }
+    .cardhead{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+    #inner_class{
+        height: auto !important;
+    }
+    #Labnewshead{
+        text-align: center;    
+        margin-top: 7%;
+    }
+}
+@media(max-width: 768px){
+    *{
+        margin:0;
+        padding:0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    body{
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position:center center;
+        height:100vh;
+    }
+    .custom-padding{
+        padding-top:25px;
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 75%;
+        background-size: cover;
+    }
+    .partner_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bothmargin{
+        margin-left: 10%;
+        margin-right:10%;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .homeback2{
+        background: url("/static/images/homepage1.jpg") 100% 0 no-repeat fixed;
+        width: 100%;
+        height: 30% !important;
+        background-position: 0.00% 57.73%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #grad1 {
+        height: 20;
+        background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
+    }
+    #carouselExampleIndicators{
+        position: relative;
+    }
+    .container {
+        position: relative;
+
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .Wildlife{
+        margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+        opacity: 0.9;
+    }
+    .kfri{
+        margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+        opacity: 0.9;
+    }
+    .wildlabtext{
+        color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+        margin-top: -60px;
+    }
+    .the{
+        color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    }
+    .divimgtext{
+        margin-left: 8%; margin-top: 6%; position: absolute;
+    }
+    .blockquotetext{  
+        font-family: 'Caveat', cursive;
+        font-size: 22px;
+        margin-top: -15%;
+        color: aliceblue;
+        margin-left: 5%;
+        
+    }
+    .subheading{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+
+    }
+    .atagbutton {
+        display: block;
+        width: 54px;
+        height: 30px;
+        background: rgba(0,183,119);
+        padding: 8px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+        position: relative;
+        float: left;
+        margin-left: 30% !important;
+    }
+    .card{
+        height: 515px;
+        background-color: rgb(71,71,71);
+        
+    }
+    .cardtext{
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+
+    .hrline{
+        background-color: rgb(80,183,119);
+        height: 3px;
+        width:100px !important;
+        margin-left:31px !important;
+    }
+    .cardhead{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: white;
+    }    
+    #inner_class{
+        height: auto !important;
+    }
+    #Labnewshead{
+        text-align: center;    
+        margin-top: 7%;
+    }
+}
+@media(max-width: 1024px){
+    *{
+        margin:0;
+        padding:0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    body{
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position:center center;
+        height:100vh;
+    }
+    .custom-padding{
+        padding-top:25px;
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 75%;
+        background-size: cover;
+    }
+    .partner_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bothmargin{
+        margin-left: 10%;
+        margin-right:10%;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .homeback2{
+        background: url("/static/images/homepage1.jpg") 100% 0 no-repeat fixed;
+        width: 100%;
+        height: 30% !important;
+        background-position: 0.00% 57.73%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #grad1 {
+        height: 20;
+        background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
+    }
+    #carouselExampleIndicators{
+        position: relative;
+    }
+    .container {
+        position: relative;
+
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .Wildlife{
+        margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+        opacity: 0.9;
+    }
+    .kfri{
+        margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+        opacity: 0.9;
+    }
+    .wildlabtext{
+        color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+        margin-top: -60px;
+    }
+    .the{
+        color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    }
+    .divimgtext{
+        margin-left: 8%; margin-top: 6%; position: absolute;
+    }
+    .blockquotetext{  
+        font-family: 'Caveat', cursive;
+        font-size: 22px;
+        margin-top: -15%;
+        color: aliceblue;
+        margin-left: 5%;
+        
+    }
+    .subheading{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+
+    }
+    .atagbutton {
+        display: block;
+        width: 54px;
+        height: 30px;
+        background: rgba(0,183,119);
+        padding: 8px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+        position: relative;
+        float: left;
+        margin-left: 30% !important;
+    }
+    .card{
+        height: 515px;
+        background-color: rgb(71,71,71);
+        
+    }
+    .cardtext{
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+
+    .hrline{
+        background-color: rgb(80,183,119);
+        height: 3px;
+        width:100px !important;
+        margin-left:31px !important;
+
+    }
+    .cardhead{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: white;
+    }    
+    #inner_class{
+        height: auto !important;
+    }
+    #Labnewshead{
+        text-align: center;    
+        margin-top: 7%;
+    }
+}
+@media(max-width: 1280px){
+    *{
+        margin:0;
+        padding:0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    body{
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position:center center;
+        height:100vh;
+    }
+    .custom-padding{
+        padding-top:25px;
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 75%;
+        background-size: cover;
+    }
+    .partner_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bothmargin{
+        margin-left: 10%;
+        margin-right:10%;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 24px;
+        text-align: center;
+    }
+
     .homeback2{
         background: url("/static/images/homepage1.jpg") 100% 0 no-repeat fixed;
         width: 100%;
@@ -73,7 +661,6 @@
         background-color: transparent;
         background-size: cover;
         background-attachment: fixed;
-
     }
     .center{
         display: block;
@@ -81,90 +668,89 @@
         margin-right: auto;
     }
 
-   #grad1 {
-    height: 20;
-  background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
-}
-#carouselExampleIndicators{
-    position: relative;
-}
-.container {
-  position: relative;
+    #grad1 {
+        height: 20;
+        background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
+    }
+    #carouselExampleIndicators{
+        position: relative;
+    }
+    .container {
+        position: relative;
 
-}
+    }
 
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
 
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-.Wildlife{
-    margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
-    opacity: 0.9;
-}
-.kfri{
-    margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
-    opacity: 0.9;
-}
-.wildlabtext{
-    color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
-    margin-top: -60px;
-}
-.the{
-    color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
-}
-.divimgtext{
-    margin-left: 8%; margin-top: 6%; position: absolute;
-}
-.blockquotetext{
-    
-    font-family: 'Caveat', cursive;
-    font-size: 22px;
-    margin-top: -15%;
-    color: aliceblue;
-    margin-left: 5%;
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .Wildlife{
+        margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+        opacity: 0.9;
+    }
+    .kfri{
+        margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+        opacity: 0.9;
+    }
+    .wildlabtext{
+        color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+        margin-top: -60px;
+    }
+    .the{
+        color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    }
+    .divimgtext{
+        margin-left: 8%; margin-top: 6%; position: absolute;
+    }
+    .blockquotetext{  
+        font-family: 'Caveat', cursive;
+        font-size: 22px;
+        margin-top: -15%;
+        color: aliceblue;
+        margin-left: 5%;
+        
+    }
+    .subheading{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
 
-}
-.subheading{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
+    }
+    .atagbutton {
+        display: block;
+        width: 54px;
+        height: 30px;
+        background: rgba(0,183,119);
+        padding: 8px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+        position: relative;
+        float: left;
+        margin-left: 75%;
+    }
+    .card{
+        height: 515px;
+        background-color: rgb(71,71,71);
+        
+    }
+    .cardtext{
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
 
-}
-.atagbutton {
-    display: block;
-    width: 54px;
-    height: 30px;
-    background: rgba(0,183,119);
-    padding: 8px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    line-height: 25px;
-    text-decoration: none;
-    position: relative;
-    float: left;
-    margin-left: 75%;
-}
-.card{
-    height: 515px;
-    background-color: rgb(71,71,71);
-    
-}
-.cardtext{
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
-
-.hrline{
+    .hrline{
         background-color: rgb(80,183,119);
         width: 190px;
         height: 3px;
@@ -172,9 +758,324 @@
     }
     .cardhead{
         font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: white;
+        font-size: 20px;
+        color: white;
+    }    
+    #inner_class{
+        height: auto !important;
     }
+    #Labnewshead{
+        text-align: center;    
+        margin-top: 7%;
+    }
+}
+@media(max-width: 1536px){
+    *{
+        margin:0;
+        padding:0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    body{
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position:center center;
+        height:100vh;
+    }
+    .custom-padding{
+        padding-top:25px;
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 75%;
+        background-size: cover;
+    }
+    .partner_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bothmargin{
+        margin-left: 10%;
+        margin-right:10%;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .homeback2{
+        background: url("/static/images/homepage1.jpg") 100% 0 no-repeat fixed;
+        width: 100%;
+        height: 50%;
+        background-position: 0.00% 57.73%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #grad1 {
+        height: 20;
+        background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
+    }
+    #carouselExampleIndicators{
+        position: relative;
+    }
+    .container {
+        position: relative;
+
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .Wildlife{
+        margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+        opacity: 0.9;
+    }
+    .kfri{
+        margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+        opacity: 0.9;
+    }
+    .wildlabtext{
+        color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+        margin-top: -60px;
+    }
+    .the{
+        color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    }
+    .divimgtext{
+        margin-left: 8%; margin-top: 6%; position: absolute;
+    }
+    .blockquotetext{  
+        font-family: 'Caveat', cursive;
+        font-size: 22px;
+        margin-top: -15%;
+        color: aliceblue;
+        margin-left: 5%;
+        
+    }
+    .subheading{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+
+    }
+    .atagbutton {
+        display: block;
+        width: 54px;
+        height: 30px;
+        background: rgba(0,183,119);
+        padding: 8px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+        position: relative;
+        float: left;
+        margin-left: 75%;
+    }
+    .card{
+        height: 515px;
+        background-color: rgb(71,71,71);
+        
+    }
+    .cardtext{
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+
+    .hrline{
+        background-color: rgb(80,183,119);
+        width: 190px;
+        height: 3px;
+        margin-left: 62px;
+    }
+    .cardhead{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: white;
+    }    
+    #inner_class{
+        height: 80% ;
+    }
+    #Labnewshead{
+        text-align: center;    
+        margin-top: 7%;
+    }
+}
+/* big screen systems */
+@media(min-width: 1537px){
+    *{
+        margin:0;
+        padding:0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    body{
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position:center center;
+        height:100vh;
+    }
+    .custom-padding{
+        padding-top:25px;
+        background: url("/static/images/homepage3.jpg") 50% 0 no-repeat fixed;
+        width: 100%;
+        height: 75%;
+        background-size: cover;
+    }
+    .partner_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bothmargin{
+        margin-left: 10%;
+        margin-right:10%;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .homeback2{
+        background: url("/static/images/homepage1.jpg") 100% 0 no-repeat fixed;
+        width: 100%;
+        height: 50%;
+        background-position: 0.00% 57.73%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #grad1 {
+        height: 20;
+        background-image: linear-gradient(to right, #b04348,#b6ba50, #70a8db,#7e3900);
+    }
+    #carouselExampleIndicators{
+        position: relative;
+    }
+    .container {
+        position: relative;
+
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .Wildlife{
+        margin-left: 4%; color: aliceblue;  font-family: 'Roboto', sans-serif;  letter-spacing: 1px; margin-top: -45px; font-size: 20px; text-shadow: 2px 2px 4px #000000; width: 100%;
+        opacity: 0.9;
+    }
+    .kfri{
+        margin-left: 4%;color: aliceblue; font-family: 'Roboto', sans-serif;  font-size: 18px; letter-spacing: 1px; margin-top: -20px; text-shadow: 2px 2px 4px #000000;
+        opacity: 0.9;
+    }
+    .wildlabtext{
+        color: aliceblue;   font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 100px;  padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+        margin-top: -60px;
+    }
+    .the{
+        color: aliceblue;     font-family: 'Raleway', sans-serif; font-weight: 300;  font-size: 64px;margin-top : -217%; padding-top:0;text-shadow: 2px 2px 4px #000000; opacity: 0.7;
+    }
+    .divimgtext{
+        margin-left: 8%; margin-top: 6%; position: absolute;
+    }
+    .blockquotetext{  
+        font-family: 'Caveat', cursive;
+        font-size: 22px;
+        margin-top: -15%;
+        color: aliceblue;
+        margin-left: 5%;
+        
+    }
+    .subheading{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+
+    }
+    .atagbutton {
+        display: block;
+        width: 54px;
+        height: 30px;
+        background: rgba(0,183,119);
+        padding: 8px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+        position: relative;
+        float: left;
+        margin-left: 75%;
+    }
+    .card{
+        height: 515px;
+        background-color: rgb(71,71,71);
+        
+    }
+    .cardtext{
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+
+    .hrline{
+        background-color: rgb(80,183,119);
+        width: 190px;
+        height: 3px;
+        margin-left: 62px;
+    }
+    .cardhead{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: white;
+    }    
+    #inner_class{
+        height: 80% ;
+    }
+    #Labnewshead{
+        text-align: center;    
+        margin-top: 7%;
+    }
+}
+
+
 </style>
 
 <!doctype html>
@@ -195,7 +1096,7 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
             </ol>
-            <div class="carousel-inner" style="height: 80%;">
+            <div class="carousel-inner" id="inner_class">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="{% static '/images/homecarsoul4.webp' %}"   style="margin-top: 59px; " alt="WildLab">
                     <div  class="divimgtext">
@@ -330,7 +1231,7 @@
         <br/>
         <br/>
         <br/>
-        <div style="text-align: center;    margin-top: 5%;">
+        <div  id="Labnewshead">
             <span class="heading">
             Lab News 
 
