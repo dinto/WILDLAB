@@ -1,0 +1,26 @@
+1)mobile view with landscape, portrait and other screen
+2)add additional content  and change bibin and vishal to alumini
+
+
+@media(max-width: 475px){
+
+}
+@media(max-width: 640px){
+
+}
+@media(max-width: 768px){
+
+}
+@media(max-width: 1024px){
+
+}
+@media(max-width: 1280px){
+
+
+}
+@media(max-width: 1536px){
+
+}
+@media(min-width: 1537px){
+
+}
