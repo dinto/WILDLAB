@@ -4,70 +4,343 @@
 {% block content %}
 
 <style>
-  .gallerycover{
-    margin-top: 59px;
+  @media(max-width: 475px){
+    .gallerycover{
+      margin-top: 59px;
+      width:102%;
+    }
+    .labgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .inner-img {
+      transition: 0.5s;
+      padding: 2px;
+    }
+    .inner-img:hover {
+      transform: scale(1.02);
+    }
+    .img-wrapper {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .gallerybox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden;    
+    }
+    .speciesgallery h2{
+      color: aliceblue;
+    }
+    .speciesbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesimages{
+      background-color: #474747;
+    }
+    .eventgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .eventbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    
+  }
+  @media(max-width: 640px){
+    .gallerycover{
+      margin-top: 59px;
+      width:102%;
+    }
+    .labgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .inner-img {
+      transition: 0.5s;
+      padding: 2px;
+    }
+    .inner-img:hover {
+      transform: scale(1.02);
+    }
+    .img-wrapper {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .gallerybox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden;    
+    }
+    .speciesgallery h2{
+      color: aliceblue;
+    }
+    .speciesbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesimages{
+      background-color: #474747;
+    }
+    .eventgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .eventbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+  }
+  @media(max-width: 768px){
+    .gallerycover{
+      margin-top: 59px;
+      width:102%;
+    }
+    .labgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .inner-img {
+      transition: 0.5s;
+      padding: 2px;
+    }
+    .inner-img:hover {
+      transform: scale(1.02);
+    }
+    .img-wrapper {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .gallerybox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden;    
+    }
+    .speciesgallery h2{
+      color: aliceblue;
+    }
+    .speciesbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesimages{
+      background-color: #474747;
+    }
+    .eventgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .eventbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+  }
+  @media(max-width: 1024px){
+    .gallerycover{
+      margin-top: 59px;
+      width:102%;
+    }
+    .labgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .inner-img {
+      transition: 0.5s;
+      padding: 2px;
+    }
+    .inner-img:hover {
+      transform: scale(1.02);
+    }
+    .img-wrapper {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .gallerybox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden;    
+    }
+    .speciesgallery h2{
+      color: aliceblue;
+    }
+    .speciesbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesimages{
+      background-color: #474747;
+    }
+    .eventgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .eventbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+  }
+  @media(max-width: 1280px){
+    .gallerycover{
+      margin-top: 59px;
+      width:102%;
+    }
+    .labgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .inner-img {
+      transition: 0.5s;
+      padding: 2px;
+    }
+    .inner-img:hover {
+      transform: scale(1.02);
+    }
+    .img-wrapper {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .gallerybox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden;    
+    }
+    .speciesgallery h2{
+      color: aliceblue;
+    }
+    .speciesbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesimages{
+      background-color: #474747;
+    }
+    .eventgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .eventbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+  }
+  @media(max-width: 1536px){
+    .gallerycover{
+      margin-top: 59px;
+      width:102%;
+    }
+    .labgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .inner-img {
+      transition: 0.5s;
+      padding: 2px;
+    }
+    .inner-img:hover {
+      transform: scale(1.02);
+    }
+    .img-wrapper {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .gallerybox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden;    
+    }
+    .speciesgallery h2{
+      color: aliceblue;
+    }
+    .speciesbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesimages{
+      background-color: #474747;
+    }
+    .eventgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .eventbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+  }
+  /* big screen systems */
+  @media(min-width: 1537px){
+    .gallerycover{
+      margin-top: 59px;
+      width:102%;
+    }
+    .labgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .inner-img {
+      transition: 0.5s;
+      padding: 2px;
+    }
+    .inner-img:hover {
+      transform: scale(1.02);
+    }
+    .img-wrapper {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .gallerybox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden;    
+    }
+    .speciesgallery h2{
+      color: aliceblue;
+    }
+    .speciesbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
+    .speciesimages{
+      background-color: #474747;
+    }
+    .eventgallery{
+      margin-left: 20%; margin-right: 20%;
+      overflow: hidden; 
+    }
+    .eventbox{
+      margin-left: 20%; margin-right: 20%;
+      padding-left: 30px;
+    }
   }
 
-  .labgallery{
-    margin-left: 20%; margin-right: 20%;
-    overflow: hidden; 
-   
-  }
-
-
-
-  .inner-img {
-    transition: 0.5s;
-    padding: 2px;
-  }
-
-  .inner-img:hover {
-    transform: scale(1.02);
-  }
-  .img-wrapper {
-    display: inline-block;
-    box-sizing: border-box;
-  }
-
-  .gallerybox{
-    margin-left: 20%; margin-right: 20%;
-    padding-left: 30px;
-  }
-  .speciesgallery{
-    margin-left: 20%; margin-right: 20%;
-    overflow: hidden; 
-   
-  }
-  .speciesgallery h2{
-    color: aliceblue;
-
-  }
-  .speciesbox{
-    margin-left: 20%; margin-right: 20%;
-    padding-left: 30px;
-  }
-  .speciesimages{
-    background-color: #474747;
-  }
-
-  
-
-
-
-  .eventgallery{
-    margin-left: 20%; margin-right: 20%;
-    overflow: hidden; 
-   
-  }
-  .eventbox{
-    margin-left: 20%; margin-right: 20%;
-    padding-left: 30px;
-  }
   
 </style>
 
 <div class="gallerycover">
-  <img src="{% static '/images/test-galllery-1.png' %}"  style="height: 80%; width:100%; margin-left: -1px;" alt="First slide">
+  <img src="{% static '/images/test-galllery-1.png' %}"   alt="First slide">
   <div  class="divimgtext">
       <p class="pagehead">Gallery</p>
   </div>

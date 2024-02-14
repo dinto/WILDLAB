@@ -4,52 +4,333 @@
 
 {% block content %}
 <style>
-    .teammargin{
-        margin-left: 10%; 
-        margin-right: 10%;
-    }
-    .intern{
-         margin-left: 41%; font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
-    }
-    .namehead{
-        font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
-    }
-    .designation{
-        margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
-    }
-    .project{
-        font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
-    }
-    .alumni p{
-        margin-left: 41%;  font-size: 24px;font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    }
-    .projectstaff{
-        font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+    @media(max-width: 475px){
+        .teammargin{
+            margin-left: 10%; 
+            margin-right: 10%;
+        }
+        .intern{
+            margin-left: 41%; font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        .namehead{
+            font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
+        }
+        .designation{
+            margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
+        }
+        .project{
+            font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
+        }
+        .alumni p{
+            margin-left: 41%;  font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        .projectstaff{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
 
+        }
+        .master{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        #thesis{
+            font-style: italic;
+            font-family: 'Raleway', sans-serif; 
+            font-size: 14px;
+        }
+        .teamcover{
+            margin-top: 59px;
+            width:102%;
+        }
+        .teamcontent{
+            margin-top: 120px;
+        }
+        .university{
+            font-size: 18px;font-family: 'Raleway', sans-serif; 
+            font-weight: bold;
+        }    
     }
-    .master{
-        font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+    @media(max-width: 640px){
+        .teammargin{
+            margin-left: 10%; 
+            margin-right: 10%;
+        }
+        .intern{
+            margin-left: 41%; font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        .namehead{
+            font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
+        }
+        .designation{
+            margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
+        }
+        .project{
+            font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
+        }
+        .alumni p{
+            margin-left: 41%;  font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        .projectstaff{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+
+        }
+        .master{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        #thesis{
+            font-style: italic;
+            font-family: 'Raleway', sans-serif; 
+            font-size: 14px;
+        }
+        .teamcover{
+            margin-top: 59px;
+            width:102%;
+        }
+        .teamcontent{
+            margin-top: 120px;
+        }
+        .university{
+            font-size: 18px;font-family: 'Raleway', sans-serif; 
+            font-weight: bold;
+        }    
     }
-    #thesis{
-        font-style: italic;
-        font-family: 'Raleway', sans-serif; 
-        font-size: 14px;
+    @media(max-width: 768px){
+        .teammargin{
+            margin-left: 10%; 
+            margin-right: 10%;
+        }
+        .intern{
+            margin-left: 41%; font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        .namehead{
+            font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
+        }
+        .designation{
+            margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
+        }
+        .project{
+            font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
+        }
+        .alumni p{
+            margin-left: 41%;  font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        .projectstaff{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+
+        }
+        .master{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        #thesis{
+            font-style: italic;
+            font-family: 'Raleway', sans-serif; 
+            font-size: 14px;
+        }
+        .teamcover{
+            margin-top: 59px;
+            width:102%;
+        }
+        .teamcontent{
+            margin-top: 120px;
+        }
+        .university{
+            font-size: 18px;font-family: 'Raleway', sans-serif; 
+            font-weight: bold;
+        }    
     }
-    .teamcover{
-        margin-top: 59px;
+    @media(max-width: 1024px){
+        .teammargin{
+            margin-left: 10%; 
+            margin-right: 10%;
+        }
+        .intern{
+            margin-left: 41%; font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        .namehead{
+            font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
+        }
+        .designation{
+            margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
+        }
+        .project{
+            font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
+        }
+        .alumni p{
+            margin-left: 41%;  font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        .projectstaff{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+
+        }
+        .master{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        #thesis{
+            font-style: italic;
+            font-family: 'Raleway', sans-serif; 
+            font-size: 14px;
+        }
+        .teamcover{
+            margin-top: 59px;
+            width:102%;
+        }
+        .teamcontent{
+            margin-top: 120px;
+        }
+        .university{
+            font-size: 18px;font-family: 'Raleway', sans-serif; 
+            font-weight: bold;
+        }    
     }
-    .teamcontent{
-        margin-top: 120px;
+    @media(max-width: 1280px){
+        .teammargin{
+            margin-left: 10%; 
+            margin-right: 10%;
+        }
+        .intern{
+            margin-left: 41%; font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        .namehead{
+            font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
+        }
+        .designation{
+            margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
+        }
+        .project{
+            font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
+        }
+        .alumni p{
+            margin-left: 41%;  font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        .projectstaff{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+
+        }
+        .master{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        #thesis{
+            font-style: italic;
+            font-family: 'Raleway', sans-serif; 
+            font-size: 14px;
+        }
+        .teamcover{
+            margin-top: 59px;
+            width:102%;
+        }
+        .teamcontent{
+            margin-top: 120px;
+        }
+        .university{
+            font-size: 18px;font-family: 'Raleway', sans-serif; 
+            font-weight: bold;
+        }    
     }
-    .university{
-        font-size: 18px;font-family: 'Raleway', sans-serif; 
-        font-weight: bold;
+    @media(max-width: 1536px){
+        .teammargin{
+            margin-left: 10%; 
+            margin-right: 10%;
+        }
+        .intern{
+            margin-left: 41%; font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        .namehead{
+            font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
+        }
+        .designation{
+            margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
+        }
+        .project{
+            font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
+        }
+        .alumni p{
+            margin-left: 41%;  font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        .projectstaff{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+
+        }
+        .master{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        #thesis{
+            font-style: italic;
+            font-family: 'Raleway', sans-serif; 
+            font-size: 14px;
+        }
+        .teamcover{
+            margin-top: 59px;
+            width:102%;
+        }
+        .teamcontent{
+            margin-top: 120px;
+        }
+        .university{
+            font-size: 18px;font-family: 'Raleway', sans-serif; 
+            font-weight: bold;
+        }    
+    }
+    /* big screen systems */
+    @media(min-width: 1537px){
+        .teammargin{
+            margin-left: 10%; 
+            margin-right: 10%;
+        }
+        .intern{
+            margin-left: 41%; font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        .namehead{
+            font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 600;margin-left: 5px;margin-right: 15px; margin-top: 20px;
+        }
+        .designation{
+            margin-left: 5px;margin-right: 15px;font-size: 18px;font-family: 'Raleway', sans-serif;
+        }
+        .project{
+            font-size: 14x;font-family: 'Raleway', sans-serif; ;margin-top: -12px;font-style: italic;
+        }
+        .alumni p{
+            margin-left: 41%;  font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        .projectstaff{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+
+        }
+        .master{
+            font-family: 'Montserrat', sans-serif; font-size: 24px;font-weight: 600;
+        }
+        #thesis{
+            font-style: italic;
+            font-family: 'Raleway', sans-serif; 
+            font-size: 14px;
+        }
+        .teamcover{
+            margin-top: 59px;
+            width:102%;
+        }
+        .teamcontent{
+            margin-top: 120px;
+        }
+        .university{
+            font-size: 18px;font-family: 'Raleway', sans-serif; 
+            font-weight: bold;
+        }    
     }
 
 </style>
 <div class="teamcover">
-    <img src="{% static '/images/team.webp' %}"  style="height: 80%; width:102%; margin-left: -1px;" alt="Team">
+    <img src="{% static '/images/team.webp' %}"  style="height: 70%; width:102%; margin-left: -1px;" alt="Team">
     <div  class="divimgtext">
         <p class=" pagehead">Team</p>
     </div>
