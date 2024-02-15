@@ -10,16 +10,47 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  li{ 
-  margin: 0px 0px 13px 0px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
-}
+  @media(max-width: 475px){
+    li{ 
+    margin: 0px 0px 13px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    }
+    #publication_cover{
+      width:140% !important;
+    }
+    .pagehead {
+      font-size: 42px !important;
+    }
+
+      
+  }
+  @media(max-width: 640px){
+  
+  }
+  @media(max-width: 768px){
+    
+  }
+  @media(max-width: 1024px){
+  
+  }
+  @media(max-width: 1280px){
+  
+  }
+  @media(max-width: 1536px){
+  
+  }
+  /* big screen systems */
+  @media(min-width: 1537px){
+  
+  }
+
+
 </style>
 </head>
 <body>
-<div style="margin-top: 59px;">
-  <img src="{% static '/images/publication.jpg' %}"  style="height: 80%; width:100%;" alt="First slide">
+<div id="publication_cover" style="margin-top: 59px;">
+  <img src="{% static '/images/publication.jpg' %}"  style="width:102%;" alt="Publication">
   <div  class="divimgtext">
       <p class="pagehead">Publications</p>
   </div>
