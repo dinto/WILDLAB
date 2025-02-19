@@ -15,8 +15,7 @@ urlpatterns = [
     path('joseph/', views.joseph, name='joseph'),
     path('balakrishnan/', views.balakrishnan, name='balakrishnan'),
     path('sheheer/', views.sheheer, name='sheheer'),
-    path('bharati/', views.bharati, name='bharati'),
-    path('Sreehari_Raman/', views.Sreehari_Raman, name='Sreehari_Raman'),
+    path('bharati/', views.bharati, name='bharati'),    
     path('ahirbudhnyan/', views.ahirbudhnyan, name='ahirbudhnyan'),
     path('ashik/', views.ashik, name='ashik'),
     path('bibin/', views.bibin, name='bibin'),
@@ -32,5 +31,6 @@ urlpatterns = [
     path('Wildlife_ecology_behavioural_ecology_and_community_ecology/', views.research4, name='research4'),
     path('Life_history_evolution_and_natural_history/', views.research5, name='research5'),
     path('Citizen_Science_Outreach_Stakeholder_Engagement/', views.research6, name='research6'),
+    path('Sreehari_Raman/', views.Sreehari_Raman, name='Sreehari_Raman'),
 
 ]
