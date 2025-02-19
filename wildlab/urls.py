@@ -16,6 +16,7 @@ urlpatterns = [
     path('balakrishnan/', views.balakrishnan, name='balakrishnan'),
     path('sheheer/', views.sheheer, name='sheheer'),
     path('bharati/', views.bharati, name='bharati'),
+    path('Sreehari_Raman/', views.Sreehari_Raman, name='Sreehari_Raman'),
     path('ahirbudhnyan/', views.ahirbudhnyan, name='ahirbudhnyan'),
     path('ashik/', views.ashik, name='ashik'),
     path('bibin/', views.bibin, name='bibin'),

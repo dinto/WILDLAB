@@ -33,6 +33,10 @@ def sheheer(request):
     return render(request,'sheheer.html',{})
 def bharati(request): 
     return render(request,'bharati.html',{})
+
+def Sreehari_Raman(request): 
+    return render(request,'Sreehari_Raman.html',{})
+
 def ahirbudhnyan(request): 
     return render(request,'ahirbudhnyan.html',{})
 def ashik(request): 

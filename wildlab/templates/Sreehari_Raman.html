@@ -1,0 +1,369 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<style>
+    @media(max-width: 475px){
+        .home-sci-icons{
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+
+        .iconsclass{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+            color: #00abf0;
+            overflow: hidden;
+        }
+
+
+        #marginsize{
+            margin-left: 10%; margin-right: 10%;
+        }
+        .home{
+            margin-top: 120px;
+        }
+        .title{
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;font-weight: 900;
+        }
+        .head2{
+            font-family: 'montserrat ', sans-serif ;font-size: 24px;
+        }
+        .coverimg{
+            margin-top: 239px;  
+            width:377px;
+            height:377px;
+        }
+        .contacticons{
+            font-size: 24px;
+        }    
+        
+    }
+    @media(max-width: 640px){
+        .home-sci-icons{
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+
+        .iconsclass{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+            color: #00abf0;
+            overflow: hidden;
+        }
+
+
+        #marginsize{
+            margin-left: 10%; margin-right: 10%;
+        }
+        .home{
+            margin-top: 120px;
+        }
+        .title{
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;font-weight: 900;
+        }
+        .head2{
+            font-family: 'montserrat ', sans-serif ;font-size: 24px;
+        }
+        .coverimg{
+            margin-top: 239px;  
+            width:377px;
+            height:377px;
+        }
+        .contacticons{
+            font-size: 24px;
+        }
+    }
+    @media(max-width: 768px){
+        .home-sci-icons{
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+
+        .iconsclass{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+            color: #00abf0;
+            overflow: hidden;
+        }
+
+
+        #marginsize{
+            margin-left: 10%; margin-right: 10%;
+        }
+        .home{
+            margin-top: 120px;
+        }
+        .title{
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;font-weight: 900;
+        }
+        .head2{
+            font-family: 'montserrat ', sans-serif ;font-size: 24px;
+        }
+        .coverimg{
+            margin-top: 239px;  
+            width:377px;
+            height:377px;
+        }
+        .contacticons{
+            font-size: 24px;
+        }
+    }
+    @media(max-width: 1024px){
+        .home-sci-icons{
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+
+        .iconsclass{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+            color: #00abf0;
+            overflow: hidden;
+        }
+
+
+        #marginsize{
+            margin-left: 10%; margin-right: 10%;
+        }
+        .home{
+            margin-top: 120px;
+        }
+        .title{
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;font-weight: 900;
+        }
+        .head2{
+            font-family: 'montserrat ', sans-serif ;font-size: 24px;
+        }
+        .coverimg{
+            margin-top: 239px;  
+            width:377px;
+            height:377px;
+        }
+        .contacticons{
+            font-size: 24px;
+        }
+    }
+    @media(max-width: 1280px){
+        .home-sci-icons{
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+
+        .iconsclass{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+            color: #00abf0;
+            overflow: hidden;
+        }
+
+
+        #marginsize{
+            margin-left: 10%; margin-right: 10%;
+        }
+        .home{
+            margin-top: 120px;
+        }
+        .title{
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;font-weight: 900;
+        }
+        .head2{
+            font-family: 'montserrat ', sans-serif ;font-size: 24px;
+        }
+        .coverimg{
+            margin-top: 239px;  
+            width:377px;
+            height:377px;
+        }
+        .contacticons{
+            font-size: 24px;
+        }
+    }
+    @media(max-width: 1536px){
+        .home-sci-icons{
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+
+        .iconsclass{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+            color: #00abf0;
+            overflow: hidden;
+        }
+
+
+        #marginsize{
+            margin-left: 10%; margin-right: 10%;
+        }
+        .home{
+            margin-top: 120px;
+        }
+        .title{
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;font-weight: 900;
+        }
+        .head2{
+            font-family: 'montserrat ', sans-serif ;font-size: 24px;
+        }
+        .coverimg{
+            margin-top: 239px;  
+            width:377px;
+            height:377px;
+        }
+        .contacticons{
+            font-size: 24px;
+        }
+    }
+    /* big screen systems */
+    @media(min-width: 1537px){
+        .home-sci-icons{
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+
+        .iconsclass{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+            color: #00abf0;
+            overflow: hidden;
+        }
+
+
+        #marginsize{
+            margin-left: 10%; margin-right: 10%;
+        }
+        .home{
+            margin-top: 120px;
+        }
+        .title{
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;font-weight: 900;
+        }
+        .head2{
+            font-family: 'montserrat ', sans-serif ;font-size: 24px;
+        }
+        .coverimg{
+            margin-top: 239px;  
+            width:377px;
+            height:377px;
+        }
+        .contacticons{
+            font-size: 24px;
+        }
+    }
+    
+
+
+</style>
+<meta charset="UTF-8">
+<title>WildLab</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="row" id="marginsize">
+    <div class="col-md-8 col-xs-5">
+        <section class="home">
+            <div class="home-content">
+                <h1 class="title">Sreehari Raman</h1>
+                <h1 class="head2">Phd Scholar</h1>
+                <br>
+                <span class="content">          
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; 
+                        I was born in Munroe Island, a backwater tourist village in south India. My education and passion for nature
+                        shaped me as a budding biologist. My interest lies in understanding the lesser-known small mammals, especially those
+                        seen in the forested landscape of south India, and my research concentrated on taxonomy, biogeography, bioacoustics,
+                        niche modeling, and behavior that will help to draw meaningful results for the long-term conservation of those elusive
+                        species and their habitats.
+                 </p>
+                 <p class="subheading">Publications:</p>
+                 <p>
+                    
+                 </p>
+                </span>
+            </div>
+        </section>
+    </div>
+    <div class="col-4">
+        <span class="home-img-hover">
+            <img  src="{% static '/images/team_ind/Sreehari_Raman_2.jpeg' %}"   class="coverimg" alt="Sreehari Raman">
+        </span>
+        <br>
+        <div class="home-sci-icons">
+            <a href="https://www.researchgate.net/profile/Sreehari-Raman" class="iconsclass" target="_blank"><i class="fa-brands fa-researchgate"></i></a>
+            <a href="https://orcid.org/0000-0001-9812-1166" class="iconsclass" target="_blank"><i class="fa-brands fa-orcid"></i></a>
+            <a href="mailto:sreehari.raman@kau.in" target="_blank" class="iconsclass" target="_blank"><i class='bx bxs-envelope' ></i></a> 
+        </div>
+    </div>
+</div>
+{% endblock content %}
